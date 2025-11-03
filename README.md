@@ -7,6 +7,11 @@ El nombre de una variable permite hacer referencia a ella.
 
 Las variables pueden ser de un tipo primitivos de datos o una referencia a un objeto, los tipos primitivos permiten representar valores básicos.
 ### Números enteros 
+Representa números enteros positivos y negativos.
 ### Numeros reales
-### 
+Existen el float y double
+### Caracters
+Existe el char que permiter repesentar cualquier caracter unicode
+### Booleano
+Representa valores lógiccos verdadero o falso 
 clases objetos y métodos
