@@ -15,3 +15,8 @@ Existe el char que permiter repesentar cualquier caracter unicode
 ### Booleano
 Representa valores lógiccos verdadero o falso 
 clases objetos y métodos
+byte entero con signo -127 128
+short entero con signo -32768 32767
+int entero con signo -2167483648 2167483647
+long entero con signo 
+
