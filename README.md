@@ -22,8 +22,8 @@ la siguiente tabla resume los tipos ´rimitivos de java
 |short | entero con signo | -32768 a 32767 |
 | int | entero con signo | -2167483648 a2167483647 |
 |long | entero con signo | -922117036854775808 a 9221170036854775807 |
-| float | real de posición simple | &para 3.4028234747e+38 a &para 1.40239846e-45 |
-| double | real de presición doble | &para 1.7976931348623157e+309 a &para 4.94065645841246544e-324 |
+| float | real de posición simple | &plusmn; 3.4028234747e+38 a &plusmn; 1.40239846e-45 |
+| double | real de presición doble | &plusmn; 1.7976931348623157e+309 a &plusmn; 4.94065645841246544e-324 |
 | char | caracteres unicode | \u0000 a \uFFFF |
 | boolean | valores lógicos | true, false |
 
