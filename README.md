@@ -26,5 +26,17 @@ la siguiente tabla resume los tipos ´rimitivos de java
 | double | real de presición doble | &plusmn; 1.7976931348623157e+309 a &plusmn; 4.94065645841246544e-324 |
 | char | caracteres unicode | \u0000 a \uFFFF |
 | boolean | valores lógicos | true, false |
+ ## Literales 
+ Se denomina literal en la manera en que se escriben sus valores para cada uno de sus tipos primitivos.
 
+### Numeros enteros
+Se puede escribir en decimal, octal o en hexadecimal.
+### Números reales
+debe tener un punto decimal o un exponente.
+### Booleanos
+los valores oógicos puden ser true y false.
+### Caracteres
+los valores de tipo caracter representan un caracter unicode, se escriben siempre entre comillas simples.
+
+ 
 
