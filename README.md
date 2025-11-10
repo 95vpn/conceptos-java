@@ -38,5 +38,14 @@ los valores oógicos puden ser true y false.
 ### Caracteres
 los valores de tipo caracter representan un caracter unicode, se escriben siempre entre comillas simples.
 
+### Textos
+pertenece a la clase string y se expresa el texto entre comillas dobles.
+Un texto siempre debe aparecer en una sola linea.
+Para dividir el texto en varias lineas se debe utilizar el operador + para concarenar textos.
+
+## Operadores
+### Números enteros 
+al realizar una operación entre dos números enteros, el resultado siempre es un número entero.
+Se puede realizar operaciones unarias, aditivas, multiplicativas, de incremento y decremento, relacionales, de igualdad y de asignación.
  
 
