@@ -48,4 +48,19 @@ Para dividir el texto en varias lineas se debe utilizar el operador + para conca
 al realizar una operación entre dos números enteros, el resultado siempre es un número entero.
 Se puede realizar operaciones unarias, aditivas, multiplicativas, de incremento y decremento, relacionales, de igualdad y de asignación.
  
+#### la operación unaria permite poner un signi delante
+
+#### la operación aditiva se refiere a la suma y a la resta
+
+#### una operación es multiplicativa al multiplicar o dividir dos valores, el resto % calcula la división entera
+
+#### un incremento o decremento aumenta o decrementa en 1 el valor de una variable. Si el operador va antes de la variable ++variable, primero se realiza la operación y se modifica el valor de la variable. si el operador va después de la variable variable++, su valor se modifica al final.
+
+#### un operador relacional permite comparar dos valores, el resultado de la comparación es un calor boleano que undica si la relación es verdadera o falsa
+
+#### un operador de igualdad compara si dos valores son iguales
+
+#### un operador de asignación permite asignar un valor o el resultado de una operación a una variable
+
+#### 
 
