@@ -62,5 +62,10 @@ Se puede realizar operaciones unarias, aditivas, multiplicativas, de incremento 
 
 #### un operador de asignación permite asignar un valor o el resultado de una operación a una variable
 
-#### 
+### Booleanos 
+#### los operadores que se aplican a los operadores lógicos son negación, Y lógico O lógico.
+
+La negación devuelve true si el ooerador es false 
+El Y lógico devuelve false si uno de los operadores es false 
+El O logico devuelve true di los dos operadores son true.
 
