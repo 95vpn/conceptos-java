@@ -65,7 +65,11 @@ Se puede realizar operaciones unarias, aditivas, multiplicativas, de incremento 
 ### Booleanos 
 #### los operadores que se aplican a los operadores lógicos son negación, Y lógico O lógico.
 
-La negación devuelve true si el ooerador es false 
+La negación devuelve true si el operador es false 
 El Y lógico devuelve false si uno de los operadores es false 
 El O logico devuelve true di los dos operadores son true.
 
+## Clases y Objetos
+Los elementos abstractos de la programación orientada a objetos se denomina clases.
+Un programa orientado a objetos es una colección de objetos que se crean, interaccionan entre si y dejan de existir cuando ya no son útiles durante la ejecución del programa.
+Una clase es una representación abstracta de un conjunto de objetos que compartes los mismos atributos y comportamiento, una clase describe un tipo de objetos.
