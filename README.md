@@ -73,3 +73,21 @@ El O logico devuelve true di los dos operadores son true.
 Los elementos abstractos de la programación orientada a objetos se denomina clases.
 Un programa orientado a objetos es una colección de objetos que se crean, interaccionan entre si y dejan de existir cuando ya no son útiles durante la ejecución del programa.
 Una clase es una representación abstracta de un conjunto de objetos que compartes los mismos atributos y comportamiento, una clase describe un tipo de objetos.
+Un objeto es una instancia de una clase, tiene una identidad propia y un estado.
+La identidad de un objeto se define por su identificador.
+El estado de un objeto se define por el valor de sus atributos.
+El comportamiento de un objeto queda determinado por el comportamiento la clase a la que pertenece.
+Los objetos son unidades indivisibles y disponen de mecanismos de interacción llamados métodos.
+Para identificar los elementos de una aplicación, debemos fijarnos en los sustantivos que utilizamos para describir los objetos reales del sistema.
+
+### Preguntas para diseñar una aplicación orientada a objetos
+¿Cuáles son los elementos tangibles de un sistema?
+¿Cuáles son los atributos?
+¿Cuales son sus responsabilidades?
+¿Cómo se relacionan los elementos del sistema?
+¿Qué objeto debe saber?
+¿Que objeto debe hacer?
+
+
+
+
