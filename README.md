@@ -88,6 +88,21 @@ Para identificar los elementos de una aplicación, debemos fijarnos en los susta
 ¿Qué objeto debe saber?
 ¿Que objeto debe hacer?
 
+## Clases
+Una clase se define por la palabra reservada class seguida del nombre de la clase. El nombre de la clase debe empezar en mayuscula.
+
+<?public class Circulo 
+  {
+    int x;
+    int y;
+    int radio;
+    //Se define con tres atributos, el radio y las coordenadas x,y. 
+  }
+?>
+
+Una vez que se ha declarado la clase, se pueden crear objetos a partir de ella. A la creación de un objeto se le denomina instanciación. Un objeto es una instancia de una clase y el termino instancia y objeto se utilizan indistintamente.
+
+
 
 
 
