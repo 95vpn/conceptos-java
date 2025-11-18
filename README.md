@@ -103,6 +103,33 @@ Una clase se define por la palabra reservada class seguida del nombre de la clas
 Una vez que se ha declarado la clase, se pueden crear objetos a partir de ella. A la creación de un objeto se le denomina instanciación. Un objeto es una instancia de una clase y el termino instancia y objeto se utilizan indistintamente.
 
 
+Para crear objetos, basta con declarar una variable de alguno de los tipos de figuras geométricas.
 
+Para crear el objeto y asignar un esácio de memoria es necesario realizar la instanciación con el operador new.
 
+<?
+  Circulo circulo1 = new Circulo();
+  Circulo circulo2 = new Circulo();
+?>
+
+Los nombres circulo1 y circulo2 son las referencias válidas para utilizar ambos objetos.
+
+### Los elementos de una clase
+
+Una clase describe un tipo de objetos con caracteristicas comunes.
+
+### Atributos
+La información de un objeto se almacena en atributos. Los atributos pueden ser de tipos primitivos de Java o de tipo objeto.
+
+<?
+  public class Vehiculo
+  {
+    String matricula;
+    String marca;
+    String modelo;
+    String color;
+    double tarifa;
+    boolean disponible;
+  }
+?>
 
