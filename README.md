@@ -131,5 +131,21 @@ La información de un objeto se almacena en atributos. Los atributos pueden ser 
     double tarifa;
     boolean disponible;
   }
+  // los atributos matricula, marca, modelo y color son cadenas de caracteres, tarifa es un número real y disponible es un valor lógico.
+  
 ?>
+
+### Métodos y constructores
+
+Además de definir los atributos de un objeto, es necesario definir los métodos que determinan su comportamiento.
+
+Toda clase debe definir un método especial denominado constructor para instanciar los objetos de la clase.
+
+Para la clase vehículo, el identificador del método constructor es Vehículo. EL método constructor se ejecuta cada vez que se instancia ub objeto de la clase. Este método se utiliza para inicializar los atributos del objeto que se instancia.
+
+Para diferenciar entre los atributos del objeto y los identificadores de los parametros del método constructor, se utiliza la palabra this. De esta forma, los parámetros del método pueden tener el mismo nombre que los atributos de la clase.
+this.marca se refiere al atributo del objeto y marca al parámetro del método.
+
+
+
 
