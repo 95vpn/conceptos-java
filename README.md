@@ -146,6 +146,38 @@ Para la clase vehículo, el identificador del método constructor es Vehículo. 
 Para diferenciar entre los atributos del objeto y los identificadores de los parametros del método constructor, se utiliza la palabra this. De esta forma, los parámetros del método pueden tener el mismo nombre que los atributos de la clase.
 this.marca se refiere al atributo del objeto y marca al parámetro del método.
 
+<?
+  public class Vehiculo
+  {
+    String matricula;
+    String marca;
+    String modelo;
+    String color;
+    double tarifa;
+    booblean disponible;
 
+    // el método constructor de la clase Vehículo
 
+    public Vehiculo(String matricula, String marca, String modelo, String color, double tarifa)
+    {
+      this.matricula = matricula;
+      this.marca = marca;
+      this.modelo = modelo;
+      this.color = color;
+      this.tarifa = tarifa;
+      this.disponible = false;
+    }
+  }
+?>
 
+La instanciación de un objeto se realiza ejecutando el método constructor de la clase.
+
+<?
+  Vehículo vehículo1 = new Vehículo("4050 ABJ", "VW", "GTI", "Blanco", 100.0);
+  Vehículo vehículo2 = new Vehículo("2345 JVM", "SEAT", "León", "Negro", 80.0);
+?>
+
+La instanciacion de un objeto consiste en asignar un espacio de memoria al que se hace referencia con el nombre del objeto.
+
+Los identificadores de los objetos permiten acceder a los valores almacenados en cada objeto.
+En los objetos vehiculo1, vehiculo2 almacenan valores diferentes y ocupan espacios de memoria distintos.
