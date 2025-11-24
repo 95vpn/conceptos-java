@@ -172,7 +172,11 @@ this.marca se refiere al atributo del objeto y marca al parámetro del método.
 
 La instanciación de un objeto se realiza ejecutando el método constructor de la clase.
 
+
+
 <?
+
+
   Vehículo vehículo1 = new Vehículo("4050 ABJ", "VW", "GTI", "Blanco", 100.0);
   Vehículo vehículo2 = new Vehículo("2345 JVM", "SEAT", "León", "Negro", 80.0);
 ?>
@@ -181,3 +185,7 @@ La instanciacion de un objeto consiste en asignar un espacio de memoria al que s
 
 Los identificadores de los objetos permiten acceder a los valores almacenados en cada objeto.
 En los objetos vehiculo1, vehiculo2 almacenan valores diferentes y ocupan espacios de memoria distintos.
+
+Para acceder a los atributos de los objetos de la clase vehículo se utilizan los métodos get y set.
+
+Los métodos get se utilizan para consultar el estado del objeto, los métodos set para modificar su estado
