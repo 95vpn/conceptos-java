@@ -189,7 +189,7 @@ En los objetos vehiculo1, vehiculo2 almacenan valores diferentes y ocupan espaci
 Para acceder a los atributos de los objetos de la clase vehículo se utilizan los métodos get y set.
 
 Los métodos get se utilizan para consultar el estado del objeto, los métodos set para modificar su estado, puden ser modificados despues de crear el objeto. 
-
+<?
 public class Vehiculo
 {
   String matricula;
@@ -209,7 +209,7 @@ public class Vehiculo
       this.tarifa = tarifa;
       this.disponible = false;
     }
-
+?>
     public String getMatricula()
     {
       return this.matricula;
