@@ -250,3 +250,12 @@ public class Vehiculo
       this.disponible = disponeble;
     }
 }
+
+### Representación de clases y objetos
+Una clase se representa como un recuadro dividido en tres partes: el nombre de clase en la parte superior, la declaración de atributos y la declaracion de métodos.
+
+El código java de una clase se divide en dos partes, la declaración y su definición. La declaración comienza por la palabra class y a continuación de indica el nombre de la clase; la definición de una clase queda delimitada por la llave de inicio y la llave de fin; en el bloque de definición de la clase se declaran los atributos de los objetos y los métodos que definen su comportamiento.
+
+Los objetos se representan como cajas que indican el nombre del objeto, la clase a la que pertenecen y el estado del objeto.
+
+En los objetos vehiculo1 y vehiculo2 son instancias de la clase vehículo, ambosa objetos comparten los mismos atributos, pero almacenan distintos valores; los valores almacenados en un objeto representan su estado.
