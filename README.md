@@ -259,3 +259,20 @@ El código java de una clase se divide en dos partes, la declaración y su defin
 Los objetos se representan como cajas que indican el nombre del objeto, la clase a la que pertenecen y el estado del objeto.
 
 En los objetos vehiculo1 y vehiculo2 son instancias de la clase vehículo, ambosa objetos comparten los mismos atributos, pero almacenan distintos valores; los valores almacenados en un objeto representan su estado.
+
+
+```
+Vehiculo vehiculo1 = new Vehiculo("4050 ABJ", "VW", "GTI", "Blanco",  100, true);
+Vehiculo vehiculo2 = new Vehiculo("2345 JVM", "SEAT", "León", "Negro", 80.0, false);
+```
+El estado de un objeto puede cambiar durante la ejecución de un programa Java. En este ejemplo solo se podría modificar la tarifa del alquiler y la disponibilidad de los objetos de la clase Vehículo.
+
+### Objetos
+Un objeto se compone de atributos y métodos. Para cacceder a los elementos de un objeto se escribe el nombre del objeto, un punto y el nombre del elemento al que se desea acceder.
+
+´´´
+System.out.println("Matricula: " + vehiculo1.matricula);
+System.out.println("Marca y modelo: " + vehiculo1.marca + " " + vehiculo1.modelo);
+System.out.println("Color: " +  vehiculo.color);
+Systeem.out.println("Tarifa: " + vehiculo1.tarifa);
+´´´
