@@ -270,9 +270,9 @@ El estado de un objeto puede cambiar durante la ejecución de un programa Java. 
 ### Objetos
 Un objeto se compone de atributos y métodos. Para cacceder a los elementos de un objeto se escribe el nombre del objeto, un punto y el nombre del elemento al que se desea acceder.
 
-´´´
+```
 System.out.println("Matricula: " + vehiculo1.matricula);
 System.out.println("Marca y modelo: " + vehiculo1.marca + " " + vehiculo1.modelo);
 System.out.println("Color: " +  vehiculo.color);
 Systeem.out.println("Tarifa: " + vehiculo1.tarifa);
-´´´
+```
