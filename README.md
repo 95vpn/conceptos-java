@@ -276,3 +276,13 @@ System.out.println("Marca y modelo: " + vehiculo1.marca + " " + vehiculo1.modelo
 System.out.println("Color: " +  vehiculo.color);
 Systeem.out.println("Tarifa: " + vehiculo1.tarifa);
 ```
+Para acceder aa un metodo, además de su nombre hay que indicar la lista de argumentos requeridos por el método. Cuando la declaración del método no incluye parametros no es necesario pasar argumentos.
+
+```
+Vehiculo vehiculo1 = new Vehiculo("4050 ABJ", "VW", "GTI", "Blanco", 100.0);
+System.out.println("Matricula: " + vehiculo1.getMatriculaa());
+System.out.println("Tarifa: " + vehiculo1.getTarifa());
+vehiculo.setTarifa(90.0);
+System.out.println("Matricula: " + vehiculo1.getMatricula());
+System.out.println("Tarifa: " + vehiculo1.getTarifa());
+```
