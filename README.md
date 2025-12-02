@@ -286,3 +286,34 @@ vehiculo.setTarifa(90.0);
 System.out.println("Matricula: " + vehiculo1.getMatricula());
 System.out.println("Tarifa: " + vehiculo1.getTarifa());
 ```
+Para mostrar la tarifa del onjeto vehiculo1 se puede acceder directamente al atributo tarifa del objeto o se puede ejecutar el método getTarifa(). Esto se debe a que los atributos de clase vehiculo son de acceso publico (se han declarado public en vez de privte). Los atributos de la clase se deben declarar private y para acceder a ellos se debe utilzar un metodo get.
+
+### La referencia null
+
+Una referencia a un objeto puede no tener asignada una instancia. Esto puede ocurrir porque se ha declarado el objeto pero no se ha instanciado, no se ha creado un objeto con el operador new. Existe un valor especial llamado null que indica que un objeto no se ha instanciado.
+
+```
+Vehiculo vehiculo2;
+```
+
+Miesntras no se instancie el objeto vehiculo2 su referencia vale null.
+En un programa Java no se deben dejar referencias de objetos sin instanciar. Es necesario asegurarse que los objetos existen para evitar referencias null.
+
+El objeto se puede instanciar en la misma declarión o mas adelante.
+
+Vehiculo vehiculo2 = new Vehiculo("2345 JVM", "SEAT", "Leon", "Negro", 80.0);
+
+Para saber su una referencia está instanciada o no, se puede comparar con null.
+
+```
+if (vehiculo2 == null)
+{
+  System.out.print("vehiculo2 es una referencia null");
+}
+
+if (vehiculo2 != null)
+{
+  System.out.print("vehiculo2 está instanciado");
+}
+```
+
