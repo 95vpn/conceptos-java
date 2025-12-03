@@ -316,4 +316,5 @@ if (vehiculo2 != null)
   System.out.print("vehiculo2 está instanciado");
 }
 ```
-
+### Referencias compartidas por varios objetos
+Un objeto puede tener varias referencias o nombres. Un alias es otro nombre que se referecia al mismo objetoUn alias es una referencia más al mismo espacio de memoria del objeto original.
