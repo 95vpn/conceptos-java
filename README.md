@@ -318,3 +318,26 @@ if (vehiculo2 != null)
 ```
 ### Referencias compartidas por varios objetos
 Un objeto puede tener varias referencias o nombres. Un alias es otro nombre que se referecia al mismo objetoUn alias es una referencia más al mismo espacio de memoria del objeto original.
+
+```
+Vehiculo vehiculo1;
+Vehiculo vehiculo3;
+
+vehiculo1 = new Vehiculo("4050 ABJ", "VW", "GTI", "Blanco", 100.0);
+
+// el objeto vehiculo1 se instancia, vehiculo3 solo está declarado y es una referencia null.
+
+vehiculo3 = vehiculo1;
+
+// vehiculo3 se convierte en alias de vehiculo1 y referencia el mismo espacio de memoria.
+
+System.out.println("Matricula: " + vehiculo1.getMatricula());
+System.out.println("Tarifa: " + vehiculo1.getTarifa());
+
+// Muestra la información de la matricula y tarifa de vehiculo1
+
+System.our.println(Matricula: " vehiculo3.getMatricula());
+System.out.println(Tarifa: " vehiculo3.getTarifa());
+
+// El alias de vehiculo1, muestra de nuevo la misma información.
+```
