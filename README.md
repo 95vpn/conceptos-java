@@ -347,3 +347,44 @@ Un alias se puede utilizar para mostrar el estado de un objeto y tambien para mo
   vehiculo3.setTarifa(90.0);
   // al modificar la tarifa de vehiculo3w en realidad se modifica la tarifa de vehiculo1
 ```
+
+El objeto vehiculo3 es un alias de vehiculo1 y no tiene un espacio de memoria propio, utiliza el mismo espacio de memoria que vehiculo1, vehiculo1 comparte con sus alias el mismo espacio de memoria.
+
+### Ciclo de vida de un objeto
+
+El ciclo de vida de un objeto empieza por su declaracion, su instanciación y su uso en un programa java hasta que finalmente desaparece. Cuando el objeto deja de ser utilizado, Java libera la memoria asignada al objeto y la reutilza.
+
+El entorno de ejecuacion de java decide cuando puede reutilizar la memopria de un objeto que ha dejado de ser util en un programa, a este proceso se le conoce como recolección de basura.
+
+### Atributos
+
+```
+public class Vehiculo
+{
+  private String matricula;
+  private String marca;
+  private String modelo;
+  private String color;
+  private double tarifa = 0.0;
+  private boolean disponible = false; 
+}
+```
+
+Los atributos son los elementos que almacenan el estado de un objeto, se definen de la misma forma que las variables, pero dentro del bloque de la clase.
+
+Existen dos tipos de atributos: los atributos de clase y los atributos de objeto.
+
+Los atributos de clase existen siempre, son independientes de que existan objetos instanciados se declaranutilizando static.
+Los atributos de objeto existen durante el ciclo de vida de un objeto, se crean cuando se instancia el objeto y se pueden utilizar mientras el objeto exista.
+
+El tipo de acceso puede ser private, protected o public. Los atributos de acceso private solo se pueden acceder desde la propia clase que los define, miestras que los atributos public se pueden acceder libremente desde otras clases. Los atributos protected se pueden acceder desde la clase que los define y desde sus subclases.
+
+La inicialización del objeto es opcional, se puede declarar un objeto que será instanciado despues o se puede instanciar al momento de su declaración.
+
+En el ejemplo anterior cuando se instancia un objeto de tipo Vehiculo se inicializan los valores de los atributos tarifa y disponible.
+
+La clase Vehiculo se debe declarar con atreibutos privados. Se utiliza el tipo de acceso private para que solo los metodos get y set de la clase pruedan acceder a ellos.
+
+### Métodos
+
+
