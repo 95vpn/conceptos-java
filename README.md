@@ -341,3 +341,9 @@ System.out.println(Tarifa: " vehiculo3.getTarifa());
 
 // El alias de vehiculo1, muestra de nuevo la misma información.
 ```
+Un alias se puede utilizar para mostrar el estado de un objeto y tambien para modificarlo.
+
+```
+  vehiculo3.setTarifa(90.0);
+  // al modificar la tarifa de vehiculo3w en realidad se modifica la tarifa de vehiculo1
+```
