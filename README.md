@@ -386,5 +386,30 @@ En el ejemplo anterior cuando se instancia un objeto de tipo Vehiculo se inicial
 La clase Vehiculo se debe declarar con atreibutos privados. Se utiliza el tipo de acceso private para que solo los metodos get y set de la clase pruedan acceder a ellos.
 
 ### Métodos
+Los métodos son funciones que determinan el comportamiento de los objetos. Un objeto se comporta de una u otra forma dependiendo de los métodos de la clase a la que pertence. Todos los objetos de una misma clase tienen los mismos métodos y el mismo comportamiento.
 
+Existen tres tipos de métodos: métodos de consulta, métodos modificadores y operaciones.
+
+Los métodos de consulta sirven para extraer información de los objetos. los métodos modificadores sirven para modificar el valor de los atributos del objeto y las operaciones definen el comportamiento de un objeto.
+
+Los métodos get son métodos de consulta, mientras que los métodos set son metodos modificadores
+
+Los métodos get se utilizan para extraer el valor de un atributo del objeto y los métodos set para modificarlo.
+
+```
+  public class Vehiculo
+  {
+    private String matricula;
+    private String marca;
+    private String modelo;
+    private String color;
+    private double tarifa = 0.0;
+    private boolean disponible = false;
+
+    public String getAtributos()
+    {
+      return "Matricula: " + this.matricula + "Modelo: " + this.marca        + " " + this.modelo + " Color:  " + this.color + " Tarifa: " +         this.tarifa + " Disponible: " + this.disponible; 
+    }  
+  }
+```
 
