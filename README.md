@@ -413,3 +413,5 @@ Los métodos get se utilizan para extraer el valor de un atributo del objeto y l
   }
 ```
 
+El metodo set se declara public y devuelve void. La lista de parametros de un método set incluye el tipo y el valor a modificar
+
