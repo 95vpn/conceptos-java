@@ -397,6 +397,17 @@ Los métodos get son métodos de consulta, mientras que los métodos set son met
 Los métodos get se utilizan para extraer el valor de un atributo del objeto y los métodos set para modificarlo.
 
 ```
+  public double getTarifa()
+  {
+    return this.tarifa;
+  }
+  // el metodo get se declara public
+  // es valor de retorno es double, igual que el atributo tarifa
+  // la lista de parametros de un método get queda vacía
+  // un método get utiliza return para devolver el valor del atributo. En este caso el identificador del atributo es tarifa y se refiere a él como this.tarifa.
+```
+
+```
   public class Vehiculo
   {
     private String matricula;
@@ -413,5 +424,15 @@ Los métodos get se utilizan para extraer el valor de un atributo del objeto y l
   }
 ```
 
-El metodo set se declara public y devuelve void. La lista de parametros de un método set incluye el tipo y el valor a modificar
+El método set se declara public y devuelve void. La lista de parametros de un método set incluye el tipo y el valor a modificar.
+
+El método setTarifa(double tarifa) debe modificar el valoe de la tarifa del alquiler almacenado en el objeto. El cuerpo de una método set asigna al atributo del objeto el parametro de la declaración.
+
+```
+public void setAtributo(double tarifa)
+{
+  this.tarifa = tarifa;
+}
+// un método sset modifica el valor de un atributo del objeto. En este caso el identificador del atributo es tarifa y se refiere a él como this.tarifa para asignarle el valor del parametro.
+```
 
