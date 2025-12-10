@@ -433,6 +433,10 @@ public void setAtributo(double tarifa)
 {
   this.tarifa = tarifa;
 }
+// un método set se declara public.
+// el valor de retorno es void.
+// la lista de parametros de un método set incluye el tipo y el nombre del parametro
 // un método sset modifica el valor de un atributo del objeto. En este caso el identificador del atributo es tarifa y se refiere a él como this.tarifa para asignarle el valor del parametro.
 ```
-
+Un método de tipo operación 
+es aquel que que realiza un claculo o modifica el estado de un objeto.Este tipo de métodospueden incluir una lista de parametros y puede devolver un valor o no. Si el métod no devuelve un valor, se declara void. 
