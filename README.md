@@ -467,3 +467,26 @@ Un método de tipo operación es aquel que realiza un cáculo o modifica el esta
     }
   }
 ```
+
+### Declaración de métodos
+La declaración de un método indica si el método necesita o no argumentos.
+
+Los metodos get ni tienen argumentos y devuelven un valor, los metodos set necesitan un argumento para identificar el valor del atributo que van a modificar.
+
+El método setTarifa (double tarifa) tiene un argumento. El nombre de este paramtro es tarifa  y su tipo es double.
+
+Un método se declara con la siguiente sintaxis:
+
+```
+tipo-de-acceso tipo nombre (lista de métodos);
+public void setTarifa(double tarifa)
+
+// La lista de parametros puede declarar una mas variables separadas por coma.
+```
+
+### Invocación de métodos
+Un método se puede invocar dentro o fuera de la clase donde se ha declarado. 
+Si el método se invoca dentro de la clase, basta con indicar su nombre.
+Si el método se invoca fuera de la clase entonces se debe indicar el nombre del objeto y el nombre del método.
+
+
