@@ -489,4 +489,25 @@ Un método se puede invocar dentro o fuera de la clase donde se ha declarado.
 Si el método se invoca dentro de la clase, basta con indicar su nombre.
 Si el método se invoca fuera de la clase entonces se debe indicar el nombre del objeto y el nombre del método.
 
+```
+public class Vehiculo
+{
+  private String matricula;
+  private String marca;
+  private String modelo;
+  private String color;
+  private double tarifa = 0.0;
+  private boolean disponible = false;
+
+  public String getAtributos()
+  {
+    return "Matricula: " + getMatricula() + " " +
+           " Modelo: " + getMarca() + " " + getModelo() +
+           " Color: " + getColor() +
+           " Tarifa: " + getTarifa() +
+           " Disponible: " + getDisponible;
+  }
+}
+```
+Si el método getAtributos() se va a incvocar desde fuera de la clase, es necesario indicar el nombre del objeto y el nombre del método.
 
