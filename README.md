@@ -511,3 +511,11 @@ public class Vehiculo
 ```
 Si el método getAtributos() se va a incvocar desde fuera de la clase, es necesario indicar el nombre del objeto y el nombre del método.
 
+Si el método es estático, es necesario indicar el nombre de la clase y el nombre del método.
+
+Cunado se invica al método, en la linea de código del programa donde se invoca al métod se calculan los valores de los argumentos.
+Los parametros se inicializan con los valores de los argumentos.
+Se ejecuta el bloque de codigo del método hasta que se alcanza el return o se llega al final del bloque.
+Si el método devuelve un valor, se sustituye la invocación por el valor devuelto.
+L a ejecución del programa continua en la siguiente instruccion donde se invocó al método.
+
