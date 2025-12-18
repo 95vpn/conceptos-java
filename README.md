@@ -519,3 +519,6 @@ Se ejecuta el bloque de codigo del método hasta que se alcanza el return o se l
 Si el método devuelve un valor, se sustituye la invocación por el valor devuelto.
 L a ejecución del programa continua en la siguiente instruccion donde se invocó al método.
 
+### El método main()
+
+Todo programa Java debe tener un clase con un método main(), este método se debe declarar public static void, es un método estático, público y no deuelve valor de retorno, los parametros String[] args se refieren a la linea de comandos de la aplicacion.
