@@ -522,3 +522,5 @@ L a ejecución del programa continua en la siguiente instruccion donde se invoc�
 ### El método main()
 
 Todo programa Java debe tener un clase con un método main(), este método se debe declarar public static void, es un método estático, público y no deuelve valor de retorno, los parametros String[] args se refieren a la linea de comandos de la aplicacion.
+
+
