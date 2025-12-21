@@ -22,6 +22,18 @@ public class Vehiculo {
         this.disponible = disponible;
     }
 
+    public String getAtributos()
+    {
+        return "Matricula: " + this.matricula +
+                " Modelo: " + this.marca + " " + this.modelo +
+                " Color: " + this.color +
+                " Tarifa: " + this.tarifa +
+                " Disponible: " + this.disponible;
+    }
 
+    public double getTarifa()
+    {
+        return this.tarifa;
+    }
 
 }

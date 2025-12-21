@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f127b3c-09ab-4d88-b814-9fe59d60dbcc" name="Changes" comment="first commit">
+    <list default="true" id="4f127b3c-09ab-4d88-b814-9fe59d60dbcc" name="Changes" comment="class-vehiculo">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fundamentos/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/fundamentos/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fundamentos/src/Vehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/fundamentos/src/Vehiculo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +44,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -49,9 +53,27 @@
     "kotlin-language-version-configured": "true",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "D:/JMJAR/Descargas/Developer/java/conceptos-java/fundamentos/src/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="fundamentos" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -69,7 +91,8 @@
       <updated>1765655520424</updated>
       <workItem from="1765655521718" duration="2150000" />
       <workItem from="1765657830922" duration="1556000" />
-      <workItem from="1765757877588" duration="3457000" />
+      <workItem from="1765757877588" duration="4145000" />
+      <workItem from="1766344721734" duration="1455000" />
     </task>
     <task id="LOCAL-00001" summary="class-vehiculo">
       <option name="closed" value="true" />
@@ -87,7 +110,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765658170953</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="class-vehiculo">
+      <option name="closed" value="true" />
+      <created>1765763408243</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1765763408245</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,9 +136,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="class-vehiculo" />
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="class-vehiculo" />
+    <option name="LAST_COMMIT_MESSAGE" value="class-vehiculo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -116,11 +147,6 @@
           <url>file://$PROJECT_DIR$/conceptosJava/src/Main.java</url>
           <line>6</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/fundamentos/src/Main.java</url>
-          <line>6</line>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
