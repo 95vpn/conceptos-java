@@ -524,3 +524,10 @@ L a ejecución del programa continua en la siguiente instruccion donde se invoc�
 Todo programa Java debe tener un clase con un método main(), este método se debe declarar public static void, es un método estático, público y no deuelve valor de retorno, los parametros String[] args se refieren a la linea de comandos de la aplicacion.
 
 Cuando la máquina virtual de Java (JVM) ejecuta un programa Java, llama al método main. Este método que a su vez que a su vez ejecuta los métodos de la aplicación.
+
+### Parámetros y argumentos
+Los parámetros de un método definen la cantidad y el tipo de dato de los valores que recibe un método para su ejecución.
+Los argumentos son los valores que se pasan a un método durante su invocación.
+El método recibe los argumentos correspondientes a los parametros con los que ha sido declarado.
+El método puede tener tantos métodos como sea necesario.
+El método constructor de la clase  vehiculo tienen cinco parématros.
