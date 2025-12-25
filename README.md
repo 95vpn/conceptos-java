@@ -544,3 +544,21 @@ public void setTarifa(double tarifa)
 {
 }
 ```
+Durante la invocación del método es necesario que el número y el tipo de argumentos coincidan con el número y el tipo de parametros declarados en la cabecera del método.
+
+```
+Vehiculo vehiculo1 = new Vehiculo();
+// es correcto invocar al método setTarifa(double tarifa) del objeto vehiculo1 pasando un argumento de tipo double.
+vehiculo1.setTarifa(100.0);
+vehiculo1.setTarifa(90.0);
+
+// La invocación del método no es coorecta si se pasan dos argumentos de tipo double o un argumento de tipo String porque la cabecera del método solo incluye un parametro de tipo double.
+vahiculo1.setTarifa(100.0, 20.0);
+vehiculo1.setTarifa("100.0");
+```
+
+### Paso de parámetros
+Cunado se invoca un método se hace una copia de los valores de los argumentos en los parámetros.
+Esto quiere decir que si el método modifica el valor de un parámetro, numca se modifica el valor original del argumento.
+
+
