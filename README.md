@@ -531,3 +531,16 @@ Los argumentos son los valores que se pasan a un método durante su invocación.
 El método recibe los argumentos correspondientes a los parametros con los que ha sido declarado.
 El método puede tener tantos métodos como sea necesario.
 El método constructor de la clase  vehiculo tienen cinco parématros.
+
+```
+public Vehiculo(String matricula, String marca, String modelo, String color, double tarifa)
+{
+}
+```
+El método setTarifa de la clase Vehiculo tiene un parametro tarifa de tipo double.
+
+```
+public void setTarifa(double tarifa)
+{
+}
+```
