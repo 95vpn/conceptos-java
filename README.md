@@ -561,4 +561,6 @@ vehiculo1.setTarifa("100.0");
 Cunado se invoca un método se hace una copia de los valores de los argumentos en los parámetros.
 Esto quiere decir que si el método modifica el valor de un parámetro, numca se modifica el valor original del argumento.
 
+Po ejemplo, el método recibirVehiculoAlquilado(Vehiculo v) recive el prametro v de tipo vehiculo. Si el método modifica el estado de objeto v, en realidad modifica el estado del objeto original vehiculo1 que recibe como argumento.
+
 
