@@ -563,4 +563,10 @@ Esto quiere decir que si el método modifica el valor de un parámetro, numca se
 
 Po ejemplo, el método recibirVehiculoAlquilado(Vehiculo v) recive el prametro v de tipo vehiculo. Si el método modifica el estado de objeto v, en realidad modifica el estado del objeto original vehiculo1 que recibe como argumento.
 
+```
+public void recibirVehiculoAlquilado(Vehiculo v) {
+  v.setDisponible(true)
+}
+```
+
 
