@@ -568,5 +568,28 @@ public void recibirVehiculoAlquilado(Vehiculo v) {
   v.setDisponible(true)
 }
 ```
+```
+public static void main(String args())
+{
+  Vehiculo vehiculo1 = new Vehiculo("4050 ABJ",
+                                     "VW",
+                                      "GTI",
+                                      "Blanco",
+                                       100.0);
+
+System.out.println("El objeto vehiculo1 está disponible: " + vehiculo1.getDispoible());
+
+recibirVehiculoAlquilado (vehiculo1);
+
+System.out.println("El objeto vehiculo1 está disponible: "+ vehiculo1.getDisponbile());
+}
+
+// Al instanciar el objeto, el método construtor asigna el valor false al atributo disponible, pero al invocar el método recibirVehiculoAlquilado(Vehiculo v)  con el objeto vehiculo1, se modifica su disponibilidad.
+```
+
+### El valor de retorno
+Un método puede devolver un valor.
+Los métodos que no devuelven un valor se declaran void.
+Los métodos que devuelven un valor indican el tipo que devuelven: int, double, char, String o un tipo de objeto.
 
 
