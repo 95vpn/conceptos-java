@@ -592,4 +592,22 @@ Un método puede devolver un valor.
 Los métodos que no devuelven un valor se declaran void.
 Los métodos que devuelven un valor indican el tipo que devuelven: int, double, char, String o un tipo de objeto.
 
+Los métodos set devuelven void, mientras que los métodos get devuelven el tipo correspondiente al atributo al que hacen referencia
+Los métodos set devuelven void porque son metodos modificadores, realizan operaciones y cálculos para modificar el estado de los objetos.
+Los métodos get son de consulta y devuelven los valores almacenados en los atributos de un objeto.
+
+```
+public void setTarifa(doble tarifa)
+{
+  this.tarifa = tarifa;
+}
+// el método setTarifa(double tarifa) recibe el parámetro tarifa de tipo double y devuelve void.
+
+public double getTarifa()
+{
+  return this.tarifa;
+}
+El método getTarifa() devuelve el tipo double correspondiente al atributo tarifa, el valor del atributo se devuelve con return.
+```
+
 
