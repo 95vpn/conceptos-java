@@ -610,4 +610,39 @@ public double getTarifa()
 El método getTarifa() devuelve el tipo double correspondiente al atributo tarifa, el valor del atributo se devuelve con return.
 ```
 
+### Las variable locales de un método
+Las variables locales de un mpetodo son útiles para almacenar valores temporales cuyo tiempo de vida coincide con el método.
 
+El método getAtributos() no utiliza variables locales. El valor re retorno se calcula al momento de hacer return.
+
+```
+public String getAtributos()
+{
+  return = "Matricula: " + getMatricula() + " " +
+         " Modelo: " + getMarca() + " " + getModelo() +
+         " Color: " + getColor() +
+         " Tarifa: " + getTarifa() +
+         " Disponible: " + getDisponible();
+}
+
+//Este atributo se podría codificar declarando la variable local atributos de tipo String para almacenar el valor de retorno. Esta variable se declara dentro del método.
+
+public String getAtributos()
+{
+  String atributos
+  atributos = "Matrivula: " + getMatricula() + " " +
+              "Modelo: " + getMarca() + " " + getModelo() +
+              " Color: " + getColor() +
+              " Rarifa: " + getTarifa() +
+              " Disponible: " + getDisponible();
+
+  return atributos;
+}
+
+//Los dos métodos son equivalentes, pero el primero es más claro porque evita el uso de una variable local que no es necesaria.
+```
+
+### Sobrecarga de métodos
+La sobrecarga de métodos es útil para que el mismo método opere con parametros de distinto tipo o que un mismo métod reciba una lista de parametros diferente.
+Puede haber dos métodos con el mismo nombre que realicen don funciones distintas.
+La diferencia entre los métodos sobrecargados está en su declaración.
