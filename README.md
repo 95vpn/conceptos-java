@@ -646,3 +646,28 @@ public String getAtributos()
 La sobrecarga de métodos es útil para que el mismo método opere con parametros de distinto tipo o que un mismo métod reciba una lista de parametros diferente.
 Puede haber dos métodos con el mismo nombre que realicen don funciones distintas.
 La diferencia entre los métodos sobrecargados está en su declaración.
+
+```
+public String getAtributos()
+{
+  return "Matricula: " + getMatricula() + " " +
+         " Modelo: " + getMarca() + " " + getModelo() +
+         " Color: " + getColor() +
+         " Tarifa: " + getTarifa() +
+         " Disponible: " + getDisponible();
+}
+
+public String getAtributos(double porcentajeDescuento)
+{
+  return "Matricula: " + getMatricula() + " " +
+         " Modelo: " + getMarca() + " " + getModelo() +
+         " Color: " + getColor() +
+         " Tarifa: " + (100.0 - porcentajeDescuento/100*tarifa) +
+         " Disponible: " + getDisponible();
+}
+
+// el método getAtributos() se puede sobrecargar para devolver los atributos de un vehiculo y para mostrar la tarifa reducida al aplicar el porcentaje de descuento recibido como argumento.
+```
+Los dos métodos se diferencian por la declaración de sus parametros y ambos métodos realizan operaciones distintas.
+
+
