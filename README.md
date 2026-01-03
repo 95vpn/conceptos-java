@@ -670,4 +670,10 @@ public String getAtributos(double porcentajeDescuento)
 ```
 Los dos métodos se diferencian por la declaración de sus parametros y ambos métodos realizan operaciones distintas.
 
+### Constructores
+
+Para crear un objeto se utiliza el operador new.
+Si no se ha definido un método contructor para la clase, entonces el objeto se instancia indicando el nombre de la clase y a continuación un parentesis abierto y otro cerrado.
+Si ya se ha definido un método constructor, entonces no es posible instanciar un objeto utilizando un contructor por defecto.
+Cuando se invoca al constructor por defectose asigna un espacio de memoria para el nuevo objeto y sus atributos se inicializan a los valores por defecto correspondientes a su tipo. Los numeros enteros se inicializan a cero, los números reales a 0.0, los valores lógicos a false, los caracteres a \u0000 y las referencias a null.
 
