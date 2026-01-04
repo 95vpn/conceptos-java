@@ -677,3 +677,39 @@ Si no se ha definido un método contructor para la clase, entonces el objeto se 
 Si ya se ha definido un método constructor, entonces no es posible instanciar un objeto utilizando un contructor por defecto.
 Cuando se invoca al constructor por defectose asigna un espacio de memoria para el nuevo objeto y sus atributos se inicializan a los valores por defecto correspondientes a su tipo. Los numeros enteros se inicializan a cero, los números reales a 0.0, los valores lógicos a false, los caracteres a \u0000 y las referencias a null.
 
+En una clase se pueden definir uno o más métodos constructores para inicializar los atributos de un objeto con valores distintos de los valores por defecto de Java.
+Para instanciar un objeto es necesario indicar los valores iniciales de sus atributos cuando se ejecuta el método contructor.
+En la clase Vehiculo se ha definido un método constructor que inicializa los atributos matricula, marca, modelo, color y tarifa.
+
+```
+public class Vehiculo
+{
+  String matricula;
+  String marca;
+  String modelo;
+  String color;
+  double tarifa;
+  boolean disponible;
+
+  // El método constructor de la clase vehiculo
+  public Vehiculo(String matricula,
+                  String marca,
+                  String modelo,
+                  String color,
+                  double tarifa)
+  {
+    this.matricula = matricula;
+    this.marca = marca;
+    this.modelo = modelo;
+    this.color = color;
+    this.tarifa = tarifa;
+    this.disponible = false;
+  }
+}
+
+// this.matricula se refiere al atributo del objeto.
+// matricula se refiere al parametro del método.
+
+
+```
+
