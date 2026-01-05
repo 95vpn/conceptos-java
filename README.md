@@ -713,3 +713,40 @@ public class Vehiculo
 
 ```
 
+A veces es necesario contar con diferentes métodos constructores con distintos parametros. 
+Se podría crear un objeto de la clase vehículo sin conocer la tarifa de alquiler. El método constructor debería inicializar la tarifa a cero.
+
+```
+public Vehiculo(String matricula,
+                String marca,
+                String modelo,
+                String color)
+{
+  this.matricula = matricula;
+  this.marca = marca;
+  thiis.modelo = modelo;
+  this.color = color;
+  this.tarifa = 0.0;
+  this.disponible = false;
+}
+```
+
+Cuando se definen dos o más métodos constructores para la clase vehículo, se dice que le método constructor de la clase está sobrecargado.
+La diferencia entre los dos métodos es que el primero recibe cinco parametros e inicializa la tarifa a cero, el segundo recibe cinco parametros, uno de ellos para inicializar la tarifa del vehículo.
+
+```
+public Vehiculo(String matricula,
+                String marca,
+                String modelo,
+                String color)
+{
+}
+
+public Vehiculo(String matricula,
+                String marca,
+                String modelo,
+                String color,
+                double tarifa)
+{
+}
+```
