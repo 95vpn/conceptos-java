@@ -763,6 +763,7 @@ public class Vehiculo
 
   public Vehiculo(String matricula,
                   String marca,
+                  String modelo,
                   String color)
   {
     this.matricula = matricula;
@@ -788,4 +789,20 @@ public class Vehiculo
     this.disponible = false;
   }
 }
+```
+
+Java diferencia los métodos sobrecargados por el número y el tipo de los argumentos que tiene el método. 
+Cuando se invoca el método contructor de la clase con el operador new, Java selecciona el método que debe ejecutar por el número y el tipo de argumentos que recibe.
+
+```
+Vehiculo vehiculo1 = new Vehiculo("4050 ABJ",
+                                  "VW",
+                                  "GTI",
+                                   "Blanco",
+                                   100.0);
+
+Vehiculo vehiculo2 = new Vehiculo("2345 JVM",
+                                  "SEAT",
+                                   "León",
+                                   "Negro");
 ```
