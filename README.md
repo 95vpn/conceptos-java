@@ -806,3 +806,11 @@ Vehiculo vehiculo2 = new Vehiculo("2345 JVM",
                                    "León",
                                    "Negro");
 ```
+## Extensión de clases
+
+### Composición
+
+La composición consiste en crear una clase nueva agrupando objetos de clases que ya existen. 
+Una composición agrupa uno o más objetos para construir una clase, de manera que las instancias de esta nueva clase contienen uno o mas objetos de otras clases.
+Normalmente los objetos contenidos se declaran con acceso private y se inicializan en el constructor de la clase.
+
