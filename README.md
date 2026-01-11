@@ -814,3 +814,50 @@ La composición consiste en crear una clase nueva agrupando objetos de clases qu
 Una composición agrupa uno o más objetos para construir una clase, de manera que las instancias de esta nueva clase contienen uno o mas objetos de otras clases.
 Normalmente los objetos contenidos se declaran con acceso private y se inicializan en el constructor de la clase.
 
+```
+public class Vehiculo
+{
+  private String matricula;
+  private String marca;
+  private String modelo;
+  private String color;
+  private double tarifa;
+  private boolean disponible;
+
+  public Vehiculo(String matricula,
+                  String marca,
+                  String modelo,
+                  String color,
+                  double tarifa)
+  {
+    this.matricula = matricula;
+    this.matricula = marca;
+    this.modelo = modelo;
+    this.color = color;
+    this.tarifa = tarifa;
+    this.disponible = falso;  
+  } 
+}
+```
+
+Para hacer una composición utilizando objetos de una clase diferente de String, lo primero es definir una nueva clase. La clase Cliente formará junto con Vehiculo la clase VehiculoAlquilado utilizando la composición.
+
+```
+public class Cliente
+{
+  private String nif;
+  private String nombre;
+  private String apellido:
+
+  public Cliente(String nif,
+                 String nombre,
+                 String appellidos)
+  {
+    this.nif = nif;
+    this.nombre = nombre;
+    this.apellido = apellido;
+  }
+}
+
+
+```
