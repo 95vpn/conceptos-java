@@ -861,3 +861,10 @@ public class Cliente
 
 
 ```
+
+Ahora se define una composición que declara un objeto de la clase Vehiculo y un objeto de la clase cliente.
+La nueva clase VehiculoAlquilado relaciona una instancia de la clase Vehiculo con una instancia de la clase cliente y crea objetos que almacenan relaciones entre clientes y vehículos de alquiler.
+
+Esto significa que para instanciar un objeto de la clase VehiculoAlquilado es necesario tener referencias a objetos de las clases Cliente y Vehiculo.
+
+
