@@ -868,3 +868,40 @@ La nueva clase VehiculoAlquilado relaciona una instancia de la clase Vehiculo co
 Esto significa que para instanciar un objeto de la clase VehiculoAlquilado es necesario tener referencias a objetos de las clases Cliente y Vehiculo.
 
 
+```
+public class VehiculoAlquilado
+{
+  private Cliente cliente;
+  private Vehiculo vehiculo;
+  private int diaAlquiler;
+  private int mesAlquiler;
+  private int añoAlquiler;
+  private int totalDiasAlquiler;
+
+  public VehiculoAlquilado(Cliente cliente,
+                           Vehiculo vehiculo,
+                           int diasAlquiler,
+                           int mesAlquiler,
+                           int añoAlquiler,
+                           int totalDiasAlquiler)
+  {
+    this.cliente = cliente;
+    this.vehiculo = vehiculo;
+    this.diaAlquiler = diaAlquiler;
+    this.mesAlquiler = mesAlquiler;
+    this.añoAlquiler = añoAlquiler;
+    this.totalDiasAlquiler = totalDiasAlquiler;
+  }
+
+  public Cliente getCliente()
+  {
+    return this.Cliente;
+  }
+
+  public Vehiculo getVehiculo()
+  {
+    return this.vehiculo;
+  }
+}
+```
+
