@@ -905,3 +905,47 @@ public class VehiculoAlquilado
 }
 ```
 
+La clase VehiculoAlqulado contiene un objeto de la clase Cliente, un objeto de la clase Vehiculo y atributos de tipo int para almacenar el día, el mes y el año de la fecha del alquler del vehiculo y el total de días de alquiler.
+La clase contenedora es VehiculoAlquilado y las clases contenidas son Cliente y Vehiculo.
+
+```
+public static void main(String args[])
+{
+  Vehiculo vehiculo1 = new Vehiculo("4050 ABJ",
+                                    "VW",
+                                    "GTI",
+                                    "Blanco",
+                                    100.0):
+
+  Vehiculo vehiculo2 = new Vehiculo("2145 JVM",
+                                    "SEAT",
+                                    "León",
+                                    "Negro",
+                                    80.0);    
+
+  Cliente cliente1 = new Cliente("30435624x", "Juan", "Perez");
+
+  VehiculoAlquilado alquiler1 = new VehiculoAlquilado(cliente1,
+                                                    vehiculo1,
+                                                    11,
+                                                    11,
+                                                    2011,
+                                                    2);
+}
+
+
+```
+
+En una relación de composición, hay atributos de la clase contenedora que son objetos que pertenecen a la clase contenida.
+Un objeto de la clase contenedora puede acceder a los métodos públicos de las clases contenidas.
+En la declaración de la clase VehiculoAlquilado se han definido dos métodos get para los atributos de tipo objeto.
+El método getCliente() devuelve un objeto de tipo Cliente y el método getVehiculo() devuelve un objeto de tipo Vehiculo.
+
+
+El objeto alquiler1 de la clase VehiculoAlquilado puede acceder a los métodos públicos de su propia clase y de las clases Cliente y Vehiculo.
+Un objeto de la clase VehiculoAlquilado puede ejecutar métodos get para mostrar la información de los objetos que contiene.
+
+```
+alquiler1.getCliente().getNIF();
+alquiler1.getVehiculo().getMatricula();
+```
