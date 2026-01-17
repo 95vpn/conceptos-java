@@ -949,3 +949,17 @@ Un objeto de la clase VehiculoAlquilado puede ejecutar métodos get para mostrar
 alquiler1.getCliente().getNIF();
 alquiler1.getVehiculo().getMatricula();
 ```
+
+## Herencia
+
+La herencia es la capacidad que tienen los lenguajes orientados a objetos para extender clases. 
+Esto produce una nueva clase que hereda el comportamiento y los atributos de la clase que ha sido extendida.
+La clase original se denomina clase base o superclase, la nueva clase se denomina clase derivada o subclase.
+
+### Extensión de clases
+
+La capacidad para extender clases se llama herencia porque la nueva clase hereda todos los atributos y los métodos de la superclase a la que extiende.
+Una subclase es una especialización de la superclase.
+Normalmente una subclase añade nuevos atributos y métodos que le dan un comportamiento diferente a l de la superclase.
+La herencia es un mecanismo muy importante porque permite la reutilización de código.
+ 
