@@ -962,4 +962,12 @@ La capacidad para extender clases se llama herencia porque la nueva clase hereda
 Una subclase es una especialización de la superclase.
 Normalmente una subclase añade nuevos atributos y métodos que le dan un comportamiento diferente a l de la superclase.
 La herencia es un mecanismo muy importante porque permite la reutilización de código.
+
+Suponga que se desea diseñar una aplicación para gestionar una empresa de alquiler de vehículos de tipo turismo, deportivo y furgonetas.
+La clase vehículo define los atributos y los métodos de todos los vehículos de la empresa de alquiler.
+Esto no es suficiente porque hay distintos tipos de vehiculos, de manera que es necesario definir subclases para cada tipo de vehiculo: turismo, deportivo y furgoneta.
+Todas las subclases son vehículos, un turismo, un deportivo y una furgoneta, pero cada uno de ellos tiene caracteristicas propias que le hacen diferente al resto. 
+Para un turismo interesa saber el número de puertas y el tipo de cambio de marchas.
+Para un turismo interesa saber su cilindrada.
+Para una furgoneta su capacidad de carga en kilos y el volumen en metros cúbicos.
  
