@@ -971,3 +971,26 @@ Para un turismo interesa saber el número de puertas y el tipo de cambio de marc
 Para un turismo interesa saber su cilindrada.
 Para una furgoneta su capacidad de carga en kilos y el volumen en metros cúbicos.
  
+La extensión de una clase tiene la siguiente sintaxis
+```
+public class nombre-subclase extends nombre-superclase
+{
+}
+```
+Las subclases Turismo, Deportivo y Furgoneta son especializaciones de la clase Vehiculo.
+En una relación de herencia, las subclases heredan los atributos y los métodos de la superclase.
+En la declaración de las subclases se indica la clase a la que extienden, en este caso Vehículo.
+
+```
+public class Turismo extends Vehiculo
+{
+}
+
+public class Deportivo extends Vehiculo
+{
+}
+
+public class Furgoneta extends Vehiculo
+{
+}
+```
