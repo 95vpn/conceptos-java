@@ -994,3 +994,14 @@ public class Furgoneta extends Vehiculo
 {
 }
 ```
+
+```
+public class Vehiculo
+{
+  private String matricula;
+  private String marca;
+  private String modelo;
+  private String color;
+  Private String tarifa = 0.0;
+}
+```
