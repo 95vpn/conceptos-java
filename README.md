@@ -1068,3 +1068,20 @@ public class Turismo extends Vehiculo
   }
 }
 ```
+
+```
+public class Deportivo extends Vehiculo
+{
+  private int cilindrada;
+
+  public Deportivo(String matricula,
+                   String modelo,
+                   String modelo,
+                   String color,
+                   double tarifa
+                   int cilidrada)
+  {
+    super(matricula, marca, modelo, folor tarifa))
+  }  
+}
+```
