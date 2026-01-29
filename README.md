@@ -1130,3 +1130,13 @@ public class Furgoneta extends Vehiculo
              " Volumen (m3): " + this.volumen;
   }
 ```
+### Polimorfismo
+Las clases Turismo, Deportivo y Furgoneta extienden a la clase vehículo.
+Estas clases heredan los atributos del Vehículo y cada clase añade atributos y métodos propios.
+La clase Turismo añade los atributos puertas, marchaAutomática y los métodos getPuertas() y getMarchaAutomatica().
+La clase Deportivo añade el atributo cilindrada y el método getCilindrada().
+La clase Furgoneta añade atributos carga, volumen y los métodos getCarga y getVolumen().
+Además cada subclase declara un método getAtributos(). Este método también se ha declarado en la superclase.
+Esto significa que el método getAtributos() de las subclases sobreescribe al método de la superclase.
+Dependiendo del tipo de objeto que invoque el método, se ejecuta el método correspondiente a la clase del objeto. Por ejemplo, si el método es invocado por un objeto de la clase Turismo, entonces se ejecuta el código del método getAtributos() de la clase Turismo.
+Los métodos getAtributos() de las subclases modifican el comportamiento del método getAtributos() de la superclase.
