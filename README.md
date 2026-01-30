@@ -1140,3 +1140,7 @@ Además cada subclase declara un método getAtributos(). Este método también s
 Esto significa que el método getAtributos() de las subclases sobreescribe al método de la superclase.
 Dependiendo del tipo de objeto que invoque el método, se ejecuta el método correspondiente a la clase del objeto. Por ejemplo, si el método es invocado por un objeto de la clase Turismo, entonces se ejecuta el código del método getAtributos() de la clase Turismo.
 Los métodos getAtributos() de las subclases modifican el comportamiento del método getAtributos() de la superclase.
+En cada método se invoca a super.getAtributos() para que muestre los atributos de un vehículo y después se muestran los atributos propios de la subclase.
+Los métodos getAtributos() de las subclases sobreescriben el método getAtributos() de la superclase.
+Esta caracteristica de los lenguajes de programación orientados a objetos se conoce como polimorfismo.
+Un objeto de las subclases Turismo, Deportivo o Furgoneta puede invocar los métodos getMatricula(), getMarca(), getModelo(), getColor(), getTarifa(), getDisponible(), setTarifa() y setDisponible() de la superclase Vehiculo().
