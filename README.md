@@ -1144,3 +1144,30 @@ En cada método se invoca a super.getAtributos() para que muestre los atributos 
 Los métodos getAtributos() de las subclases sobreescriben el método getAtributos() de la superclase.
 Esta caracteristica de los lenguajes de programación orientados a objetos se conoce como polimorfismo.
 Un objeto de las subclases Turismo, Deportivo o Furgoneta puede invocar los métodos getMatricula(), getMarca(), getModelo(), getColor(), getTarifa(), getDisponible(), setTarifa() y setDisponible() de la superclase Vehiculo().
+
+```
+Vehiculo miVehiculo = new Vehiculo("4050 ABJ",
+                                   "VM", "GTI",
+                                    "Blanco",
+                                     100.0);
+
+Turismo miTurismo = new Turismo("4060 TUR",
+                                "Skoda", "Fabia",
+                                 "Blanco",
+                                 90.0,
+                                 2,
+                                 false);
+
+Deportivo miDeportivo = new Deportivo("4070 DEF",
+                                       "Ford", "Mustang",
+                                        "Rojo",
+                                        150.0,
+                                        2000);
+
+Furgoneta miFurgoneta = new Furgoneta("4080 FUR",
+                                      "Fiat", "Ducato",
+                                      "Azul",
+                                      80.0,
+                                      1200,
+                                      8);
+```
