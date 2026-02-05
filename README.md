@@ -1171,3 +1171,9 @@ Furgoneta miFurgoneta = new Furgoneta("4080 FUR",
                                       1200,
                                       8);
 ```
+
+### Compatibilidad de tipos
+En una relación de tipo herencia, un objeto de la superclase puede almacenar un objeto de cualquiera de sus subclases.
+Un objeto de la clase vehículo puede almacenar un objeto de la clase Turismo, Deportivo o Furgoneta.
+Cualquier referencia de la clase Vehiculo puede contener una instancia de la clase Vehiculo o bien una instancia de las subclases Turismo, Deportivo o Furgoneta.
+La base o superclase es compatible con los tipos que derivan de ella, pero no al revés. Una referencia de la clase Turismosolo puede almacenar una istancia de Turismo, nunca una instancia de la supercla Vehículo.
