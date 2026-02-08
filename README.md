@@ -1177,3 +1177,8 @@ En una relación de tipo herencia, un objeto de la superclase puede almacenar un
 Un objeto de la clase vehículo puede almacenar un objeto de la clase Turismo, Deportivo o Furgoneta.
 Cualquier referencia de la clase Vehiculo puede contener una instancia de la clase Vehiculo o bien una instancia de las subclases Turismo, Deportivo o Furgoneta.
 La base o superclase es compatible con los tipos que derivan de ella, pero no al revés. Una referencia de la clase Turismosolo puede almacenar una istancia de Turismo, nunca una instancia de la supercla Vehículo.
+
+#### Conversión ascendente de tipos
+
+Cuando un objeto se asigna una referencia distinta de la clase a la que pertenece, se hace una conversión de tipos. Java permite asignar un objeto a una referencia de la clase base.
+Si un objeto de la clase Turismo se asigna una referencia de la clase Vehiculo, se hace uan conversión ascendente de tipos, denominada upcasting. La conversión ascendente de tipos siempre se puede realizar.
