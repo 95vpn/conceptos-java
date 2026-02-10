@@ -1182,3 +1182,17 @@ La base o superclase es compatible con los tipos que derivan de ella, pero no al
 
 Cuando un objeto se asigna una referencia distinta de la clase a la que pertenece, se hace una conversión de tipos. Java permite asignar un objeto a una referencia de la clase base.
 Si un objeto de la clase Turismo se asigna una referencia de la clase Vehiculo, se hace uan conversión ascendente de tipos, denominada upcasting. La conversión ascendente de tipos siempre se puede realizar.
+
+```
+Vehiculo miVehiculo = new Turismo("5090 TUR",
+                                  "Skoda", "Fabia",
+                                   "Negro",
+                                    90.0,
+                                    2,
+                                    true);
+System.out.println("Vehiculo " + miVehiculo.getAtributos);
+
+//Se crea un objeto de la clase Vehiculo utilizando el contructor de la clase derivada Turismo.
+
+//Dado que la instancia es de tipo Turismo, al invocar al método, al invocar al método getAtributos() muestra los atributos de un Turismo.
+```
