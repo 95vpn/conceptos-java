@@ -1196,3 +1196,8 @@ System.out.println("Vehiculo " + miVehiculo.getAtributos);
 
 //Dado que la instancia es de tipo Turismo, al invocar al método, al invocar al método getAtributos() muestra los atributos de un Turismo.
 ```
+
+### Conversión descendente de tipo
+Si una instancia de la clase base Vehiculo almacena una referencia de un objeto de una de sus clases derivadas, entonces es posible hacer una conversi´n descendente de tipos, denominada downcasting.
+El objeto miVehiculo de la clase base Vehiculo almacena una referencia a un objeto de la clase derivada turismo. En este caso, está permitido hacer una conversión descendente de tipos. 
+La conversión se debe hacer de forma explicita, indicando el nombre de la clase a la que se desea covertir.
