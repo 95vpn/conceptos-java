@@ -1201,3 +1201,19 @@ System.out.println("Vehiculo " + miVehiculo.getAtributos);
 Si una instancia de la clase base Vehiculo almacena una referencia de un objeto de una de sus clases derivadas, entonces es posible hacer una conversi´n descendente de tipos, denominada downcasting.
 El objeto miVehiculo de la clase base Vehiculo almacena una referencia a un objeto de la clase derivada turismo. En este caso, está permitido hacer una conversión descendente de tipos. 
 La conversión se debe hacer de forma explicita, indicando el nombre de la clase a la que se desea covertir.
+
+```
+Vehiculo miVehiculo = new Turismo("4090 TUR",
+                                   "sKODA", "Fabia",
+                                   "Negro",
+                                    90.0,
+                                    2,
+                                    true);
+
+Turismo miNuevoTurismo = (Turismo) miVehiculo;
+
+```
+El objeto de la clase Vehiculo almacena un objeto de la clase derivada Turismo.
+El objeto miVehiculo se convierte de forma explicita a un objeto de tipo Turismo utilizando el casting (Turismo).
+Solo así es posible realizar la asignación a una referencia que ha sido declarada de tipo Turismo
+Es importante señalar que el downcasting no siempre es legal y puede producir un error durante la ejecución del programa Java.
