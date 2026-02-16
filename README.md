@@ -1217,3 +1217,12 @@ El objeto de la clase Vehiculo almacena un objeto de la clase derivada Turismo.
 El objeto miVehiculo se convierte de forma explicita a un objeto de tipo Turismo utilizando el casting (Turismo).
 Solo así es posible realizar la asignación a una referencia que ha sido declarada de tipo Turismo
 Es importante señalar que el downcasting no siempre es legal y puede producir un error durante la ejecución del programa Java.
+
+## Jerarquía de herencia
+Cualquier clase de Java puede ser utilizada como una clase base para extender sus atributos y comportamiento.
+La clase derivada que se obtenga, puede a su vez ser extendida de nuevo.
+La relación de herencia es transitiva y define una jerarquía.
+En java todas las clases está relacionadas en una única jerarquía de herencia puesto que toda clase hereda explicitamente de otra o bien implicitamente de object.
+La clase Vehiculo no extiende explicitamenteotra clase, por lo que se puede decir que es una extensión de la clase object de Java.
+Esto quiere decir que cualquier objeto de un programa Java se puede ver como una instancia de la clase Object.
+
