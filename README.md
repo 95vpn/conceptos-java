@@ -1226,3 +1226,13 @@ En java todas las clases está relacionadas en una única jerarquía de herencia
 La clase Vehiculo no extiende explicitamenteotra clase, por lo que se puede decir que es una extensión de la clase object de Java.
 Esto quiere decir que cualquier objeto de un programa Java se puede ver como una instancia de la clase Object.
 
+# Ampliación de clases
+
+## Elementos de clase (Static)
+Los atributos y métodos de una clase precedidos con la palabra static se denominan elementos de clase.
+Solo existe un elemento estático para todos los objetos de una misma clase.
+Esto significa que los elementos de clase son compartidos por todas las instancias de la clase.
+Cuando se modifica un elemento de clase todas las instancias de la clase ven dicha modificación.
+Los atributos de clase deben tener un valor inicial aunque no exista ninguna minstancia en la clase.
+Si el elemento de clase es un valor constante, entonces se debe indicar la palabra final.
+
