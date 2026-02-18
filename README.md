@@ -1236,3 +1236,31 @@ Cuando se modifica un elemento de clase todas las instancias de la clase ven dic
 Los atributos de clase deben tener un valor inicial aunque no exista ninguna minstancia en la clase.
 Si el elemento de clase es un valor constante, entonces se debe indicar la palabra final.
 
+```
+public class Circulo
+{
+  public static final double PI = 3.1415926536;
+  private double radio;
+
+  public Circulo(double radio)
+  {
+    this.radio = radio;
+  }
+
+  public double getRadio()
+  {
+    return this.radio;
+  }
+
+  public double calcularPerimetro()
+  {
+    return 2 * PI * this.radio;
+  }
+
+  public double calcularArea()
+  {
+    return PI * this.radio * this.radio;
+  }
+}
+```
+
