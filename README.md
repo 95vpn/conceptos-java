@@ -1264,3 +1264,19 @@ public class Circulo
 }
 ```
 
+```
+public class PerimetroAreaCircunferencia
+{
+  public static void main (string[] args)
+  {
+    System.out.printtn("El valor de PI es " + Circulo.PI);
+    Circulo miCirculo = new Circulo(10.0);
+
+    System.out.println("El radio del circulo es " +
+                         miCirculo.getRadio() +
+                         "su perimetro es " +
+                          miCirculo.calcularPerimetro() +
+                         " y su area es " + miCirculo.calcularArea());
+  }
+}
+```
