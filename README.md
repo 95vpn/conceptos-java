@@ -1280,3 +1280,10 @@ public class PerimetroAreaCircunferencia
   }
 }
 ```
+
+## Derechos de acceso
+
+El estado de un objeto está dado por el conjunto de valores de sus atributos.
+Una modificación arbitraria, intencionada o no, puede provocar inconsistencias  o comportamientos no deseados de un objeto.
+Por este motivo se debe controlar el acceso a los atributos de los objetos.
+Java proporciona mecanismos de acceso a los elementos de una clase de forma que se puede determinar el derecho de acceso a cada elemento según las necesidades de los objetos.
