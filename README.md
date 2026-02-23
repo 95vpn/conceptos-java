@@ -1287,3 +1287,19 @@ El estado de un objeto está dado por el conjunto de valores de sus atributos.
 Una modificación arbitraria, intencionada o no, puede provocar inconsistencias  o comportamientos no deseados de un objeto.
 Por este motivo se debe controlar el acceso a los atributos de los objetos.
 Java proporciona mecanismos de acceso a los elementos de una clase de forma que se puede determinar el derecho de acceso a cada elemento según las necesidades de los objetos.
+
+### Acceso privado 
+Los elementos privados solo se pueden utilizar dentro de la clase que los define. Para indicar el acceso privado se utiliza private.
+
+### Acceso de paquete
+El acceso a estos componentes es libre dentro del paquete en que se define la clase. El acceso de paquete no se indica expresamente.
+
+### Acceso protegido 
+Los elementos protegidos solo se puede utilizar dentro de la clase que los define, aquellas clases que la extiendan y cualquier clase definida en el mismo paquete. Para indicar el acceso protegido se utiliza protected.
+
+### Acceso publico
+Los elementos públicos se pueden utilizar libremente. Para indicar expresamente el acceso público se utiliza public.
+No es necesario, el acceso publico se utiliza como valor por defecto mientras no se indique private o protected.
+
+Para limitar el acceso a los atributos de la clase Vehiculo se utiliza private.
+Al utilizar este tipo de acceso, solo los métodos get y set de la clase pueden acceder a ellos.
