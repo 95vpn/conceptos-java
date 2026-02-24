@@ -1303,3 +1303,16 @@ No es necesario, el acceso publico se utiliza como valor por defecto mientras no
 
 Para limitar el acceso a los atributos de la clase Vehiculo se utiliza private.
 Al utilizar este tipo de acceso, solo los métodos get y set de la clase pueden acceder a ellos.
+
+```
+public class Vehículo
+{
+  private String matricula;
+  private String marca;
+  private String midelo;
+  private String color;
+  private double tarifa;
+  private boolean disponible;
+}
+```
+Con esta declaración, todos los atributos de la clase tienen acceso private, y el diagrama de clases muestra un signo menos delante del udentificador del atributo para indicar que es privado.
