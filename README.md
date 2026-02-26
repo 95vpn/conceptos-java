@@ -1316,3 +1316,61 @@ public class Vehículo
 }
 ```
 Con esta declaración, todos los atributos de la clase tienen acceso private, y el diagrama de clases muestra un signo menos delante del udentificador del atributo para indicar que es privado.
+
+
+La clase vehículo con sus métodos get y set.
+
+```
+public class Vehículo
+{
+  private String matricula;
+  private String marca;
+  private String modelo;
+  private String color;
+  private double tarifa;
+  private boolean disponible;
+
+  public String getMatricula()
+  {
+    return this.matricula;
+  }
+
+  public String getMarca()
+  {
+    return this.marca;
+  }
+
+  public String getModelo()
+  {
+    return this.modelo;
+  }
+
+  public String getColor()
+  {
+    return this.color;
+  }
+
+  public double getTarifa()
+  {
+    return this.tarifa;
+  }
+
+  public boolean getDisponible()
+  {
+    return this.disponibke;
+  }
+
+  public void setTarifa(double   tarifa)
+  {
+    this.tarifa = tarifa;
+  }
+
+  public void set.Disponible(boolean disponible)
+  {
+    this.disponible = disponible;
+  }
+}
+```
+
+la clase Vehiculo define métodos get para los atributos matricula, marca, modelo, color, tarifa y disponible.
+Los métodos set solo son aplicables a los atributos tarifa y disponible porque se considera que el resto de atributos de la clase no pueden midificar su valor una vez que se ha creado el objeto.
