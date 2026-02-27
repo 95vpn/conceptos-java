@@ -1376,4 +1376,4 @@ la clase Vehiculo define métodos get para los atributos matricula, marca, model
 Los métodos set solo son aplicables a los atributos tarifa y disponible porque se considera que el resto de atributos de la clase no pueden midificar su valor una vez que se ha creado el objeto.
 
 La responsabilidad de modificar los atributos de los objetos es de los métodos set.
-
+Estos métodos deben verificar que el valor que se desea asignar a un atributo es valido y cumple con las condiciones del diseño de la clase.
