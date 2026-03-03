@@ -1377,3 +1377,7 @@ Los métodos set solo son aplicables a los atributos tarifa y disponible porque 
 
 La responsabilidad de modificar los atributos de los objetos es de los métodos set.
 Estos métodos deben verificar que el valor que se desea asignar a un atributo es valido y cumple con las condiciones del diseño de la clase.
+
+### Paquetes
+Los paquetes son grupos de clases, interfaces y otros paquetes que están relacionados entre sí. Los paquetes aportan una forma de encapsulación a un nivel de un nivel superior al de las clases.
+Permiten unificar un conjunto de clases e interfaces que se relacionan funcionalmente.
