@@ -1381,3 +1381,11 @@ Estos métodos deben verificar que el valor que se desea asignar a un atributo e
 ### Paquetes
 Los paquetes son grupos de clases, interfaces y otros paquetes que están relacionados entre sí. Los paquetes aportan una forma de encapsulación a un nivel de un nivel superior al de las clases.
 Permiten unificar un conjunto de clases e interfaces que se relacionan funcionalmente.
+El oaquete java engliba un conjunto de paquetes con utilidades de soporte para desarrollo y ejecución de aplicaciones como util o lang.
+
+
+Un paquete se declara con la siguiente sintaxis.
+
+```
+package nombre-del-paquete 
+```
