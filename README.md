@@ -1389,3 +1389,13 @@ Un paquete se declara con la siguiente sintaxis.
 ```
 package nombre-del-paquete 
 ```
+
+Se podría definir el paquete vehiculos para la aplicación de la empresa de alquiler de vehículos.
+
+```
+package vehiculos;
+```
+
+### Uso
+
+Para utilizar componentes que están en otro paquete diferente se debe añadir la declaración de importación
