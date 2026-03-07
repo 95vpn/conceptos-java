@@ -1399,3 +1399,47 @@ package vehiculos;
 ### Uso
 
 Para utilizar componentes que están en otro paquete diferente se debe añadir la declaración de importación
+
+El uso de un paquete se declara con la sguiente sintaxis:
+
+```
+import nombre-del-paquete;
+```
+
+Se puede importar un paquete entero o un componente del paquete.
+Si se declara importar las librerías para cálculos matemáticos de Java.
+
+```
+import java.math.*;
+```
+
+Si solo se desea importar una librería, entonces se debe indicar el nombre del paquete y del componente.
+Se importa el componente Calendar de la librería de utilidades de Java.
+
+```
+import java.util.Calendar;
+```
+
+La declaración de importación se incluye antes de la declaración de la clase.
+
+Se incluye el componente Calendar de util y se utiliza el método getInstance() para obtener el día, el mes y el año de la fecha actual.
+
+```
+import java.util.Calendar;
+
+public class CalcularFechaHoy
+{
+  public static void main (String[] args)
+  {
+    int edad, diaHoy, mesHoy, añoHoy;
+    diaHoy = Calendar.getInstance().get(Calendar.DAY_OF_MONDAY);
+    mesHoy = Calendar.getInstance().get(Calendar.MONTH) + 1;
+    añoHoy = Calendar.getInstance().get(Calendar.YEAR);
+
+    System.out.println("La fecha de hoy es " + diaHoy + "/" +
+                        mesHoy + "/" +
+                        añoHoy);
+
+  }
+}
+```
