@@ -1443,3 +1443,21 @@ public class CalcularFechaHoy
   }
 }
 ```
+### Nombres
+El nombre de un paquete debe ser representativo de su contenido.
+El nombre puede contener la declaración de subpaquete.
+Se puede incluir el nombre de la empresa que ha desarrollado el paquete para facilitar su identificación.
+
+```
+package nombre-de-la-empresa.nombre-del-paquete;
+```
+El paquete vehiculos de la empresa "Mi Empresa" se podría identificar:
+
+```
+package miEmpresa.vehiculos;
+```
+
+### Clases predefinidas
+
+Una caracteristica importante de Java es que apota gran cantidad de clases predefinidas.
+Estas clases están especializadas en comunicaciones, web, interfaz de usuario, matemáticas y muchas otras aplicaciones.
