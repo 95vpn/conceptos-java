@@ -1457,7 +1457,24 @@ El paquete vehiculos de la empresa "Mi Empresa" se podría identificar:
 package miEmpresa.vehiculos;
 ```
 
-### Clases predefinidas
+## Clases predefinidas
 
 Una caracteristica importante de Java es que apota gran cantidad de clases predefinidas.
 Estas clases están especializadas en comunicaciones, web, interfaz de usuario, matemáticas y muchas otras aplicaciones.
+
+### Las clases asociadas a los tipos primitivos
+
+Los tipos predefinidos boolean, char, int, float y double son tipos dimples, no son clases.
+Para facilitar la programación en Java se han creado clases asociadas  a los tipos predefinidos.
+Estas  clases proporcionan métodos útilies  para convertir cadenas de texto a otros tipos, para imprimir los números con diversos formatos y para describir los tipos simples.
+Estas clases generan automaticamente una instancia cuando se usan tipos simples en contextosen los que se espera un objeto.
+Pueden utilizarce en expreciones donde se espera un tipo simple. 
+
+| Clase  | Tipo ptimitivo asociado |
+| ------------- |:-------------:|
+| Boolean      | boolean     |
+| Character      | Char     |
+| Integer      | int     |
+| Long      | long     |
+| Float      | float     |
+| Double      | double     |
