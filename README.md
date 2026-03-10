@@ -1478,3 +1478,21 @@ Pueden utilizarce en expreciones donde se espera un tipo simple.
 | Long      | long     |
 | Float      | float     |
 | Double      | double     |
+
+Estas clases tienen los siguientes métodos:
+
+#### Método constructor a partir de un valor de tipo simple
+Character letra = new Character('A');
+Integer numero = new Integer(10);
+
+#### Método constructor que recibe una cadena de texto y la traduce al tipo simple
+Integer numero = new Integer("120");
+
+#### Método toString() que transforma el valor almacenado en una cadena
+Integer numero = new Integer("100");
+System.out.println(numero.toString());
+
+#### Método equals() para comparar el valor almacenado
+Integer numero1 = new Integer("100");
+Integer numero2 = new Integer("101");
+System.out.println(numero2.equals(numero1));
