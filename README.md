@@ -1497,6 +1497,23 @@ Integer numero1 = new Integer("100");
 Integer numero2 = new Integer("101");
 System.out.println(numero2.equals(numero1));
 
-## La clase Math
+### La clase Math
 La clase Math contiene constantes y metodos de uso comun en matemáticas. Todas las operaciones que se realizan  en esta clase utilizan el tipo dobule.
-Contiene la constante pi (M.PI)
+Contiene la constante pi (Math.PI) y el número de euler (Math.E).
+En las funciones trigonométricas, los angulos se expresan en radianes y los métodos devuelven valores de tipo double.
+La clase Math incluye funciones como potenciación, redondeo, cuadrado, raíz cuadrada y mucho más.
+
+### La clase String
+La clase String se usa para manejar cadenas de caracteres de cualquier longitud. 
+Un objeto String se puede crear a parttir de una secuencia de caracteres delimitados por comillas dobles.
+
+```
+String nombre = "Juan";
+String apellidos = "Gonzalez Lopez";
+```
+
+Un objeto String tambien se puede crear utilizando el contructor de la clase.
+
+```
+String mensaje = new String("Hola Mundo");
+```
