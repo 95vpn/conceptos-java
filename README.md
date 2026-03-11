@@ -1496,3 +1496,7 @@ System.out.println(numero.toString());
 Integer numero1 = new Integer("100");
 Integer numero2 = new Integer("101");
 System.out.println(numero2.equals(numero1));
+
+## La clase Math
+La clase Math contiene constantes y metodos de uso comun en matemáticas. Todas las operaciones que se realizan  en esta clase utilizan el tipo dobule.
+Contiene la constante pi (M.PI)
