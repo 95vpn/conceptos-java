@@ -1517,3 +1517,14 @@ Un objeto String tambien se puede crear utilizando el contructor de la clase.
 ```
 String mensaje = new String("Hola Mundo");
 ```
+
+La clase String tiene un tratamiento particular en Java.
+Además de la construcción de objetos a partir de literales entre comillas, se pueden aplicar los operadores + y += para concatenar objetos tipo String.
+
+```
+String hola = new String("Hola");
+String espacio = new String(" ");
+String mundo = new String("Mundo");
+String holaMundo = hola + espacio + mundo;
+System.out.println(holaMundo); 
+```
