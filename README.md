@@ -1528,3 +1528,31 @@ String mundo = new String("Mundo");
 String holaMundo = hola + espacio + mundo;
 System.out.println(holaMundo); 
 ```
+
+Para conocer la longitud de un objeto String se utiliza el método length(). 
+El objeto holaMundo tiene una longitud de 10 caracteres.
+
+```
+System.out.println("El texto " + holaMundo + " tiene " + holaMundo.length() + " letras");
+```
+Para comparar cada letra de dos objetos de tipo String se utiliza el método contentEquals().
+
+```
+String nombre1 = "Angel";
+String nombre2 = "Carlos";
+System.out.println(nombre1.contentEquals(nombre2));
+```
+
+El método String.valueOf() devuelve una cadena correspondiente al valor de su parámetro. 
+Este método está sobrecargado y acepta tipos boolean, char, int, long, float y double.
+
+```
+String año = String.ValueOf(2011);
+```
+
+
+
+
+
+
+
