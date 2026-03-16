@@ -1550,6 +1550,22 @@ Este método está sobrecargado y acepta tipos boolean, char, int, long, float y
 String año = String.ValueOf(2011);
 ```
 
+El método charAt(int posicion) de la clase String  devuelve el carácter almacenado en la posición indicada  de una cadena de caracteres.
+El primer caracter de una cadena se almacena en la posición cero y el último en la posición correspondiente a la longitud de la cadena -1.
+
+```
+String holaMundo = "Hola Mundo";
+System.out.println("La primera letra de 'Hola Mundo'" + " es " + holaMundo.charAt(0));
+```
+
+## Estructra de control
+
+El cuerpo de un programa se compone de un conjunto de sentencias que especifican las acciones que se realizan durante su ejecucuón. 
+Dentro de cualquier programa, se escriben sentencias que definen la secuencia de acciones a ejecutar.
+Estas sentencias incluyen acciones de clculo, entrada y salida de datos, almacenamiento de datos, etc.
+Las sentencias se ejecutan una a una  en el orden en que han sido escritas.
+Se denomina flujo de un programa al orden de ejecución de las sentencias que forman parte del cuerpo de un programa.
+Las estructuras de control son una caracteristica básica de los lenguajes que se utiliza para modificar el flujo del programa.
 
 
 
