@@ -1567,7 +1567,11 @@ Las sentencias se ejecutan una a una  en el orden en que han sido escritas.
 Se denomina flujo de un programa al orden de ejecución de las sentencias que forman parte del cuerpo de un programa.
 Las estructuras de control son una caracteristica básica de los lenguajes que se utiliza para modificar el flujo del programa.
 
+Hay casos en los que el flujo del programa debe ajustar determinadas instrucciones solo cuando se cumple una condición. 
+En otras ocaciones, debe repetir un conjunto de sentencias un número determinado de veces.
+Las estructuras de control permiten condicionar el flujo de ejecución dependiendo del estado de la variable de un programa.
 
+Las estructuras de control básicas se pueden clasificar  en estructuras de selección, de repetición y de salto.
 
 
 
