@@ -1573,6 +1573,23 @@ Las estructuras de control permiten condicionar el flujo de ejecución dependien
 
 Las estructuras de control básicas se pueden clasificar  en estructuras de selección, de repetición y de salto.
 
+Selección. Permiten decidir si se ejecuta un bloque de sentencias o no.
+Repetición. Permiten ejecutar un bloque de sentencias.
+Salto. Permiten dar un salto y continuar la ejecución de un programa en un punto distinto de la siguiente sentencia en el orden natural de ejecución.
+
+Las estructuras de control se pueden combinar sin ningún tipo de limitación. 
+Cualquier nuevo bloque de sentencias puee incluir  estructuras de control a continuación de otras.
+Cuando se incluyen varias estructuras seguidas unas de otras, se dice que son estructuras de control apiladas.
+
+Por otras parte, dentro de un bloque de una estructura de control se puede incluir una estructura de control y dentro de este nuevo bloque se puede incluir otra estructura de control y asi sucesivamente.
+Cuando una estructura  contiene otra estructura, se dice que son estructura de control anidadas.
+
+Es importante destacar que no existe limitación  en cuanto al número  de estructuras de control apiladas o anidadas que se pueden utilizar en un programa Java.
+La única restricción a tene en cuenta es la claridad y la legibilidad del programa.
+
+
+
+
 
 
 
