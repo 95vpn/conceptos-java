@@ -1587,6 +1587,24 @@ Cuando una estructura  contiene otra estructura, se dice que son estructura de c
 Es importante destacar que no existe limitación  en cuanto al número  de estructuras de control apiladas o anidadas que se pueden utilizar en un programa Java.
 La única restricción a tene en cuenta es la claridad y la legibilidad del programa.
 
+### Estructura de Selección
+Las estructura de selección permiten modificar el flujo de un programa.
+La decisión de ejecutar un bloque de sentencias queda condicionada por el valor de una expresión lógica definida utilizandp variables del programa.
+
+#### Estructura if
+La estructura if se denomina estructura de selección única porque ejecuta un bloque de sentencias solo cuando se cumple la condición del if.
+Si la condición es verdadera se ejecuta el bloque de sentencias.
+Si la condición es falsa, el flujo del programa continua en la sentencia inmediatamente posterior al if.
+
+La sentencia if tiene la siguiente sintaxis:
+
+```
+if (condicion)
+{
+  bloque de sentencias
+}
+```
+
 
 
 
