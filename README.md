@@ -1604,6 +1604,18 @@ if (condicion)
   bloque de sentencias
 }
 ```
+La condición es una expresión que evalúa un valor logico, por lo que el resultado solo puede ser true o false.
+La condición siempre se escribe entre parentesis.
+La selección se produce sobre el bloque de sentencias delimitado por llaves.
+Si el bloque de sentencias solo tienen una sentencia, entonces se puede escribir sin llaves, 
+```
+if (condicion)
+  sentencia;
+```
+
+Cuando el flujo del programa llega auna estructura if, se evalúa la condición y el bloque de instrucciones se ejecuta si el valor de la condición es true.
+Si la condición es false, entonces se ejecuta la sentencia inmediatamente posterior al if.
+
 
 
 
