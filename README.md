@@ -1616,6 +1616,16 @@ if (condicion)
 Cuando el flujo del programa llega auna estructura if, se evalúa la condición y el bloque de instrucciones se ejecuta si el valor de la condición es true.
 Si la condición es false, entonces se ejecuta la sentencia inmediatamente posterior al if.
 
+Si la calificación de un alumno es 10, entonces se debe mostrar por la consola un mensaje indicanco que tiene una matricula de honor.
+
+La sentencia if considerando que calificación es una variable de tipo int:
+
+```
+if (calificacion == 10)
+{
+  System.out.println("Matricula de honor")
+}
+```
 
 
 
