@@ -1626,7 +1626,12 @@ if (calificacion == 10)
   System.out.println("Matricula de honor")
 }
 ```
+El mendaje "Matricula de honor" solo se muestra cuando el valor de la calificación es igual a 10.
 
+### Estructura if else
+La estructura if-else se denomina de selección doble porque selecciona entre dos bloques de sentencias mutuamente excluyentes.
+Si se cumple la condición, se ejecuta el bloque de sentencias asociadas al if.
+Si la condición no se cumple, entonces se ejecuta el bloque de sentencias asociadas al else.
 
 
 
