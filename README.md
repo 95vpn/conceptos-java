@@ -1633,6 +1633,28 @@ La estructura if-else se denomina de selección doble porque selecciona entre do
 Si se cumple la condición, se ejecuta el bloque de sentencias asociadas al if.
 Si la condición no se cumple, entonces se ejecuta el bloque de sentencias asociadas al else.
 
+Una sentencia if-else tiene la siguiente sintaxis.
+
+```
+if (condicion)
+{
+  bloque de sentencias if
+}
+else
+{
+  bloque de sentencias else
+}
+```
+
+La condicion se debe inscribir en parentesis.
+La seleción depende del resultado de evaluar la condición
+Si el resultado es true, se ejecuta el bloque de sentencias if, en cualquier otro caso se ejecuta el bloque de instrucciones del else.
+Despues de ejecutar el bloque de sentecias se ejecuta la sentecias inmediatamente posterior al if-else.
+
+Si se desea mostrar un mensaje por la consola para indicar si un número es par o impar basta con calcular el resto de la división del número entre 2 con el operador %.
+Si el resto es igual a cero, entonces el número es par, en caso contrario es impar.
+
+
 
 
 
