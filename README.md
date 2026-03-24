@@ -1654,6 +1654,24 @@ Despues de ejecutar el bloque de sentecias se ejecuta la sentecias inmediatament
 Si se desea mostrar un mensaje por la consola para indicar si un número es par o impar basta con calcular el resto de la división del número entre 2 con el operador %.
 Si el resto es igual a cero, entonces el número es par, en caso contrario es impar.
 
+```
+if (numero % 2 == 0)
+  System.out.println("El número es par");
+else
+  System.out.println("El número es impar");
+```
+
+Los bloques de sentencias son mutuamente excluyentes. 
+Si se cumple la condición se ejecuta un bloque de sentencias.
+Se podría escribir una sentencia if-else con la condición contraria y con los bloques de sentencias intercambiadas.
+
+```
+if (numero % 2 != 0)
+  System.out.println("El número es impar");
+else
+  System.out.println("El número es par");
+```
+
 
 
 
