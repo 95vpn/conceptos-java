@@ -1672,7 +1672,23 @@ else
   System.out.println("El número es par");
 ```
 
+Si fuera necesario evaluar más de una condición, entonces se deben utilizar varias estructura  de selección anidadas.
+Para mostrar la calificación de un alumno, es necesario evaluar las condiciones que se indican en la siguiente tabla.
 
+| Calificación  | Descripción |
+| ------------- |:-------------:|
+| 10      | Matrícula de honor     |
+| 9      | Sobresaliente     |
+| 7, 8      | Notable     |
+| 6      | Bien    |
+| 5      | Aprobado     |
+| 0, 1, 2, 3, 4      | Suspenso     |
+
+Se puede ver que las condiciones son excluyentes entre sí. Si la calificación es 10 se muestra "Matrícula de honor". 
+En caso contrario la calificación es menor de 10 y es necesario seleccionar entre "Sobresaliente", "Notable", "Bien", "Aprobado", y "Suspenso".
+Si la calificación es 9 se muestra "Sobresaliente".
+En caso contrario la calificación es menor de 9 y se debe seleccionar entre "Notable", "Bien", "Aprobado" y "Suspenso".
+Si la calificación  es mayot o  igual a 7 se muestra "Notable".
 
 
 
