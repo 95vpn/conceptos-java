@@ -1688,8 +1688,10 @@ Se puede ver que las condiciones son excluyentes entre sí. Si la calificación 
 En caso contrario la calificación es menor de 10 y es necesario seleccionar entre "Sobresaliente", "Notable", "Bien", "Aprobado", y "Suspenso".
 Si la calificación es 9 se muestra "Sobresaliente".
 En caso contrario la calificación es menor de 9 y se debe seleccionar entre "Notable", "Bien", "Aprobado" y "Suspenso".
-Si la calificación  es mayot o  igual a 7 se muestra "Notable".
-
+Si la calificación  es mayor o  igual a 7 se muestra "Notable".
+En caso contrario la calificación es menor que 7 y se debe seleccionar entre "Bien", "Aprovado", y "Suspenso".
+Si la calificación es 6 se muestra "Bien".
+En caso contrario es menor que 6 y se debe seleccionar entre
 
 
 
