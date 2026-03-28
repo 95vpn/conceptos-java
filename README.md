@@ -1691,7 +1691,31 @@ En caso contrario la calificación es menor de 9 y se debe seleccionar entre "No
 Si la calificación  es mayor o  igual a 7 se muestra "Notable".
 En caso contrario la calificación es menor que 7 y se debe seleccionar entre "Bien", "Aprovado", y "Suspenso".
 Si la calificación es 6 se muestra "Bien".
-En caso contrario es menor que 6 y se debe seleccionar entre
+En caso contrario es menor o igual a 6 y se debe seleccionar entre entre "Aprobado" y "Suspenso".
+Si la calificación es 5 se muestra "Aprobado", en caso contrario "Suspenso".
+
+La sentencia if-else
+
+```
+int calificación = 7;
+
+if (calificación == 10)
+  System.out.println("Matricula de Honor");
+else
+  if(calificación == 9)
+    System.out.println("Sobresaliente");
+  else
+    if(calificacion == 7)
+      System.out.println("Notable");
+    else
+      if(matricula == 6)
+        System.out.println("Bien");
+      else
+        if(calificacion == 5)
+          System.out.println("Aprobado");
+        else
+          System.out.println("Suspenso");
+```
 
 
 
