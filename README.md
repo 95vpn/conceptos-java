@@ -1716,7 +1716,25 @@ else
         else
           System.out.println("Suspenso");
 ```
+### Estructura if else if
+La estructura if-else-if se puede aplicar en los mismos casos en el que se utiliza un if.else anidado. 
+Esta estructura  permite escribir  de forma abreviadalas condiciones de un if-else anidado.
+Una sentencia if-else-if tiene la siguiente sintaxis:
 
+```
+if (condicion-1)
+{
+  bloque-de-sentencias-condicion-1
+}
+else-if (condicion-2)
+{
+  bloque de sentencias-condicion-2
+}
+else
+{
+  blque-de-sentencias-else
+}
+```
 
 
 
