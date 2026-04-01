@@ -1767,4 +1767,42 @@ else
 
 ```
 
+### Estructura switch
+La estructura switch es una estructura de selección múltiple que permite seleccionar un bloque de sentencias  entre varios casos.
+En cierto modo, es parecido a una estructura if-else anidados.
+La diferencia está en que la selección del bloquie de sentencias depende de la evaluación de uan expresión que se compara por igualdad con cada uno de los casos.
+La estructura switch consta de una expresión  y una serie de etiquetas case y una opción default.
+La sentencia break indica el final de la ejecucióndel switch.
+
+Una sentencia switch tiene la siguiente sintaxis
+
+```
+switch (expresion)
+{
+  case valor-1:
+    bloque-se-sentencias-1;
+    break;
+
+  case valor-2:
+    bloquie-de-sentencias-2;
+    breack;
+
+  case valor-3
+    bloque-de-sentencias-3;
+    break;
+
+  case valor-4:
+    bloque-de-sentencias-4;
+    break;
+
+  case valor-5:
+    bloque-de-sentencias-5;
+    break;
+
+  default:
+    bloque-de-sentencias-default;
+    break;
+
+}
+```
 
