@@ -1805,4 +1805,4 @@ switch (expresion)
 
 }
 ```
-
+La expresión debe devolver un valor de tipo entero (int) o caracter (char) y es obligatorio que la expresión se escriba entgre parentesis.
