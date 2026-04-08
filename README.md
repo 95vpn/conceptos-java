@@ -1806,4 +1806,9 @@ switch (expresion)
 }
 ```
 La expresión debe devolver un valor de tipo entero (int) o caracter (char) y es obligatorio que la expresión se escriba entre parentesis.
-A continuación de cada case aparece valores constantes
+A continuación de cada case aparece valores constantes del mismo tipo de valor que devuelve la expresión del switch.
+Para interrumpir la ejecución  de las sentencias del switch se utiliza la sentencia break que provoca la finalizxación del switch.
+El flujo del programa continúa en la sentencia inmediatamente posterior al switch.
+Una vez que se evalúa la expresión del switch  se comprueba si coincide  con el valor del primer case.
+En caso contrario, se comprueba si coincide con el valor del segundo case y así sucesivamente.
+Cuando el valor de lña expresión conincide con el valor de uno de los case, se empieza a ejecutar el bloque de instrucciones correspondiente al casehasta encontrar una sentencia break o al llegar al final de la estructura switch donde se cierra la llave.
