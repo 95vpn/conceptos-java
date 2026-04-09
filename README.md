@@ -1811,4 +1811,9 @@ Para interrumpir la ejecución  de las sentencias del switch se utiliza la sente
 El flujo del programa continúa en la sentencia inmediatamente posterior al switch.
 Una vez que se evalúa la expresión del switch  se comprueba si coincide  con el valor del primer case.
 En caso contrario, se comprueba si coincide con el valor del segundo case y así sucesivamente.
-Cuando el valor de lña expresión conincide con el valor de uno de los case, se empieza a ejecutar el bloque de instrucciones correspondiente al casehasta encontrar una sentencia break o al llegar al final de la estructura switch donde se cierra la llave.
+Cuando el valor de la expresión conincide con el valor de uno de los case, se empieza a ejecutar el bloque de instrucciones correspondiente al casehasta encontrar una sentencia break o al llegar al final de la estructura switch donde se cierra la llave.
+Si no encuentra un case que coincida con el valor de la expresión, se ejecuta el bloque de sentencias correspondiente a la etiqueta default.
+
+Para asegurar el correcto flujo de ejecución de un programa durante la evaluación de una sentencia switch, es recomendable incluir una sentencia break al final del bloque de instrucciones de cada case, incluido el correspondiente a la etiqueta default.
+Esto es importante, porqur si se omite la sentencia break, cuando finaliza la ejecución del bloque de sentencias de un case, el flujo del programa continua ejecutando los case siguietes y esto puede provocar un comportamiento erróneo del programa.
+Suponga que una empresa de consultoría la categoría profesional de un empleado se calcula a partir de su tasa de coste. La tabla muestra los valores de las tasas y sus correspondientes categorias.
