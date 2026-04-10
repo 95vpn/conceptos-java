@@ -1817,3 +1817,9 @@ Si no encuentra un case que coincida con el valor de la expresión, se ejecuta e
 Para asegurar el correcto flujo de ejecución de un programa durante la evaluación de una sentencia switch, es recomendable incluir una sentencia break al final del bloque de instrucciones de cada case, incluido el correspondiente a la etiqueta default.
 Esto es importante, porqur si se omite la sentencia break, cuando finaliza la ejecución del bloque de sentencias de un case, el flujo del programa continua ejecutando los case siguietes y esto puede provocar un comportamiento erróneo del programa.
 Suponga que una empresa de consultoría la categoría profesional de un empleado se calcula a partir de su tasa de coste. La tabla muestra los valores de las tasas y sus correspondientes categorias.
+
+| Calificación | Descripción |
+------------------------------
+| Menr de 80 | La categoría es C de consultor junior |
+| Mayor o igual a 80 y menor que 120 | La categoría es B de consultor senior |
+| Mayor o igual a 120 | La categoria es A de socio |
