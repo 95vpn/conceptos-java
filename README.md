@@ -1823,3 +1823,33 @@ Suponga que una empresa de consultoría la categoría profesional de un empleado
 | Menr de 80 | La categoría es C de consultor junior |
 | Mayor o igual a 80 y menor que 120 | La categoría es B de consultor senior |
 | Mayor o igual a 120 | La categoria es A de socio |
+
+```
+public class CategoriasProfesionales
+{
+  public static void main(String[] args)
+  {
+    int tasaEstandar = 150;
+    char categoriaProfesional;
+
+    if (tasaEstandar < 80)
+      categoriaProfesional = 'C';
+    else
+      if(tasaEstandar < 120)
+        categoriaProfesional = 'B';
+      else
+        categoriaProfesional = 'A';
+
+    System.out.print("Tasa " + tasaEstandar + " euros. ");
+    System.out.print("Categoria " + categoriaProfesional + " de ");
+
+    switch (categoriaProfesional)
+    {
+      case 'A': System.out.print("Socio ");
+      case 'B': System.out.print("Senior ");
+      case 'C': System.out.print("Junior ");
+      default: System.out.print("¡ Indefinida !");
+    }
+  }
+}
+```
