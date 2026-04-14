@@ -1859,3 +1859,10 @@ public class CategoriasProfesionales
 
 // la sentencia break al final de cada case asegura que solo se ejecuta el case y después finaliza en switch
 ```
+
+Para evitar que se ejecute mas de un bloque de sentencias de un switch se debe incluir un break al final del bloque de cada case. Si no es así el primer case no finaliza la ejecución del switch y se ejecutan los bloques de sentencias correspondientes al segundo case, al tercer case, y al default.
+El programa mostraría por consola el mensaje:
+
+```
+Tasa 90 euros, categoria 'A' de socio Senior Junior ¡Indefinida!
+```
