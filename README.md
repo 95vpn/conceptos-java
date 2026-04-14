@@ -1846,10 +1846,16 @@ public class CategoriasProfesionales
     switch (categoriaProfesional)
     {
       case 'A': System.out.print("Socio ");
+                break;
       case 'B': System.out.print("Senior ");
+                break;
       case 'C': System.out.print("Junior ");
+                break;
       default: System.out.print("¡ Indefinida !");
+               break;
     }
   }
 }
+
+// la sentencia break al final de cada case asegura que solo se ejecuta el case y después finaliza en switch
 ```
