@@ -1866,3 +1866,42 @@ El programa mostraría por consola el mensaje:
 ```
 Tasa 90 euros, categoria 'A' de socio Senior Junior ¡Indefinida!
 ```
+
+Volviendo al ejemplo de las calificaciones que antes se ha codificado utilizando if-else anidados, ahora se utiliza un switch.
+
+```
+public class Calificaciones
+{
+  public static void main(String[] args)
+  {
+    int calificacion = 9;
+    switch (calificacion)
+      {
+        case 0:
+        case 1:
+        case 2:
+        case 3:
+        case 4: System.out.println('Suspenso');
+                break;
+        case 5: System.out.println('Aprobado');
+                break;
+        case 6: System.out.println('Bien');
+                break;
+        case 7:
+        case 8: System.out.println('Notable');
+                break;
+        case 9: System.out.println('Sobresaliente');
+                break;
+        case 10: System.out.println('Matricula de Honor');
+                break;
+        default System.out.println('No presentado');
+                break;
+      }
+  }
+}
+```
+
+Es importante ver que los case correspondientes a los valores 0, 1, 2 y 3se han dejado vacios porqur el bloque de sentencias para estos casos es el mismo que el case 4.
+Para evitar repetir este código varias veces no se incluye el break.
+Cuando se cumple uno de ellos, se ejecuta el bloque de sentencias correspondiente al case, que para los valores 0, 1, 2, 3 está vacio. Como no hay break, se ejecutan las siguientes lineas del programa hasta llegar al bloque de sentencias  correspondiente al case 4, que muestra el mensaje "Suspenso" y cuando encuentra el break finaliza el switch.
+
