@@ -1904,4 +1904,8 @@ public class Calificaciones
 Es importante ver que los case correspondientes a los valores 0, 1, 2 y 3se han dejado vacios porqur el bloque de sentencias para estos casos es el mismo que el case 4.
 Para evitar repetir este código varias veces no se incluye el break.
 Cuando se cumple uno de ellos, se ejecuta el bloque de sentencias correspondiente al case, que para los valores 0, 1, 2, 3 está vacio. Como no hay break, se ejecutan las siguientes lineas del programa hasta llegar al bloque de sentencias  correspondiente al case 4, que muestra el mensaje "Suspenso" y cuando encuentra el break finaliza el switch.
-
+El switch se diferencia de otras estructuras en que no es necesario delimitar entre llaves el bloque de sentencias de cada case. Solo son obligatorias las llaves de inicio y fin del switch.
+En una estructura switch es obligatorio que los valores de los distintos casos sean diferentes.
+Si no hay un caso que coincida con el valor de la expresión y no se incluye la etiqueta default, entonces el switch no ejecuta ninguno de los bloques de sentencias.
+Conviene recordar  que un switch es una estructura apropiada para sellecionar entre un conjunto de opciones sinples y predefinidas.
+No se puede aplicar cuando la selección se basa en opciones complejas o cuando dependen de un intervalo de valores. En este caso es necesario utilizar una estructura if-else anidada.
