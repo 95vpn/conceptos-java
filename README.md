@@ -1909,3 +1909,10 @@ En una estructura switch es obligatorio que los valores de los distintos casos s
 Si no hay un caso que coincida con el valor de la expresión y no se incluye la etiqueta default, entonces el switch no ejecuta ninguno de los bloques de sentencias.
 Conviene recordar  que un switch es una estructura apropiada para sellecionar entre un conjunto de opciones sinples y predefinidas.
 No se puede aplicar cuando la selección se basa en opciones complejas o cuando dependen de un intervalo de valores. En este caso es necesario utilizar una estructura if-else anidada.
+
+## El operador condicional
+El operador condicional (?:) se relaciona con la estructura if-else.
+Es el único operador de Java que utiliza tres operandos.
+El primer operando es una condición lógica, el segundo es valor que toma la expresión cuando la condición es true y el tercero es el valor que toma la expresión cuando la condición es false.
+El operador evalúa la condición delante del simbolo ?, que puede escribirse entre parentesis.
+Si vale true devuelve el valor que aparece a continuación del signo ?. Si es false devuelve el valor que aprece a continuación de los tres puntos.
