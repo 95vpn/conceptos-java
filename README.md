@@ -1915,4 +1915,14 @@ El operador condicional (?:) se relaciona con la estructura if-else.
 Es el único operador de Java que utiliza tres operandos.
 El primer operando es una condición lógica, el segundo es valor que toma la expresión cuando la condición es true y el tercero es el valor que toma la expresión cuando la condición es false.
 El operador evalúa la condición delante del simbolo ?, que puede escribirse entre parentesis.
-Si vale true devuelve el valor que aparece a continuación del signo ?. Si es false devuelve el valor que aprece a continuación de los tres puntos.
+Si vale true devuelve el valor que aparece a continuación del signo ?. Si es false devuelve el valor que aprece a continuación de los dos puntos.
+
+```
+condicion-logica ? valor-si-verdadero : valor si falso
+
+// la codición lógica tambien se puede expreasr entre parentesis
+
+(condicion-logica) ? valor-si-verdadero : valor-si-falso
+```
+D espués de evaluar la condición lógica, se devuelve el valor correspondiente al resultado lógico verdadero o falso.
+
