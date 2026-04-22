@@ -1926,3 +1926,14 @@ condicion-logica ? valor-si-verdadero : valor si falso
 ```
 D espués de evaluar la condición lógica, se devuelve el valor correspondiente al resultado lógico verdadero o falso.
 
+```
+// Dada la edad de una persona, se desea mostrar un mensaje por la consola que indique si es mayor de edad o no.
+
+int edad = 16;
+String txt;
+txt = (edad >= 18) ? 'Mayor de edad' : 'Menor de edad';
+System.out.print(txt);
+
+// la condición lógica es edad mayor o igual a 18 años.
+// si es verdadera, el operador devuelve el texto 'Mayor de edad', en caso contrario devuelve 'Menor de edad'.
+```
