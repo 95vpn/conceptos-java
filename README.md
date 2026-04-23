@@ -1937,3 +1937,10 @@ System.out.print(txt);
 // la condición lógica es edad mayor o igual a 18 años.
 // si es verdadera, el operador devuelve el texto 'Mayor de edad', en caso contrario devuelve 'Menor de edad'.
 ```
+## Estructura de repetición
+Las estructuras de repetición permiten repetir muchas veces un bloque de sentencias. A estas estructuras tambien se les conoce como estructuras iterativas o bucles.
+
+Como las estructuras de seleccion,  las estructuras de repetición se pueden combinar y anidar.
+Es frecuente utilizar una estrucutra de repetición que contenga un bloque de sentencias que combine otras estructuras de repetición y de selección.
+
+Las estructuras de repetición se componen de cuatro partes: la inicialización, la condición, el bloque de sentencias y la actualización.
