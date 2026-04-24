@@ -1944,3 +1944,9 @@ Como las estructuras de seleccion,  las estructuras de repetición se pueden com
 Es frecuente utilizar una estrucutra de repetición que contenga un bloque de sentencias que combine otras estructuras de repetición y de selección.
 
 Las estructuras de repetición se componen de cuatro partes: la inicialización, la condición, el bloque de sentencias y la actualización.
+
+Inicialización: permiteinicializar la estructura iterativa, normalmente consiste en la declaración e inicialización de la variable de control del bucle.
+
+Condición: define la condiciónque se evalúa para ejecutarel bloque de sentenciasde la estructura terativa. Dependiendo del tipo de de estruvtura que se utilice, la condición se comprueba antes o después de realizar cada iteración.
+Bloque de sentenvias: conjunto de dentencias que se ejecutam demtro de la estructura iterative.
+Actualización: Actualización de la variable de control del bucle. Normalmente se realiza al finalizar la ejecución del bloque de sentencias.
