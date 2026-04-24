@@ -1945,8 +1945,13 @@ Es frecuente utilizar una estrucutra de repetición que contenga un bloque de se
 
 Las estructuras de repetición se componen de cuatro partes: la inicialización, la condición, el bloque de sentencias y la actualización.
 
-Inicialización: permiteinicializar la estructura iterativa, normalmente consiste en la declaración e inicialización de la variable de control del bucle.
+Inicialización: permite inicializar la estructura iterativa, normalmente consiste en la declaración e inicialización de la variable de control del bucle.
 
-Condición: define la condiciónque se evalúa para ejecutarel bloque de sentenciasde la estructura terativa. Dependiendo del tipo de de estruvtura que se utilice, la condición se comprueba antes o después de realizar cada iteración.
-Bloque de sentenvias: conjunto de dentencias que se ejecutam demtro de la estructura iterative.
+Condición: define la condición que se evalúa para ejecutar el bloque de sentenciasde la estructura iterativa. Dependiendo del tipo de de estruvtura que se utilice, la condición se comprueba antes o después de realizar cada iteración.
+Bloque de sentencias: conjunto de sentencias que se ejecutam dentro de la estructura iterativa.
 Actualización: Actualización de la variable de control del bucle. Normalmente se realiza al finalizar la ejecución del bloque de sentencias.
+
+## Estructura while
+La estructura de repetición while repite el bloque de sentencias mientras la condición del while es verdadera.
+El diagrama de flujo de una estrucutra while muestra que la condición mustra que la condición se verifica justo despues de inicializar la variable de control.
+Si el resultado de evaluar la condición por primera es falso, entonces no se ejecuta el bloque de sentencias
