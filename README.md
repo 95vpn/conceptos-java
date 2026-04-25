@@ -1955,3 +1955,16 @@ Actualización: Actualización de la variable de control del bucle. Normalmente 
 La estructura de repetición while repite el bloque de sentencias mientras la condición del while es verdadera.
 El diagrama de flujo de una estrucutra while muestra que la condición mustra que la condición se verifica justo despues de inicializar la variable de control.
 Si el resultado de evaluar la condición por primera es falso, entonces no se ejecuta el bloque de sentencias
+
+```flow
+st=>start: Login
+op=>operation: Inicialización de la variable de control
+cond=>condition: Condición
+op=>operation: Bloque de sentencias
+op=>operation: Actualización de la variable de control
+e=>end: Fin
+
+st->op->cond
+cond(yes)->op
+cond(no)->e
+```
