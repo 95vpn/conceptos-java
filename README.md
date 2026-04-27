@@ -1960,11 +1960,32 @@ Si el resultado de evaluar la condición por primera es falso, entonces no se ej
 st=>start: Login
 op=>operation: Inicialización de la variable de control
 cond=>condition: Condición
-op=>operation: Bloque de sentencias
-op=>operation: Actualización de la variable de control
 e=>end: Fin
 
 st->op->cond
 cond(yes)->op
 cond(no)->e
 ```
+
+Un while tiene la siguiente sintaxis:
+
+```
+inicializacion:
+while (condicion)
+{
+  bloque-de-sentencias:
+  actualización;
+}
+```
+Est es la sintaxis genera. la condición del while se escribe obligatoriamente entre paréntesis.
+
+Un while no necesariamente requiere inicialización y actualización de una variable de control. En ese caso solo es necesari incluir la condición y el bloque de sentencias:
+
+```
+while (condicion)
+{
+  bloque-de-sentencias;
+}
+```
+
+Cuando el programa ejecuta un while, lo primero que hace es evaluar la condición. Si es verdadera ejecuta el bloque de sentencias, si es falsa finaliza el while.
