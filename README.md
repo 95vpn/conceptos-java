@@ -1989,3 +1989,8 @@ while (condicion)
 ```
 
 Cuando el programa ejecuta un while, lo primero que hace es evaluar la condición. Si es verdadera ejecuta el bloque de sentencias, si es falsa finaliza el while.
+En cada iteración, cuando finaliza la ejecución del bloque de sentencias se vuelve a evaluar la condición.
+De nuevo, si es verdadera ejecuta una vez más el bloque de sentencias, si es falsa finaliza el while. Cunado esto se produce, el flujo del programa continua en la sentencia inmediatamente posterior al while.
+
+Si la primera vez que se evalúa la condición el resultado es falso, entonces no se ejecuta el bloque de sentencias. Por esta razón, se dice que un while se ejecuta cero o más veces.
+Si la condición siempre es veradera, entonces el while nunca termina y se ejecuta indefinidamente. Esto se conoce como blucle infinito.
