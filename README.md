@@ -1994,3 +1994,32 @@ De nuevo, si es verdadera ejecuta una vez más el bloque de sentencias, si es fa
 
 Si la primera vez que se evalúa la condición el resultado es falso, entonces no se ejecuta el bloque de sentencias. Por esta razón, se dice que un while se ejecuta cero o más veces.
 Si la condición siempre es veradera, entonces el while nunca termina y se ejecuta indefinidamente. Esto se conoce como blucle infinito.
+
+Función factorial de un número entero positivo 'n'.
+```
+0! = 1
+1! = 1
+2! = 2 x 1
+3! = 3 x 2 x 1
+4! = 4 x 3 x 2 x 1
+n! = n x (n-1) x (n-2) x (n-3) x ... x 1
+```
+
+```
+Public class FactorialWhile
+{
+  public static void main(String[] args)
+  {
+    int n = 5;
+    int i = 1;
+    int factorial = 1;
+    while (n <= i)
+    {
+      factorial = factorial * n;
+      n--;
+    }
+
+    System.out.println("El factoriaal de "  + n + " es " + factorial);
+  }
+}
+```
