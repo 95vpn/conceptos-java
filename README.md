@@ -2023,3 +2023,13 @@ Public class FactorialWhile
   }
 }
 ```
+La expresión factorial = factorial * n la variable factorial aparece dos veces. 
+Primero se calcula el producto factorial  *n y después se asigna ese resultado a la variable factorial
+
+| n | i | factorial * n | factorial |
+-------------------------------------
+| 5 | 1 |   1 * 5       |    5      | 
+| 4 | 1 |   5 * 4       |    20      | 
+| 3 | 1 |   20 * 3       |    60     |
+| 2 | 1 |   60 * 2       |    120    |
+| 1 | 1 |   120 * 1       |    120    |
