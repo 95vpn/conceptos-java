@@ -2033,3 +2033,17 @@ Primero se calcula el producto factorial  *n y después se asigna ese resultado 
 | 3 | 1 |   20 * 3       |    60     |
 | 2 | 1 |   60 * 2       |    120    |
 | 1 | 1 |   120 * 1       |    120    |
+
+## Estructura do-while
+La estructura de repetición do-while ejecuta el bloque de sentencias al menos una vez. Despues comprueba la condición y repite el bloque de sentencias mientras la condición es verdadera.
+
+```mermaid
+flowchart TD
+    A([Inicio]) --> B[Inicialización de la variable de control]
+    B --> C[Bloque de sentencias]
+    C --> D[Actualización de la variable de control]
+    D --> E{Condición}
+
+    E -- Sí --> C
+    E -- No --> F([Fin])
+```
