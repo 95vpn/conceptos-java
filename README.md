@@ -2037,6 +2037,8 @@ Primero se calcula el producto factorial  *n y después se asigna ese resultado 
 ## Estructura do-while
 La estructura de repetición do-while ejecuta el bloque de sentencias al menos una vez. Despues comprueba la condición y repite el bloque de sentencias mientras la condición es verdadera.
 
+El diagrama de flujo de una estructura do-while muestra que la condición se verifica al final, después de ejecutar el bloque de sentencias la primera vez.
+
 ```mermaid
 flowchart TD
     A([Inicio]) --> B[Inicialización de la variable de control]
@@ -2046,4 +2048,15 @@ flowchart TD
 
     E -- Sí --> C
     E -- No --> F([Fin])
+```
+
+Un do-while tiene la siguiente sintaxis:
+```
+inicialización;
+
+do
+{
+  bloque-de-sentencias;
+  actualizacion;
+} while (condicion);
 ```
