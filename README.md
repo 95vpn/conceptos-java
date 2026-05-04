@@ -2060,3 +2060,16 @@ do
   actualizacion;
 } while (condicion);
 ```
+La condición del do-while se escribe obligatoriamente entre parentesis.
+
+Un do-while no necesariamente utiliza un a variable de control. En ese caso solo es necesario incluir la condición y el bloque de sentencias.
+
+```
+do
+{
+  bloque de sentencias;
+} while (condicion)
+```
+Cuando el programa ejecuta un do-while, lo primero que hace es ejecutar el bloque de sentencias y luego evalua la condición. Si es verdadera, ejecuta de nuevo el bloque de sentencias, si es falsa finaliza el do-while.
+
+
