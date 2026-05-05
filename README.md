@@ -2072,4 +2072,25 @@ do
 ```
 Cuando el programa ejecuta un do-while, lo primero que hace es ejecutar el bloque de sentencias y luego evalua la condición. Si es verdadera, ejecuta de nuevo el bloque de sentencias, si es falsa finaliza el do-while.
 
+En cada iteración, cuando finaliza la ejecución del bloque de sentencias se vuelve a evaluar la condición. De nuevo si es verdadera ejecuta una vez más el bloque de sentencias, si es falsa finaliza el do-while. Cunado esto se produce, el flujo del programa continúa en la sentencia inmediatamente posterior al do-while.
 
+Programa que calcula la función factorial de un número utilizando la estructura do-while.
+
+```
+public class FactorialDoWhile
+{
+  public static void main(String[] args)
+  {
+    int n = 5;
+    int factorial = 1
+
+    do
+    {
+      factorial = factorial * n;
+      n--;
+    } while (n >= 1)
+
+    System.out.println("El factorial de " + n + " es " + factorial);
+  }
+}
+```
