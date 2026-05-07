@@ -2094,3 +2094,12 @@ public class FactorialDoWhile
   }
 }
 ```
+
+## Estructura for
+La estructura de repetición for repite el bloque de sentencias mientras la condición del for es verdara.
+Un for es un caso particular de la estructura while. Solo se debe utilizar cuando se sabe el número de veces que se debe repetir el bloque de sentencias.
+
+El diagrama de flujo de una estrucutura for es igual que el de un while.
+Un for verifica la condición justo después de inicializar la variable de control.
+
+Si el resultado de evaluar la condición por primera vez es falso entonces no se ejecuta el bloque de sentencias.
