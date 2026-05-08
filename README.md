@@ -2103,3 +2103,31 @@ El diagrama de flujo de una estrucutura for es igual que el de un while.
 Un for verifica la condición justo después de inicializar la variable de control.
 
 Si el resultado de evaluar la condición por primera vez es falso entonces no se ejecuta el bloque de sentencias.
+
+```mermaid
+flowchart TD
+    A([Inicio]) --> B[Inicialización de la variable de control]
+    
+    B --> C{Condición}
+
+    C -- Sí --> D[Bloque de sentencias]
+    D --> E[Actualización de la variable de control]
+    E --> C
+
+    C -- No --> F([Fin])
+```
+Un for tiene la siguiente sintaxis:
+```
+for (inicializacion; condicion; actialización)
+{
+  bloque de sentencias;
+}
+```
+
+Cuando el programa ejecuta un for, lo primero que hace es evaluar la condición. Si es verdadera ejecuta el bloqur de sentencias, si es falsa finaliza el for.
+
+En cada iteración, cuando finaliza la ejecución del bloque de sentencias se vuelve a evaluar la condición.
+De nuevo, si es verdadera ejecuta una vez más el bloque de senencias, si es falsa finaliza el for.
+Cuando esto produce, el flujo del programa continua en la sentencia inmediatamente posterior al for.
+
+Programa que calcula la función factorial de un número utilizando la estructura for.
