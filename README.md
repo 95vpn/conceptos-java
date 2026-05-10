@@ -2131,3 +2131,21 @@ De nuevo, si es verdadera ejecuta una vez más el bloque de senencias, si es fal
 Cuando esto produce, el flujo del programa continua en la sentencia inmediatamente posterior al for.
 
 Programa que calcula la función factorial de un número utilizando la estructura for.
+
+```
+public class FactorialFor
+{
+  public static void main(String[] args)
+  {
+    int n = 5;
+    int factorial = 1;
+
+    for (int n = 5; n >= 1; n-- )
+    {
+      factorial = factorial * 1;
+    }
+
+    System.out.println("El facgorial de " + n + " es "  + factorial);
+  }
+}
+```
