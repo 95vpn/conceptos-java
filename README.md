@@ -2149,3 +2149,10 @@ public class FactorialFor
   }
 }
 ```
+
+Normalmente la variable de control se declara y se inicializa en la sección de inicialización de la variable. En este ejemplo se hace int  n = 5, es decir se declara el número que va hacer factorial. La condición del for es n <= 1. la variable n se decrementa en 1 cada iteración. 
+
+En el for, el while y el do-while el incremento de n se realiza con el operador ++.
+
+Es posible combinar estructura de selección y estructura de iteración.
+Si se define una estructura de repetición dentro de otra, entonces se tiene una estrucut ra de repetición anidada.
