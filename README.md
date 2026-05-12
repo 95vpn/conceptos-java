@@ -2155,4 +2155,25 @@ Normalmente la variable de control se declara y se inicializa en la sección de 
 En el for, el while y el do-while el incremento de n se realiza con el operador ++.
 
 Es posible combinar estructura de selección y estructura de iteración.
-Si se define una estructura de repetición dentro de otra, entonces se tiene una estrucut ra de repetición anidada.
+Si se define una estructura de repetición dentro de otra, entonces se tiene una estructura de repetición anidada.
+
+El siguiente ejemplo utiliza tres for anidados. ¿Cuántas veces se muestra por consola el mensaje "Hola Mundo"?
+
+```
+public class ForAnidado
+{
+  public static void main(String[] args)
+  {
+    for (int i = 1; i <= 5; i++)
+    {
+      for (int j = 2; j <= 4; j++)
+      {
+        for (int k = 3; k <= 6; k++)
+        {
+          System.out.println("Hola Mundo");
+        }
+      }
+    }
+  }
+}
+```
