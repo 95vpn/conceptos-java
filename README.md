@@ -2177,3 +2177,4 @@ public class ForAnidado
   }
 }
 ```
+Para saber cuantas veces se imprime el mensaje es necesario saber cuantas veces de repite cada for. E l for de i se repite 5 veces, el for de j se repite 4 veces y el for de k se repite 4 veces. Como del for de k está dentro del for de j y éste dentro del for de i, el mensaje se imprime 5x3x4 veces, un total de 60 veces.
