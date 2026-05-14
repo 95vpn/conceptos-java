@@ -2178,3 +2178,17 @@ public class ForAnidado
 }
 ```
 Para saber cuantas veces se imprime el mensaje es necesario saber cuantas veces de repite cada for. E l for de i se repite 5 veces, el for de j se repite 4 veces y el for de k se repite 4 veces. Como del for de k está dentro del for de j y éste dentro del for de i, el mensaje se imprime 5x3x4 veces, un total de 60 veces.
+
+### Uso de las estructuras de repetición
+Es importante utilizar la estructura de repetición más apropiada para cada caso. En general, se recomienda seguir los siguiente criterios:
+
+El while se debe utilizar cuando no se sabe el número de veces que se va repetir el bloque de sentencias.
+
+El do-while se debe utilizar cuando el bloque de sentencias se debe ejecutar al menos una vez.
+
+El for se debe utilizar cuando se sabe el número de veces que se va a repetir el bloque de sentencias. Un for es útil cuando se conoce el valor inicial para la variable de control del bucle y ademas es necesario utilizar una expresión aritmética para actualizar esta variable.
+
+Ejemplo de uso del while.
+Utilice una estructura  while para deteminar mediant restas sucesivas si un numero entero positivo es par.
+
+Para saber si un número entero es par es necesario restar 2 sucesivamente mientras el número sea mayor o igual a 2. Si después de realizar las restas el número es cero, el número es par, si no, es impar.
