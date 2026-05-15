@@ -2192,3 +2192,23 @@ Ejemplo de uso del while.
 Utilice una estructura  while para deteminar mediant restas sucesivas si un numero entero positivo es par.
 
 Para saber si un número entero es par es necesario restar 2 sucesivamente mientras el número sea mayor o igual a 2. Si después de realizar las restas el número es cero, el número es par, si no, es impar.
+
+```
+public class NumeroParImpar
+{
+  public static void main(String[] args)
+  {
+    int numero = 12;
+
+    while (numero >= 2)
+    {
+      numero = numero -2;
+    }
+
+    if (numero == 0)
+      System.out.println("El número es par");
+    else
+      System.out.println("El número es impar");
+  }
+}
+```
