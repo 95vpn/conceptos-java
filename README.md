@@ -2229,3 +2229,6 @@ public class NumerosAleatorios
   }
 }
 ```
+
+Ejemplo del uso del for
+Utilice una estructura for para calcular la función potencia de un número entero positivo utilizando productos.
