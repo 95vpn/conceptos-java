@@ -2212,3 +2212,20 @@ public class NumeroParImpar
   }
 }
 ```
+Ejemplo del uso de do-while
+Utilice una estructura do-while que muestre por la consola números enteros aleatorios entre 0 y 100 hasta que salga el número 50.Para calcular un número aleatorio se utiliza el método random() de la clase Math. Este método devuelve un valor de tipo double entre 0 y 1. Este valor se multiplica por 100 para que el valor esté en el rango entre 0 y 100. Antes de asignar el resultado a la variable número se convierte a un valor entero utilizando (int).
+El do-while se ejecuta al menos una vez y muestra los números aleatorios calculados mientras el número sea diferente de 50.
+
+```
+public class NumerosAleatorios
+{
+  public static void main(String[] args)
+  {
+    do
+    {
+      numero = (int) (100 * Math.random());
+      System.out.println("Numero aleatorio: " + numero);
+    } while (numero != 50);
+  }
+}
+```
