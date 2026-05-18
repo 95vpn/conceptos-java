@@ -2232,3 +2232,28 @@ public class NumerosAleatorios
 
 Ejemplo del uso del for
 Utilice una estructura for para calcular la función potencia de un número entero positivo utilizando productos.
+
+```
+potencia = base x base x base x base x ... x base
+```
+
+Inicialmente, el valor de la variable potencia es 1 porque cualquier número elevado a la potencia cero es 1.
+
+```
+public class PotenciaFor
+{
+  public static void main(String[] args)
+  {
+    int base = 2;
+    int exponente = 10;
+    int potencia = 1;
+
+    for (int i = 1; i <= exponente; i++)
+    {
+      potencia = potencia * base;
+    }
+
+    System.out.println("La potencia es " + potencia);
+  }
+}
+```
