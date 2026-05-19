@@ -2257,3 +2257,13 @@ public class PotenciaFor
   }
 }
 ```
+
+### Estructuras de salto
+En Java existen dos sentencias que permiten modificar el flujo secuencial de un programa y provocan un salto en la ejucución. Estas sentencias son un break y continue. Ambas se utilizan con las estructuras de repetición para interrumpir la ejecución con break o volver al principio con continue.
+Además, el break se utiliza para interrumpir ña ejecición de un switch.
+
+#### Sentencia break
+La sentencia break se utiliza para interrumpir la ejecución de una estructura de repetición o de un switch.
+Cunado se ejecuta el break, el flujo del progama continúa en la sentencia inmediatamente posterior a la estructura de repetición o al switch.
+
+
