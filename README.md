@@ -2266,4 +2266,6 @@ Además, el break se utiliza para interrumpir ña ejecición de un switch.
 La sentencia break se utiliza para interrumpir la ejecución de una estructura de repetición o de un switch.
 Cunado se ejecuta el break, el flujo del progama continúa en la sentencia inmediatamente posterior a la estructura de repetición o al switch.
 
+#### Sentencia continue
+La sentencia continue unicamente puede aparecer en una estructura de repetición. Cuando se ejecuta un continue, se deja de ejecutar el resto del bloque de sentencias de la estructura iterativa para volver al inicio de ésta.
 
