@@ -2269,3 +2269,15 @@ Cunado se ejecuta el break, el flujo del progama continúa en la sentencia inmed
 #### Sentencia continue
 La sentencia continue unicamente puede aparecer en una estructura de repetición. Cuando se ejecuta un continue, se deja de ejecutar el resto del bloque de sentencias de la estructura iterativa para volver al inicio de ésta.
 
+### Uso de break y continue
+A continuación se muestran ejemplos del uso de las sentencias break y continue.
+
+Ejemplo de uso de break en un switch
+Desarrolle un programa que cuente el número de covales, consonantes y espacios de una cadena de caracteres.
+
+Utilice un for para comparar cada una de las letras de la frase. dentro del for utilice un switch para seleccionar entre vocales, consonantes y espacios.
+Las variables vocales, constantes y espacios se inicializan a cero y se utilizan para contar el número de veces que aparecen en la frase.
+
+Defina una variable letra de tipo char, Almacene la letra correspondiente a la posición i de la cadena de caracteres. Utilice el método charAT (I) de la clase String para copiar el valor de éste carácter a la variable letra.
+
+Utilice la sentencia break al final del bloque de sentencias de los case correspondiente a vocalrs, espacios y consonantes.
