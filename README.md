@@ -2278,6 +2278,44 @@ Desarrolle un programa que cuente el número de covales, consonantes y espacios 
 Utilice un for para comparar cada una de las letras de la frase. dentro del for utilice un switch para seleccionar entre vocales, consonantes y espacios.
 Las variables vocales, constantes y espacios se inicializan a cero y se utilizan para contar el número de veces que aparecen en la frase.
 
+```
+public class ConsonantesVocales
+{
+  public static void main(String[] args)
+  {
+    String frase = "Hola Mundo";
+    char letra;
+    int vocales = 0, consonantes = 0, espacios = 0;
+
+    for (int = 0; i < frase.length(); i++)
+    {
+      letra = frase.charAt(i);
+      switch (letra)
+      {
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+        case 'A':
+        case 'E':
+        case 'I':
+        case 'O':
+        case 'U': vocales++;
+                  brek;
+        case ' ': espacios++;
+                  break;
+        default: consonantes++;
+                 break;
+
+      }
+    }
+
+    System.out.println("La frase '" + frase + "' tiene " + vocales + " vocales. " + consonantes + " consonantes y " + espacios + "espacios. "  );
+  }
+}
+```
+
 Defina una variable letra de tipo char, Almacene la letra correspondiente a la posición i de la cadena de caracteres. Utilice el método charAT (I) de la clase String para copiar el valor de éste carácter a la variable letra.
 
 Utilice la sentencia break al final del bloque de sentencias de los case correspondiente a vocalrs, espacios y consonantes.
