@@ -2316,6 +2316,29 @@ public class ConsonantesVocales
 }
 ```
 
+
+
 Defina una variable letra de tipo char, Almacene la letra correspondiente a la posición i de la cadena de caracteres. Utilice el método charAT (I) de la clase String para copiar el valor de éste carácter a la variable letra.
 
 Utilice la sentencia break al final del bloque de sentencias de los case correspondiente a vocalrs, espacios y consonantes.
+
+
+Ejemplo de uso de break en un do-while
+Modifique el programa de los números aleatorios desarrollado en el ejemplo de uso de un do-while. Incluya un break que interrumpa el do-while  cuando el número aleatorio sea igual a 25. El programa debe terminar cuando el número aleatorio sea 25 o 50.
+
+```
+public class NumerosAleatoriosConBreak
+{
+  public static void main(String[] args)
+  {
+    do
+    {
+      numero = int (100 * Math.random());
+      System.out.println("Numero aleatorios: " + numero);
+
+      if (numero == 25)
+        break;
+    } while (numero != 50);
+  }
+}
+```
