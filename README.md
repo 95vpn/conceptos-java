@@ -2342,3 +2342,22 @@ public class NumerosAleatoriosConBreak
   }
 }
 ```
+
+Ejemplo de uso de continue en un for
+Desarrolle un progrgama que muestre por consola los números pares entre 2 y  10. Utilice un for para valores de i de 1 a 10 y aplique la sentencia continue para interrumpir la ejecución de las iteraciones impares.
+
+```
+public class NumerosPares
+{
+  public static void main(String[] args)
+  {
+    for (int i = 1; i <= 10; i++)
+    {
+      if (i % 2 != 0)
+        continue;
+
+      System.out.println("Numeros pares:  " + i);
+    }
+  }
+}
+```
