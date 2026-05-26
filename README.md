@@ -2361,3 +2361,25 @@ public class NumerosPares
   }
 }
 ```
+
+## Estructuras de almacenamiento
+
+### Arrays
+Java proporciona una estructura de almacenamiento denominada array que permite almacenar muchos objetos de la misma clase r identificarlos con el mismo nombre.
+
+La declaración de un array tiene la siguiente sintaxis:
+
+```
+tipo-o-clase[] identificador-array;
+o
+tipo-o-clase identificador-array[];
+```
+
+Por ejemplo, un array de números enteros se puede declarar de dos formas:
+```
+int[] numeros;
+o
+ont numeros[];
+```
+Ambas declaraciones son equivalentes, el tipo de base del array es int y el nombre del array es numeros.
+Todos los elementos de la estructura numeros[] almacenan un int. La primera declaración define un array de objetos de tipo primitivo int con identificaodr numeros. La segunda declaración dice que cada elementos de la forma numeros[] es de tipo int.
