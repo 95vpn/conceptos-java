@@ -2383,3 +2383,31 @@ ont numeros[];
 ```
 Ambas declaraciones son equivalentes, el tipo de base del array es int y el nombre del array es numeros.
 Todos los elementos de la estructura numeros[] almacenan un int. La primera declaración define un array de objetos de tipo primitivo int con identificaodr numeros. La segunda declaración dice que cada elementos de la forma numeros[] es de tipo int.
+
+Ejemplos de declaraciones de arrays:
+```
+int[] numerosEnteros; // array de tipo int
+double[] numerosReales; // array de tipo double
+String[] nombres; // array de tipo String
+Object[] objetos; // array de la clase Object
+Vehiculo[] vehiculo; // array de la clase Vehiculo
+Turismo[] turismos; // array de la clase Turismo
+```
+
+Se denoina tipo base del array al tipo que se declara para sus elementos.
+Este tipo base puede ser un tipo primitivo de Java, un objetos o una clase definida. En los elementos anteriores se han utilizado tiposprimitivos y clases como tipo base.
+El array nunerosEnteros alamacena objetos del primitivo int.
+El array nombres almacena objetos de la clase String.
+El array objetos almacena referencias a instancias de la clase Object de Java. 
+El array vehiculos almacena objetos de la clase Vehiculo.
+
+Además de declarar un array es necesario indicar el número de elementos que va almacenar. Un array es un objeto y como cualquier objeto de un programa Java, su valor es null. Antes de hacer referencia a los elementos del array es necesario instanciar el objeto.
+
+Cuando se instancia un objeto array se aigna un espacio de memoria para almacenar los elementos del array. Para esto es necesario saber el número total de elementos que va almacenar.
+
+La instanciación de un objeto array se hace de la siguiente forma:
+
+```
+nombres = new String[100];
+vehiculos = new Vehiculo[50];
+```
