@@ -2411,3 +2411,11 @@ La instanciación de un objeto array se hace de la siguiente forma:
 nombres = new String[100];
 vehiculos = new Vehiculo[50];
 ```
+En este ejemplo, el array nombres tiene capacidad para almacenar hasta 100 objetos de tipo String. 
+El array vehiculos puede almacenar hasta 50 objetos de la clase Vehiculo.
+
+Cuando se crea un array se inicializa el valor de todos sus elementos al valor por defecto del tipo del array: cero para los números, false para los boolean, \u0000 para los caracteres y null para las referencias a objetos.
+
+De forma similar al resto de objetos de Java, un array se puede inicializar al momento de la declaración. En este caso se inicializa al valor por defecto del tipo del array.
+
+
