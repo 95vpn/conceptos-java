@@ -2418,4 +2418,20 @@ Cuando se crea un array se inicializa el valor de todos sus elementos al valor p
 
 De forma similar al resto de objetos de Java, un array se puede inicializar al momento de la declaración. En este caso se inicializa al valor por defecto del tipo del array.
 
+```
+int numerosEnteros = new int[10];
+String[] nombres = new String[100];
+Vehiculo[] vehiculos = new Vehiculo[50];
+Turismo[] turismos = new Turismos[50];
+```
+
+Un array tambien se puede inicializar indicando la lista de valores que va a almacenr:
+
+```
+String[] diasLaborables = {"Lunes", "Martes", "Miercoles", "Jueves", Viernes};
+
+int enteros = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+```
+
+El array diasLaborables almacena 5 objetos de tipo String con los nombres de los días laborables de la semana. El array enteros almacena 11 números enteros con valores de 0 a 10.
 
