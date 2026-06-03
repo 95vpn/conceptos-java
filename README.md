@@ -2447,3 +2447,31 @@ El primer elemto del array se almacena em la posición 0 y el último en la posi
 
 Este array notas almacena 5 calificaciones, notas[0] es el primer elemento del aray y notas[4] el último. Para mostrar las calificaciones almacenadas en el aray, se puede utilizar un for con una variable de control que vaya de cero hasta la longitud del array menos 1.
 
+```
+int[] notas = {4, 9, 7, 5, 10};
+for (int i = 0; i <= nots.length -1; i++)
+  {
+    System.out.println("notas[" + i +"] es " + notas[i]);
+  }
+
+//La salida por la consola:
+notas[0] es 4
+notas[1] es 9
+notas[2] es 7
+notas[3] es 5
+notas[4] es 10
+```
+
+El siguiente for es equivalente al anterior. En vez de definir el límite de la variable de control menor o igual a notas.length-1, se hace estrictamente menor que notas.length.
+
+```
+for (int i = 0; i <vnotas.length; i++)
+{
+  System.out.println("notas[" + i + "] es " + notas[i]};
+}
+```
+
+El atributo length de un array almacena un valor numérico que se puede consultar pero no se puede modificar. Es una buena práctica de programación utilizar el atributo length para hacer referencia al tamaño del array.
+
+
+
