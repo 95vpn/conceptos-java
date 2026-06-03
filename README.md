@@ -2435,3 +2435,15 @@ int enteros = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
 El array diasLaborables almacena 5 objetos de tipo String con los nombres de los días laborables de la semana. El array enteros almacena 11 números enteros con valores de 0 a 10.
 
+Para hacer referencia a cada elemento de un array es necesario indicar la posición que ocupa en la estructura de almacenamiento. Esta posición se denomina indice.
+El primer elemento de un array se almacena en la posición cero y el último elemento en la posición n-1, donde n es el tamaño de array.
+
+La declaración del array:
+```
+int[] notas = {4, 9, 7, 5, 10};
+```
+
+El primer elemto del array se almacena em la posición 0 y el último en la posición 4, que equivale a su tamaño menos 1. El atributo length almacena el tamaño de un array. En este ejemplo, la última posición del array es notas.length -1.
+
+Este array notas almacena 5 calificaciones, notas[0] es el primer elemento del aray y notas[4] el último. Para mostrar las calificaciones almacenadas en el aray, se puede utilizar un for con una variable de control que vaya de cero hasta la longitud del array menos 1.
+
