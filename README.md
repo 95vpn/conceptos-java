@@ -2473,5 +2473,11 @@ for (int i = 0; i <vnotas.length; i++)
 
 El atributo length de un array almacena un valor numérico que se puede consultar pero no se puede modificar. Es una buena práctica de programación utilizar el atributo length para hacer referencia al tamaño del array.
 
+Otra forma de mostrar los valores almacenadosen un array es utilizando un for "para todo", donde la variable de control del for, con identificador nota, toma el valor de todos los elementos de la estructura de almacenamiento, en este caso, el array notas.
+
+```
+for (int nota : notas)
+  System.out.println(nota);
+```
 
 
