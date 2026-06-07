@@ -2504,3 +2504,31 @@ for (String dia : diasLaborables)
   System.out.println(dia);
 ```
 
+La variable dia del for "para todo" es de tipo String y toma los valores diasLaborables[0], diasLaborables[1], diasLaborables[2], diasLaborables[3] y diasLaborablees[4] en cada iteración.
+
+El array vehiculos almacena 3 objetos de la clase Vehiculo: un turismo, un deportivo y una furgoneta. Cada elemento del array es una instancias de las subclases de Vehiculo.
+El array vehiculos almacena referencias a objetos de la clase Vehiculo
+
+La declaración del array:
+```
+Vehiculos[] vehiculos =
+  {
+    new Turismo("4060 TUR", "Skoda", "Fabia", "Blanco", 90.0, 2, false),
+    new Deportivo("4070 Dep", "Ford", "Mustang", "Rojo", 150.0, 2000),
+    new Furgoneta("4080 FUR", "Ducato", "Azul", 80.0, 1200, 8)
+  };
+```
+
+Para mostrar los datos de los vehiculos almacenados en el array se debe ejecutar el metodo getAtributos() de la clase Vehiculo. Se puede utilizar un for con una vriable de control i o un for "para todo".
+
+```
+// for con la variable de control i
+for (int i = 0; i < vehiculos.length; i++)
+  System.out.println(vehiculso[i].getAtributos());
+
+// "for para todo"
+for (Vehiculo vehiculo : vehiculos)
+  System.out.println(vehiculo.getAtributos());
+```
+
+La variablr vehiculo del for "para todo" es de tipo Vehiculo y toma los valores de vehiculos[0], vehiculos[1], y vehiculos[2] en cada iteración.
