@@ -2480,4 +2480,27 @@ for (int nota : notas)
   System.out.println(nota);
 ```
 
+La variable nota del for "para todos" toma los valores nota[0], nota[1], nota[2], nota[3] y nota[4] en cada iteración. Cuando se utiliza un for "para todo" no hace falta indicar los límites de la variable de control del for, bas ta que esta vaariable sea del tipo almacenado en el array. En este ejemplo nota es de tipo int.
+
+El array diasLaborables almacena los nombres de los días laborables de la semana:
+```
+diasLaborables.length  5
+diasLaborables[0]  Lunes
+diasLaborables[1]  Martes
+diasLaborables[2]  Miércoles
+diasLaborables[3]  Jueves
+diasLaborables[4]  Viernes
+```
+
+La declaración del array:
+
+```
+String[] diasLaborables = {"Lunes", "Martes", "Miercoles", "Jueves", "Viernes"}
+```
+De nuevo se utiliza un for "para todos" para mostrar el contenido del array diasLaborables que almacena objetos de tipo String.
+
+```
+for (String dia : diasLaborables)
+  System.out.println(dia);
+```
 
