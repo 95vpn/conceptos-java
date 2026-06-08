@@ -2532,3 +2532,22 @@ for (Vehiculo vehiculo : vehiculos)
 ```
 
 La variablr vehiculo del for "para todo" es de tipo Vehiculo y toma los valores de vehiculos[0], vehiculos[1], y vehiculos[2] en cada iteración.
+
+## Arrays multidimensionales
+Un array de dos dimensiones es un array que contiene otro array en cada uno de sus elementos.
+Por ejemplo, un array de dos dimensiones de números entero de tamaño 2 x 3 se declara:
+
+```
+int[][] notas = new int[2][3];
+```
+Un array de dos dimensiones tiene forma de tabla. para indicar la posición de uno de sus elementos es necesario indicar dos indices, uno para la fila y otro para la columna. La fila indica la posición del primer array y la columna la posición del segundo array.
+
+El siguiente esquema muestra un array de dos dimensiones de números enteros. El array notas se inicializa con los valores {{5, 7, 9}, {4, 6, 5}}. Este array representa una tabla de 2 x 3 y en total almacena 6 números enteros.
+El array notas tiene dos elementos y cada uno de ellos es un array: notas[0] y notas[1]. El elemento notas[0] tiene a su vez 3 elementos: notas[0][0], notas[0][1], y notas[0][2]. El elemento notas[1] tiene también 3 elementos: notas[1][0], notas[1][!] y notas[1][2].
+
+Para mostrar los elementos del array notas es necesario utilizar dos for anidados.
+```
+for (int i = 0; i < notas.length: i++)
+  for (int j = 0; j < notas[i].lenght; j++)
+    System.out.println("notas[" + i +"][" + j + "] " + "es " + notas[i][j]);
+```
