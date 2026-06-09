@@ -2551,3 +2551,27 @@ for (int i = 0; i < notas.length: i++)
   for (int j = 0; j < notas[i].lenght; j++)
     System.out.println("notas[" + i +"][" + j + "] " + "es " + notas[i][j]);
 ```
+
+Tambien se puede utilizar un for "para todo":
+```
+for (int[] fila : notas)
+  for (int nota : fila)
+    System.out.println(nota);
+```
+
+En general, un array multidimiensional es aquel que dentro de uno de sus elementos almacena uno o más arrays de objetos. Por ejemplo, un array de tres dimensiones de números enteros de tamaño 3 x 3 x 3 se declara:
+
+```
+int[] [] [] numeros = new int[3] [3] [3];
+```
+
+Este array de tres dimensiones tiene forma de cubo y almacena 27 números enteros. Para indicar la posición de uno de sus elementos es necesario utilizar tres indices. Si el array debe almacenar números del 1 al 27 consecutivos en cada una de sus dimensiones, entonces se inicializa utilizando tres for anidados:
+
+```
+int numero = 1;
+
+for (int i = 0; i < numeros.length; i++)
+  for (int j = 0; j < numeros[i].length; j++)
+    for (int k = 0; k < numeros[j].length; k++)
+      numeros[i] [j] [k] = numero++;
+```
