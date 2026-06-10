@@ -2575,3 +2575,22 @@ for (int i = 0; i < numeros.length; i++)
     for (int k = 0; k < numeros[j].length; k++)
       numeros[i] [j] [k] = numero++;
 ```
+
+Para mostrar los números almacenados:
+
+```
+for (int i = 0; i < numeros.length; i++)
+  {
+    for (int j = 0; j < numeros[i].length; j++)
+    {
+      for (int k = 0; k < numeros[j].length; k++)
+      {
+        System.out.print(numeros[i][j][k] + " ");
+      }
+      System.out.println("");
+    }
+    System.out.print("");
+  }
+```
+
+
