@@ -2593,4 +2593,71 @@ for (int i = 0; i < numeros.length; i++)
   }
 ```
 
+## Uso de arrays
+Suponga que desea almacenar en arrays el catálogo de vehículos y la relación de clientes de una empresa de alquiler de vehículos. Para esto es necesario definir una nueva clase, EmpresaAlquilerVehiculos, que almacene información detallada de la empresa, los clientes y el catálogo de vehiculos
+
+```
+public class EmpresaAlquilerVehiculos
+{
+  private String cif;
+  private String nombre;
+  private String paginaWeb;
+  private int totalClientes;
+  private Cliente[] clientes;
+  private int totalVehiculos
+  private Vehiculo[] vehiculos;
+  private int totalAlquileres;
+  private VehiculoAlquilado[] alquileres;
+
+  public EmpresaAlquilerVehiculos (String cif, String nombre, String paginaWeb)
+  {
+    this.cif = cif;
+    this.nombre = nombre;
+    this.paginaWeb = paginaWeb;
+    this.totalClientes = 0;
+    this.clientes = new Cliente[50];
+    this.totalVehiculos = 0;
+    this.vehiculos = new Vehiculo[50];
+    this.totalAlquileres = 0;
+    this.alquileres = new VehiculoAlquilado[100];
+  }
+}
+```
+
+La clase EmpresaAlquilerVehiculos está compuesta de arrays de objetos de las clases Cliente, Vehiculo y VehiculoAlquilado. A continuación se incluye la declaración de los atributos de estas clases, se omite la declaración de los método constructores y los métodos get y set.
+
+```
+public class Cliente
+{
+  private String nif;
+  private String nombre;
+  private String apellidos;
+  
+}
+```
+```
+
+public class Vehiculo
+{
+  private String matricula;
+  private String marca;
+  private String modelo;
+  private String color;
+  private double tarifa;
+  private boolean disponible;
+ 
+}
+```
+
+```
+public class VehiculoAlquilado
+{
+  private Cliente cliente;
+  private Vehiculo vehiculo;
+  private int diaAlquiler;
+  private int mesAlquiler;
+  private int añoAlquiler;
+  private int totalDiasAlquiler;
+}
+```
 
