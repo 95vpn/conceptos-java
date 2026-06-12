@@ -2661,3 +2661,12 @@ public class VehiculoAlquilado
 }
 ```
 
+La clase EmpresaAlquilerVehiculos declara tres arrays para registrar a sus clientes, vehiculos y el histórico de vehiculos alquilados.
+El array clientes puede almacenar hasta 50 objetos de tipo Cliente, el array vehiculos puede almacenar hasta 50 objetos de tipo Vehiculo y el array alquileres tiene capacidad para almacenar 100 objetos de tipo VehiculoAlquilado.
+
+las variables numéricas totalClientes, totalVehiculos y totalAlquileres se utilizan para almacenar el total de objetos almacenados en cada uno de los arrays. Estas variables se inicializan a cero en el método constructor de la clase.
+
+La clase EnpresaAlquilerVehiculos declara los siguientes métodos para realizar operaciones:
+
+
+
