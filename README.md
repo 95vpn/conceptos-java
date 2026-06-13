@@ -2666,7 +2666,110 @@ El array clientes puede almacenar hasta 50 objetos de tipo Cliente, el array veh
 
 las variables numéricas totalClientes, totalVehiculos y totalAlquileres se utilizan para almacenar el total de objetos almacenados en cada uno de los arrays. Estas variables se inicializan a cero en el método constructor de la clase.
 
-La clase EnpresaAlquilerVehiculos declara los siguientes métodos para realizar operaciones:
+La clase EmpresaAlquilerVehiculos declara los siguientes métodos para realizar operaciones:
+
+registrarCliente(Cliente cliente). Añade un nuevo cliente a la lista de clientes de la empresa.
+registrarVehiculo(Vehiculo vehiculo). Añade un vehiculo al catálogo de vehiculos de la empresa.
+imprimirClientes(). Muestra la relación de clientes de la empresa.
+imprimirVehiculos(). Muestra el catálogo de vehiculos de la empresa.
+alquilerVehiculo(String matricula.String nif.int dias). Modifica la disponibilidad del vehiculopara indicar que está alquilado y añade un objeto de tipo VehiculoAlquilado al array de vehiculos alquilados. Este array almacena el cliente, el vehículo y los días de alquiler de cada vehículo alquilado.
+recibirVehiculo(String matricula). Modifica la disponibilidad del vehículo para que se pueda alquilar de nuevo.
+
+El método registrarCliente(Cliente cliente) almacena un objeto de la clase Cliente en la última posición del array clientes, dad por la variable totalClientes y a continuación incrementa la variable totalClientes.
+
+```
+public void registrarCliente(Cliente cliente)
+{
+  this.clientes[this.totalClientes] = cliente;
+  this.totalClientes++;
+}
+```
+
+El métod registrarVehiculo(Vehiculo vehiculo) almacena un objeto de la clase Vehiculo en la última posición del array vehiculos, dada por la variable totalVehiculos y a continuación incrementea la variable totalVehiculos.
+```
+public void registrarVehiculo(Vehiculo vehiculo)
+{
+  this.vehiculos[this.totalVehiculos] = vehiculo;
+  this.totalVehiculos++;
+}
+```
+
+El método imprimirClientes() muestra la elación de clientes de la empresa del alquiler.
+```
+public vlid imprimirClientes()
+{
+  System.out.println("NIF cliente\tNombre\n");
+  for (int i= 0; i < this.totalClientes[i]; i++)
+    System.out.println(clientes[i].getAtributos());
+}
+```
+
+El método imprimirVehiculos() muestra el catálogo de vehículos de la emopresa de alquiler. El método getAtributosInforme() muestra el detalle de atributos del vehícilo.
+```
+public void impriimrVehiculos()
+{
+  System.out.println("Matricula\tModelo " + "\tImporte Disponible\n");
+
+  for (int i = 0; i < this.totalVehiculos; i++)
+    System.out.println(vehiculos[i].getAtributosInforme());
+}
+```
+
+Para registrar el alquiler de un vehículo por un cliente se usa el método alquilarVehiculo(String matricula, String nif, int días).
+Este método modifica la disponibilidad del vehiculo para indicar que está alqulado. El método getCliente(Sting nif) busca la referencia del cliente con el NIF dado en el array clientes. De forma similar, el método getVehiculo(String matricula) busca la referencia del vehículo con la matrícula dada en el array vehiculos. Una vez encontrado el vehíclo con la matricula indicada, se verifica si está disponible para alquilar y se modifica su disponibilidad. 
+A continuación, almacena un objeto de tipo VehiculoAlqulado en el array alquileres. Este objeto relaciona un cliente, un vehiculo, la fecha actual y los días de alquiler.
+
+El método getCliente(String nif).
+```
+private Cliente getCliente(String nif)
+{
+  for (int i = 0; i < this.getTotalClientes(); i++)
+  {
+    if (this.clientes[i].getNIF() == nif)
+      return this.clientes[i];
+  }
+  return null;
+}
 
 
+public void alquilarVehiculo(String matricula, String nif, int dias)
+{
+  Cliente cliente = getCliente(nif);
+  Vehiculo vehiculo = getVehiculo(matricula);
+  //busca el cliente con el NIF dado en el arrayclientes y el vehículo con la matricula dada en el array vehículos,
+  // si el vehículo está disponible se alquila con la fecha actual, que se obtienen ejecutando los métodos diaHoy(), mesHoy y
+  // añoHoy(), cuya declaración no se incluye
 
+  if (vehiculo.getDisponible())
+  {
+    vehiculo.setDisponible(false);
+    this.alquileres[this.totalAlquileres] = new VehiculoAlquilado(cliente, vehiculo, díaHoy(), mesHoy(), añoHoy(), dias);
+    this.totalAlquileres++;
+  }
+}
+```
+
+El método recibiVehiculo(String matricula) modifica la disponibilidad del vehículo para que se pueda alquilar de nuevo. Este método utiliza el método getVehiculo(String matricula) que busca el vehículo con la matricula dada en el array vehiculos. Si lo encuentra, modifica su disponibilidad para indicar que nuevamente está disponible para alquiler.
+
+```
+public void recibirVehiculos(String matricula)
+{
+  //busca el vehiculo con la matricula dada en el array vehiculos y modifica su disponibilidad
+  //para que se pueda alquilar de nuevo
+  Vehiculo vehiculo = getVehiculo(matricula);
+
+  if (vehiculo != null)
+    vehiculo.setDisponible(true);
+}
+```
+
+Una vez definida la clase EmpresaAlquilerVehiculos es necesario definir la clase del programa principal donde van a cerar las instancias de los objetos de esta aplicación. El método main() del programa principal crea una instancia de la clase EmpresaAlquilerVehiculos, denominada easyDrive con CIF "A-28-187189", nombre "easydrive" Y PAGINA WEB "www.easyDrive.com".
+```
+//la instancia easydrive de EmpresaAlquilerVeiculos
+EmpresaAlquilerVehiculos easydrive = new EmpresaAlquilerVehiculos("A-28-187189", "EASY DRIVE", "www.easydriev.com");
+
+```
+
+Al crear la instancia easydrive, el método constructor de la clase EmpresaAlquilerVehiculos inicializa los arrays clientes y vehiculos de este objeto. 
+Una vez creada la instancia es necesario añadir clientes y vehículos añ objetos easydrive. En este ejemplo se registran dos clientes y cinco vehículos de alquiler: tres turismos, un deportivo y una furgoneta.
+Para registrar un nuevo cliente basta con ivocar el método registrarCliente(Cliente  cliente) con una instancia  de la clase Cliente para añadir un nuevo cliente al array clientes del objeto easydrive.
