@@ -2784,3 +2784,59 @@ Para registrar un nuevo vehículo basta con invocar el método registrarVehiculo
 // registro del turismo con matrícula "4060 TUR"
 easydrive.registrarVehiculo(new Turismo("4060 TUR", "Skoda", "Fabia", "Blanco", 90.0, 2, false));
 ```
+
+Una vez registrados los clientes y los vehículos de la empresa, se invocan los métodos imprimirClientes() e imprimirVehiculos() para mostrar la relación de clientes y el catalogo de vehiculoss de la empresa "easydrive".
+
+```
+// imprime la relación de clientes de easydrive
+easydrive.imprimirClientes();
+
+// imprime el catalogo de vehiculos de easydrive
+easydrive.imprimirVehiculos();
+```
+
+```
+public class EmpresaAlquilerVehiculos
+{
+  //se omiten los atributos y el resto de métodos de la clase
+  public void registrarCliente(Cliente cliente)
+  {
+    this.clientes[this.totalClientes] = cliente;
+    this.totalClientes++;
+  }
+
+  public void registrarVehiculo(Vehiculo vehiculo)
+  {
+    this.vehiculos[this.totalVehiculos] = vehiculo;
+    this.totalVehiculos++;
+  }
+
+  public void imprimirVehiculos()
+  {
+    System.out.println("Matricula\tModelo " + "\tImporte Disponible\n");
+    for (int i = 0; i < this.totalVehiculos; i++)
+    {
+      System.out.println(vehiculos[i].getAtributosInforme());
+    }
+  }
+
+  public void alquilerVehiculo(String matricula, String nif, int dias)
+  {
+    Cliente cliente = getCliente(nif);
+    Vehiculo vehiculo = getVehiculo(matricula);
+    if (vehiculo.getDisponible())
+    {
+      vehiculo.setDisponible(false);
+      this.alquileres[this.tatalAlquileres] = new VehiculoAlquilado(cliente, vehiculo, diaHoy(), mesHoy(), añoHoy(), dias);
+      this.totalAlquileres ++;
+    } 
+  }
+
+  public void recibirVehiculo(String matricula)
+    {
+      Vehiculo vehiculo = getVehiculo(matricula);
+      if(vehiculo != null)
+        vehiculo.setDisponible(true);
+    }
+}
+```
