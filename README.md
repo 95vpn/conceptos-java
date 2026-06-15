@@ -2772,4 +2772,15 @@ EmpresaAlquilerVehiculos easydrive = new EmpresaAlquilerVehiculos("A-28-187189",
 
 Al crear la instancia easydrive, el método constructor de la clase EmpresaAlquilerVehiculos inicializa los arrays clientes y vehiculos de este objeto. 
 Una vez creada la instancia es necesario añadir clientes y vehículos añ objetos easydrive. En este ejemplo se registran dos clientes y cinco vehículos de alquiler: tres turismos, un deportivo y una furgoneta.
-Para registrar un nuevo cliente basta con ivocar el método registrarCliente(Cliente  cliente) con una instancia  de la clase Cliente para añadir un nuevo cliente al array clientes del objeto easydrive.
+Para registrar un nuevo cliente basta con invocar el método registrarCliente(Cliente  cliente) con una instancia  de la clase Cliente para añadir un nuevo cliente al array clientes del objeto easydrive.
+
+```
+// registro del cliente con NIF "X5618927C"
+easydrive.registrarCliente(new Cliente("X5618927C", "Juan", "Gonzalez López"));
+```
+
+Para registrar un nuevo vehículo basta con invocar el método registrarVehiculo(Vehiculo vehiculo) con una instancia de la clase Vehiculo para añadir un nuevo vehículo al array vehiculos del objeto easydrive.
+```
+// registro del turismo con matrícula "4060 TUR"
+easydrive.registrarVehiculo(new Turismo("4060 TUR", "Skoda", "Fabia", "Blanco", 90.0, 2, false));
+```
