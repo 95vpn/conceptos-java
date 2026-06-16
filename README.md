@@ -2840,3 +2840,33 @@ public class EmpresaAlquilerVehiculos
     }
 }
 ```
+
+Programa principal de la aplicación.
+```
+public class MisVehiculos
+{
+  public static void main(String[] args)
+  {
+    // la instancia easydrive de la clase EmpresaAlquilerVehiculos
+    EmpresaAlquilerVehiculos easydrive = new EmpresaAlquilerVehiculos("A-28-187189", "easy drive", "www.easydrive.com");
+
+    //registro de los clientes de la empresa
+    easydrive.registrarCliente(new Cliente("X5618927C", "Juan", "Gonzalez López"));
+    easydrive.registrarCliente(new Cliente("Z7568991Y", "Luis", "Fernández Gomez"));
+
+    // registro de los vehículos de la empresa
+    easydrive.registrarVehiculo(new Turismo("4060 TUR", "Skoda", "Fabia", "Blanco", 90.0, 2, false));
+    easydrive.registrarVehiculo(new Deportivo("4070 DEP", "Fors", "Mustang", "Rojo", 150.0, 2000));
+    easydrive.registrarVehiulo(new Turismo("4080 TUR", "VW", "GTI", "Azul", 110.0, 2, false));
+    easydrive.registrarVehiculo(new Turismo("4090 TUR", "SEAT", "Ibiza", "Blanco", 90.0, 4, false));
+    easydrive.registrarVehiculo(new Furgoneta("4100 FUR", "Fiat", "Ducato", "Azul", 80.0, 1200, 8))
+
+   // imprime la relación de clientes de easydrive
+   easydrive.imprimirClientes();
+
+   // imprime el catalogo de clientes de easydrive
+   easydrive.imprimirVehiculos();
+  }
+}
+```
+
