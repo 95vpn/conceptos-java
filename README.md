@@ -2870,3 +2870,11 @@ public class MisVehiculos
 }
 ```
 
+## Busqueda binaria en arrays ordenados
+Para buscar un elemento en un array ordenado se puede aplicae la técnica de busqueda binaria. El conjunto de busqueda se delimita por dos posiciones: el límite inferior y el límite superior. El algoritmo empieza la busqueda por el elemento que está almacenado en la mitad del conjunto de busqueda. Si el elemento almacenadoen la mitad del conjunto es menor que el valor que se busca, entonces continúa la busqueda en la segunda mitad. Si el elemento almacenado en la mitad del conjunto es igual que el valor que se busca, finaliza el proceso. En cada comparación, el algoritmo reduce el conjunto de búsqueda a la mitad. Si durante las sucesivas reducciones del conjunto de busqueda el límite inferior es mayor que el límite superior, entonces el valor que se busca no está en el array y finaliza el proceso.
+
+En este ejemplo el conjunto de busqueda tiene 10 elementos, el límite inferior coincide con el primer elemento del array y el límite superior con el último elemento del array.
+
+
+
+
