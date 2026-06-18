@@ -2875,6 +2875,34 @@ Para buscar un elemento en un array ordenado se puede aplicae la técnica de bus
 
 En este ejemplo el conjunto de busqueda tiene 10 elementos, el límite inferior coincide con el primer elemento del array y el límite superior con el último elemento del array.
 
+```
+Conjunto de busqueda
+2  0  límite inferior
+4  1
+6  2
+8  3
+10 4  mitad
+12 5
+14 6
+16 7
+18 8
+20 9  límite superior
+```
 
+Si se aplica la busqueda binaria para buscar el número 18, el algoritmo realiza las siguientes reducciones del conjunto de busqueda.
+Cuando se busca el número 18 en el array, en la primera iteración se compara el valor almacenado en la mitad con el 18. La mitad es la posición 4 y almacena un 10. Como 18 es mayor que 10 se descarta la primera mitad del conjunto de búsqueda y el límite inferior se hace igual a la mitad + 1. Ahora el límite inferior es 5 y la nueva mitad es 7. Los valores del array que se han descartado en esta iteración se han tachado.
 
-
+```
+Conjunto de busqueda
+2  0  x  
+4  1  x
+6  2  x
+8  3  x
+10 4  x  
+12 5  límite inferior
+14 6
+16 7  mitad
+18 8
+20 9  límite superior
+```
+Una vez más, se compara el 18 con el valor almacenado en la mitad, que es 16. Como 18 es mayor que 16, se descarta la primera mitad del conjunto de búsqueda y el límite inferior  se hace igual a la mitad + 1. Ahora, el límite inferior es 8 y la nueva mitad es 8. En la siguiente iteración se compara el valor almacenado en la posición central con el 18 y finaliza el algoritmo.
