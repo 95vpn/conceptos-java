@@ -2906,3 +2906,60 @@ Conjunto de busqueda
 20 9  límite superior
 ```
 Una vez más, se compara el 18 con el valor almacenado en la mitad, que es 16. Como 18 es mayor que 16, se descarta la primera mitad del conjunto de búsqueda y el límite inferior  se hace igual a la mitad + 1. Ahora, el límite inferior es 8 y la nueva mitad es 8. En la siguiente iteración se compara el valor almacenado en la posición central con el 18 y finaliza el algoritmo.
+
+```
+Conjunto de busqueda
+2  0  x  
+4  1  x
+6  2  x
+8  3  x
+10 4  x  
+12 5  x
+14 6  x
+16 7  x
+18 8  límite inferior / mitad
+20 9  límite superior
+```
+
+En este ejemplo, el algoritmo de búsqueda binaria ha realizado tres comparaciones para encontrar el número 18 en el array.
+Durante el proceso de divisióndel conjunto de búsqueda se modifica el valor del límite inferior o el límite superior, dependiendo de si el número que busca está en la primera mitad o en la segunda mitad. Si durante este proceso el límite inferior es mayor que el límite superior, entonces el algoritmo finaliza porque el número que se busca no estpa en el array.
+
+El siguiente programa utiliza el algoritmo de busqueda binaria para buscar un número entre cero y 100 en un  array de números ordenados.
+
+```
+public class usquedaBinaria
+{
+  public static void main(String[] args)
+  {
+    int[] numeros = {1,2,3,4,5,6,7,8,9,10,15,17,20,45,51,60,68,74,75};
+    int mitad;
+    int limmiteInferior = 0;
+    int limiteSuperior = numeros.length - 1;
+    int numeroBusqueda = 68;
+    boolean encontrado  = false;
+
+    while ((limiteInferior <= limiteSuperior)  && (!encontrado))
+    {
+      mitad = (limiteInferior + limiteSuperior) / 2;
+
+      if (numeros[mitad] == numeroBusqueda)
+      {
+        encontrado = true;
+      }
+      else if (numero[mitad] > numeroBusqueda)
+      {
+        limiteSuperior = mitad -1; // buscar la primera mitad
+      }
+      else
+      {
+        limiteInfereor = mitad + 1; // buscar en la segunda mitad
+      }
+    }
+
+    if (encontrado)
+      Aystem.out.println("He encontrado el número");
+    else
+      System.out.println("No he encontrado el núimero");
+  }
+}
+```
