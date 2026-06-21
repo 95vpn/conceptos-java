@@ -2963,3 +2963,9 @@ public class usquedaBinaria
   }
 }
 ```
+
+## Ordenación de arrays
+Una de la operaciones más copmunes con array es la ordenación. Un algoritmo de ordenación clasifica un conjunto de datos de forma ascendente o descendente.
+
+### El algoritmo de ordenación "Bubble Sort"
+El algoritmo "Buble Sort" se basa en comparar cada elemento del conjunto a ordenar con el siguiente. Si estos elementos no están ornedados, entonces se intercambian. En este algoritmo es necesario revizar varias veces todo el conjunto hasta que no sea necesario realizar más intercambios.
