@@ -2969,3 +2969,26 @@ Una de la operaciones más copmunes con array es la ordenación. Un algoritmo de
 
 ### El algoritmo de ordenación "Bubble Sort"
 El algoritmo "Buble Sort" se basa en comparar cada elemento del conjunto a ordenar con el siguiente. Si estos elementos no están ornedados, entonces se intercambian. En este algoritmo es necesario revizar varias veces todo el conjunto hasta que no sea necesario realizar más intercambios.
+
+El algoritmo "Buble Sort" ordena los valores almacenados en el array de numeros.
+
+```
+int[] numeros = {6, 5, 3, 1, 2};
+int tmp;
+
+for (int i = 0; i < numeros.length - 1; i++)
+{
+  for (int j = i + 1; j < numeros.length; j++)
+  {
+    if (numeros[i] > numeros[j])
+    {
+      tmp = numeros[i];
+      numeros[i] = numeros[j];
+      numeros[j] = tmp;
+    }
+  }
+}
+```
+La variable tmp se utiliza para realizar el intercambio de los valores almacenados en las posiciones i y j del array. Primero, se almacena el valor de numeros[i] en tmp, después se almacena el valor de numeros[j] en numeros[i], por último se almacena el valor de tmp en numeros[j] y finaliza el intercambio.
+
+El algopritmo utiliza un for anidado. La variable de control del primer for es i y la del segundo for es j. La variable i del primer for toma los valores 0, 1, 2 y 3. Para i = 0, la variable j del segundo for toma los valores 1, 2, 3 y 4. Para i = 1, la variable j toma los valores 2, 3 y 4. Para i = 2, la variable j toma los valores 3, 4. Para i = 3, la variable j toma el valor de 4.
