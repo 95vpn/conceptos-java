@@ -2992,3 +2992,55 @@ for (int i = 0; i < numeros.length - 1; i++)
 La variable tmp se utiliza para realizar el intercambio de los valores almacenados en las posiciones i y j del array. Primero, se almacena el valor de numeros[i] en tmp, después se almacena el valor de numeros[j] en numeros[i], por último se almacena el valor de tmp en numeros[j] y finaliza el intercambio.
 
 El algopritmo utiliza un for anidado. La variable de control del primer for es i y la del segundo for es j. La variable i del primer for toma los valores 0, 1, 2 y 3. Para i = 0, la variable j del segundo for toma los valores 1, 2, 3 y 4. Para i = 1, la variable j toma los valores 2, 3 y 4. Para i = 2, la variable j toma los valores 3, 4. Para i = 3, la variable j toma el valor de 4.
+
+En diagramas se muestra el array de números antes y desoues de hacer el intercambio de los valores que se comparan cada vez.
+
+Comparación de numeros[0] y numeros[1].
+```
+0  6       0  5
+1  5       1  6
+2  3       2  3
+3  1       3  1
+4  2       4  2
+comparación de números para i=0 y j=1
+```
+
+Comparación de numeros[0] y numeros[2]
+```
+0  5       0  3
+1  6       1  6
+2  3       2  5
+3  1       3  1
+4  2       4  2
+comparación de numeros para i=0 y j=2
+```
+
+Comparación de numeros[0] y numeros[3]
+```
+0  3       0  1
+1  6       1  6
+2  5       2  5
+3  1       3  3
+4  2       4  2
+comparación de números para i=0 y j=3
+```
+
+Comparación de números[1] y numeros[2]
+```
+0  1       0  1
+1  6       1  6
+2  5       2  5
+3  3       3  3
+4  2       4  2
+comparación de numeros para i=0 y j=4
+```
+
+Comparación de numeros[1] y numeros[2]
+```
+0  1       0  1
+1  6       1  5
+2  5       2  6
+3  3       3  3
+4  2       4  2
+comparación de números para i=1 y j=2
+```
