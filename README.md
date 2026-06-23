@@ -3044,3 +3044,56 @@ Comparación de numeros[1] y numeros[2]
 4  2       4  2
 comparación de números para i=1 y j=2
 ```
+
+Comparación de numeros[1] y numeros[3].
+```
+0  1       0  1
+1  5       1  3
+2  6       2  6
+3  3       3  5
+4  2       4  2
+comparación de números para para i=1 y j=3
+```
+
+Comparación de numeros[1] y numeros[4].
+```
+0  1       0  1
+1  3       1  2
+2  6       2  6
+3  5       3  5
+4  2       4  3
+comparación de números para i=1 y j=4
+```
+
+Comparación de numeros[2] y numeros[3].
+```
+0  1       0  1
+1  2       1  2
+2  6       2  5
+3  5       3  6
+4  3       4  3
+comparación de números para i=2 y j=3
+```
+
+Comparación de numeros[2] y numeros[4]
+```
+0  1       0  1
+1  2       1  2
+2  5       2  3
+3  6       3  6
+4  3       4  5
+comparación de numeros para i=2 y j=4
+```
+
+Comparación de numeros[3] y numeros[4]
+```
+0  1       0  1
+1  2       1  2
+2  3       2  3
+3  6       3  5
+4  5       4  6
+comparación de números para i=3 y j=4
+```
+
+Al finalizar el algoritmo, el array ordenado es {1, 2, 3, 5, 6 }
+
