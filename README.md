@@ -3097,3 +3097,7 @@ comparación de números para i=3 y j=4
 
 Al finalizar el algoritmo, el array ordenado es {1, 2, 3, 5, 6 }
 
+## El método sort de la clase Arrays
+
+Java define la clase Arrays con métodos que permiten realizar operaciones de ordenación y búsqueda en opbjetos de tipo array. Estos métodos se pueden utilizar con todos los tipos primitivos, String y con cualquier otro tipo de objeto.
+
