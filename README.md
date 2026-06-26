@@ -3100,4 +3100,13 @@ Al finalizar el algoritmo, el array ordenado es {1, 2, 3, 5, 6 }
 ## El método sort de la clase Arrays
 
 Java define la clase Arrays con métodos que permiten realizar operaciones de ordenación y búsqueda en opbjetos de tipo array. Estos métodos se pueden utilizar con todos los tipos primitivos, String y con cualquier otro tipo de objeto.
+Los métodos más utilizados de esta clase son:
 
+Arrays.sort(array-de-datos). Ordena el contenido del array en orden ascendente.
+Arrays.sort(numeros) ordena todos los elementos del array numeros.
+
+Arrays.sort(array-de-datos, inicio, fin) Ordena el contenido del array en orden ascendente, desde la posición de inicial hasta la posición final.
+Arrays.sort(numeros, 0, 49) ordena los elementos almacenados entre la posición 0 y la 49 del array de numeros.
+
+Arrays.binarySearch(array-de-datos, clave). Busca la clave indicada en el array de numeros enteros.
+Arrays.binarySearch(numeros, 1991) busca el número1991 en el array de numeros.
