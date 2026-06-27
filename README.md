@@ -3110,3 +3110,9 @@ Arrays.sort(numeros, 0, 49) ordena los elementos almacenados entre la posición 
 
 Arrays.binarySearch(array-de-datos, clave). Busca la clave indicada en el array de numeros enteros.
 Arrays.binarySearch(numeros, 1991) busca el número1991 en el array de numeros.
+
+Arrays.fill(array-de-datos, dato). Rellena el array con el valor dado. Se puede utilizar con todos los tipos primitivos, String y con cualquier otro tipo de objeto.
+Arrays.fill(numeros, 5). rellena con el valor 5 todo el array numeros.
+
+Arrays.fill(array-de-datos, dato, inicio, fin). Rellena el array con el valor dado, indicando la posición inicial y final.
+Arrays.fill(numeros, 5, 0, 5) rellena con el valor 5 desde la posición 0 hasta la posición 5 del array numeros.
