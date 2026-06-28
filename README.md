@@ -3116,3 +3116,31 @@ Arrays.fill(numeros, 5). rellena con el valor 5 todo el array numeros.
 
 Arrays.fill(array-de-datos, dato, inicio, fin). Rellena el array con el valor dado, indicando la posición inicial y final.
 Arrays.fill(numeros, 5, 0, 5) rellena con el valor 5 desde la posición 0 hasta la posición 5 del array numeros.
+
+Programa que utiliza el método sort de la clase Arrays para ordenar ascendentemente un array de números enteros.
+
+```
+public class SortArray
+{
+  public static void main(String[] args)
+  {
+    int[] numerosDesordenados = {5, 4, 6, 7, 5, 6, 4, 8, 7, 10};
+    // numerosOrdenaods es una copia de numerosDesordenados
+    //el método clone() copia del ojeto al que se aplica
+
+    int[] numerosOrdenados = numerosDesordenados.clone();
+    System.out.println("\nEl array de números desordenados\n");
+
+    for (int numero : numerosDesordenados)
+      System.out.println(numero);
+
+    // el métod sort(array-de-datos) de la clase Array ordena ascendentemente todos los elementos de numerosOrdenados
+
+    Arrays.sort(numerosOrdenados);
+
+    System.out.println("\nEl array de números ordenados\n");
+    for (int numero : numerosOrdenados)
+      System.out.println(numero);
+  }
+}
+```
