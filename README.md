@@ -3144,3 +3144,33 @@ public class SortArray
   }
 }
 ```
+
+## Arrays redimensionables
+Un arrayList es un array redimensionable. Puede almacenar un número indefinido de elementos.
+La declaración de un ArrayList tienen la siguiente sintaxix:
+```
+List <tipo-o-clase> identificador-lista;
+```
+
+Por ejemplo, el ArrayList vehiculos de la clase Vehiculo se inicializa:
+
+```
+List <Vehiculo> vehiculos = new ArrayList<Vehiculo>();
+```
+
+Los métodos más utilizados de la clase ArrayList son:
+
+add(Object o). Añade un objeto a la lista.
+```
+vehiculos.add(new Turismo("4060 TUR", "Skida", "Fabia", "Blanco", 90.0, 2, false));
+```
+
+get(int posicion). Extrae el objeto almacenado en la posición indicada. Es necesario indicar el tipo de objeto que se extrae.
+```
+Vehiculo v = (Vehiculo)vehiculos.get(0);
+```
+
+size(). Devuelve el número de elementos almacenado en la lista.
+```
+int totalVehiculos = vehiculos.size();
+```
