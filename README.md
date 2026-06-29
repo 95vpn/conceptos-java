@@ -3174,3 +3174,27 @@ size(). Devuelve el número de elementos almacenado en la lista.
 ```
 int totalVehiculos = vehiculos.size();
 ```
+
+Para mostrar los elementos almacenados en una lista se puede utilizar un for con una variable de control o un for 'para todo'.
+
+```
+// recorrido de un ArrayList for con variable de control
+for (int i=0; i<vehiculos.size(); i++)
+{
+  Vehiculo v = (Vehiculo)vehiculos.get(i);
+  System.out.println(v.getAtributos());
+}
+
+for(Vehiculo v : vehiculos)
+  Ayatem.out.println(v.getAtributos());
+```
+
+El método add(Object o) almacena objetos en un ArrayList:
+```
+List <Vehiculos> vehiculos = new ArrayList<Vehiculo>();
+vehiculos.add(new Turismo("4060 TUR", "Skoda", "Fabia", "Blanco", 90.0, 2, false));
+vehiculos.add(new Deportivo("4070 DEP", "Ford", "Mustang", "Rojo", 150.0, 2000));
+vehiculos.add(new Turismo("4080 TUR", "VW", "GTI", "Azul", 110.0, 2, false));
+vehiculos.add(new Turismo("4090 TUR", "SEAT", "Ibiza", "Blanco", 90.0, 4, false));
+vehiculos.add(new Furgoneta("4100 FUR", "Fiat", "Ducato", "Azul", 80.0, 1200, 8));
+```
