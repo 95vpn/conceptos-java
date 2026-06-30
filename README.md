@@ -3198,3 +3198,37 @@ vehiculos.add(new Turismo("4080 TUR", "VW", "GTI", "Azul", 110.0, 2, false));
 vehiculos.add(new Turismo("4090 TUR", "SEAT", "Ibiza", "Blanco", 90.0, 4, false));
 vehiculos.add(new Furgoneta("4100 FUR", "Fiat", "Ducato", "Azul", 80.0, 1200, 8));
 ```
+
+El ArrayList vehiculos almacena objetos de la clase Vehiculo. Para añadir un nuevo elemento se ejecuta el método add(Object o) con un objeto de tipo Vehiculo. En este ejemplo se almacenan instancias de las clases Turismo,Deportivo y Furgoneta, todas ella subclases de Vehiculo.
+
+El método size() devuelve el número de objetos almacenado.
+
+```
+int totalVehiculos = vehiculos.size();
+```
+
+Programa que define un ArrayList para alamacenar objetos de la clase Vehiculo y muestra su contenido por consola. Para utilizar la clase ArrayList es necesario importar los paquetes:
+
+```
+import java.util.ArrayList;
+import java.util.List;
+```
+
+
+```
+import java.util.ArraysList;
+import java.util.List;
+
+public class ArrayListVehiculos
+{
+  public static void main(String[] args)
+  {
+    //se declara e inicialización el ArrayList
+    List <Vehiculo> vehiculos = new ArrayList<Vehiculo>();
+    // se añadenobjetos de la clase Vehiculo
+
+    vehiculos.add(new)
+  }
+
+}
+```
