@@ -3227,8 +3227,20 @@ public class ArrayListVehiculos
     List <Vehiculo> vehiculos = new ArrayList<Vehiculo>();
     // se añadenobjetos de la clase Vehiculo
 
-    vehiculos.add(new)
+    vehiculos.add(new Turismo("4060 TUR", "Skoda", "Fabia", "Blanco", 90.0, 2, false));
+    vehiculos.add(new Deportivo("4070 DEP", "Ford", "Mustang", "Rojo", 150.0, 2000));
+    vehiculos.add(new Turismo("4080 TUR", "VW", "GTI   ", "Azul", 110.0, 2, false));
+    vehiculos.add(new Turismo("4090 TUR", "SEAT", "Ibiza", "Blanco", 90.0, 4, false));
+    vehiculos.add(new Furgoneta("4100 FUR", "Fiat", "Ducato", "Azul", 80.0, 1200, 8));
+
+    // muestra el contenido del ArrayList
+    System.out.println("Vehiculos");
+
+    For(Vehiculo v: vehiculos)
+      System.out.println(v.getAtributos());
   }
 
 }
 ```
+
+
