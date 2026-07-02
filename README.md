@@ -3243,4 +3243,12 @@ public class ArrayListVehiculos
 }
 ```
 
+## Uso de arrays Redimensionables
+
+Suponga que se deea almacenar en arrays redimensionables el catálogo de vehiculos y la relación de clientes de la empresa de alquiler de vehiculos.
+Basta con sustituir los arrays de la clase EmpresaAlquilerVehiculos por objetos de tipo ArrayList y modificar los métodos de la clase que utilizan los objetos clientes, vehiculos y alquileres.
+
+En esta nueva implementación de la clase, no es necesario definir variables para almacenar el total de clientes, vehiculos o vehiculos alquilados. Un ArrayList es un array que modifica su tamaño de forma dinamica para almacenar tantos elementos como sea necesario.
+
+La nueva clase EmpresaAlquilerVehiculos declara los objetos clientes, vehiculos y alquileres de tipoArrayList para almacenar la información de lso clientes, el catálogo de vehículos y el histórico de vehículos alquilados, respectivamente.
 
