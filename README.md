@@ -3252,3 +3252,30 @@ En esta nueva implementación de la clase, no es necesario definir variables par
 
 La nueva clase EmpresaAlquilerVehiculos declara los objetos clientes, vehiculos y alquileres de tipoArrayList para almacenar la información de lso clientes, el catálogo de vehículos y el histórico de vehículos alquilados, respectivamente.
 
+```
+import java.util.ArrayList;
+import java.util.List;
+
+public class EmpresaAlquilerVehiculos
+{
+  private String cif;
+  private String nombre;
+  private String paginaWeb;
+  private List <Clentes> clientes;
+  private List <Vehiculos> vehiculos;
+  private List <VehiculoAlquilado> alquileres;
+
+  // se omiten los metodos get y  set de la clase
+
+  public EmpresaAlquilerVehiculos (String cif, String nombre, String paginaWeb)
+  {
+    this.cif = cif;
+    this.nombre = nombre;
+    this.paginaWeb = paginaWeb;
+    this.clientes = new ArrayList<Clientes>();
+    this.vehiculos = new ArrayList<Vehiculos>();
+    this.alquileres = new ArrayList<VehiculoAlquilados>();
+
+  }
+}
+```
