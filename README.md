@@ -3279,3 +3279,11 @@ public class EmpresaAlquilerVehiculos
   }
 }
 ```
+
+La clase EmpresaAlquilerVehiculos declara los siguientes métodos para realizar operaciones:
+
+registrarCliente(Cliente cliente). Añade un nuevo cliente a la lista de clientes de la empresa.
+registrarVehiculo(Vehiculo vehiculo). Añade un vehiculo al catálogo de vehiculos de la empresa.
+imprimirClientes(). Muestra la relación de clientes de la empresa.
+imprimirVehiculos(). Muestra el catálogo de vehículos de la empresa.
+alquilarVehiculo(String matricula, String nif, int dias). Modifica la disponibilidad del vehículo para indicar que está alquilado 
