@@ -3286,4 +3286,30 @@ registrarCliente(Cliente cliente). Añade un nuevo cliente a la lista de cliente
 registrarVehiculo(Vehiculo vehiculo). Añade un vehiculo al catálogo de vehiculos de la empresa.
 imprimirClientes(). Muestra la relación de clientes de la empresa.
 imprimirVehiculos(). Muestra el catálogo de vehículos de la empresa.
-alquilarVehiculo(String matricula, String nif, int dias). Modifica la disponibilidad del vehículo para indicar que está alquilado 
+alquilarVehiculo(String matricula, String nif, int dias). Modifica la disponibilidad del vehículo para indicar que está alquilado y añade un objeto de tipoVehiculoAlquilado a la lista de vehículos alquilados. Esta lista almacena el cliente, el vehículo y los días de alquiler de cada vehiculo alquilñado.
+recibirVehiculo(String matricula). Modifica la disponibilidad del vehículo para que pueda alquilar de nuevo.
+
+El método registrarCliente(Cliente cliente) añade un objeto de la clase Cliente a la lista clientes.
+```
+public void registrarCliente(Cliente cliente)
+{
+  this.clientes.add(clientes);
+}
+```
+
+El método registrarVehiculo(Vehiculo vehiculo) añade un objeto de la clase Vehiculo a la lista vehiculos.
+```
+public void registrarVehiculo(Vehiculo vehiculo)
+{
+  this.vehiculos.add(vehiculo);
+}
+```
+
+El método imprimirClientes() muestra la relación de clientes de la empresa de alquiler.
+```
+public void imprimirClientes()
+{
+  System.out.println("NIF cliente\tNombre\n");
+  for(Cliente)
+}
+```
