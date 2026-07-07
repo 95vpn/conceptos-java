@@ -3326,4 +3326,29 @@ public void imprimirVehiculos()
 ```
 Para registrar el alquiler de un vehiculo por cliente se usa el método alquilarVehiculo(String matricula, String nif, int dias). Este método modifica la disponibilidad del vehículo para indicar que está alquilado. El método getCliente(String nif) busca la referencia del cliente con el NIF dado en la lista clientes. De forma similar, el método getVehiculo(String matrcula) busca la referencia del vehículo con la matricula dada en la lista vehiculos. Una vez encontrado el vehiculo con la matricula indicada, se verifica si está disponible para alquilar y se modifica su disponibilidad. A continuación, almacena un objeto de tipo VehiculoAlquilado en la lista alquileres. Este objeto relaciona un cliente, un vehiculo, la fecha actual  y los días de alquiler.
 
+El método getCliente(String nif)
+```
+private Cliente getCliente(String nif)
+{
+  for (Cliente c : this.clientes)
+    if (c.getNIF() == nif)
+      return c;
+
+  return null;
+}
+
+public void alquilarVehiculo(String matricula, String nif, int dias)
+{
+  Cliente  cliente = getCliente(nif);
+  Vehiculo vehiculo = getVehiculo(matricula);
+
+  if (vehiculo.getDisponible())
+  {
+    vehiculo.setDisponible(false);
+    this.alquileres.add(new VehiculoAlquilado(cliente, vehiculo, diaHoy(), mesHoy(), añoHoy(), dias));
+  }
+}
+```
+
+El método recibirVehiculo(String matricula) modifica la disponiblidad del vehículo para que se pueda alquilar de nuevo. Este método utiliza el método getVehiculo(String matricula) que busca el vehiculo con la matrícula dada en la lista vehiculos. Si lo encuentra, modifica su disponibilidad para indicar que nuevamente está disponible para alquiler.
 
