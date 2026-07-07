@@ -3310,6 +3310,20 @@ El método imprimirClientes() muestra la relación de clientes de la empresa de 
 public void imprimirClientes()
 {
   System.out.println("NIF cliente\tNombre\n");
-  for(Cliente)
+  for(Cliente c : this.clientes)
+    System.out.println(c.getAtributos());
 }
 ```
+
+El método imprimirVehiculos() muestra el catálogo de vehiculos de la empresa de alquiler. El método getAtrivutosInforme() muestra el  detalle de atributos del vehiculo.
+```
+public void imprimirVehiculos()
+{
+  System.out.println("Matricula\tModelo " + "\tImporte Disponible\n");
+  for (Vehiculo v : this.vehiculos)
+    System.out.println(v.getAtributosInforme());
+}
+```
+Para registrar el alquiler de un vehiculo por cliente se usa el método alquilarVehiculo(String matricula, String nif, int dias). Este método modifica la disponibilidad del vehículo para indicar que está alquilado. El método getCliente(String nif) busca la referencia del cliente con el NIF dado en la lista clientes. De forma similar, el método getVehiculo(String matrcula) busca la referencia del vehículo con la matricula dada en la lista vehiculos. Una vez encontrado el vehiculo con la matricula indicada, se verifica si está disponible para alquilar y se modifica su disponibilidad. A continuación, almacena un objeto de tipo VehiculoAlquilado en la lista alquileres. Este objeto relaciona un cliente, un vehiculo, la fecha actual  y los días de alquiler.
+
+
