@@ -3351,4 +3351,15 @@ public void alquilarVehiculo(String matricula, String nif, int dias)
 ```
 
 El método recibirVehiculo(String matricula) modifica la disponiblidad del vehículo para que se pueda alquilar de nuevo. Este método utiliza el método getVehiculo(String matricula) que busca el vehiculo con la matrícula dada en la lista vehiculos. Si lo encuentra, modifica su disponibilidad para indicar que nuevamente está disponible para alquiler.
+```
+public void recibirVehiculo(String matricula)
+{
+  Vehiculo vehiculo = getVehiculo(matricula);
 
+  if (vehiculo != null)
+    vehiculo.setDisponible(true);
+}
+```
+
+Una vez modificada la clase EmpresaAlquilerVehiculos, es importante ver que los cambios realizados a las variables privadas de la clase solo afectan a la implementación de los métodos de esta clase. Las modificaciones quedan "encapsuladas" dentro de la clase y no afectan a otras clases o programas.
+Esto significa que no es necesario modificar la clase MisVehiculos que registra los clientes y los vehiculos de la empresa de alquiler. El  método amin clrea una instancia de la clase EmpresaAlquiloerVehculos, denominada easydrive con CIF "A-28-187189", nombre "easydrive" y página web "www.easydrive.com".
