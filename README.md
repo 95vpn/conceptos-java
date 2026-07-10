@@ -3363,3 +3363,12 @@ public void recibirVehiculo(String matricula)
 
 Una vez modificada la clase EmpresaAlquilerVehiculos, es importante ver que los cambios realizados a las variables privadas de la clase solo afectan a la implementación de los métodos de esta clase. Las modificaciones quedan "encapsuladas" dentro de la clase y no afectan a otras clases o programas.
 Esto significa que no es necesario modificar la clase MisVehiculos que registra los clientes y los vehiculos de la empresa de alquiler. El  método amin clrea una instancia de la clase EmpresaAlquiloerVehculos, denominada easydrive con CIF "A-28-187189", nombre "easydrive" y página web "www.easydrive.com".
+
+```
+// La instancia easydrive de EmpresaAlquilerVehiculos
+
+EmpresaAlquilerVehiculos easydrive = new EmpresaAlquilerVehiculos("A-28-187189", "easy drive", "www.easydrive.com");
+```
+
+Al crear la instancia easydrive, el método constructor de la clase EmpresaAlquilerVehiculos inicializa las listas clientes y vehiculos de este objeto. Una vez creada la instancia es necesario añadir clientes y vehiculos al objeto easydrive. En este ejemplo se registran dos clientes y cinco vehículos de alquiler: tres turismos, un deportivo y una furgoneta.
+Para registrar un nuevo cliente basta con invocar el método registrarCliente(Cliente cliente) con una instancia de la clase Cliente para añadir un nuevo cliente a la lista clientes del objeto easydrive.
