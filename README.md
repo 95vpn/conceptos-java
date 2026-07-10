@@ -3372,3 +3372,79 @@ EmpresaAlquilerVehiculos easydrive = new EmpresaAlquilerVehiculos("A-28-187189",
 
 Al crear la instancia easydrive, el método constructor de la clase EmpresaAlquilerVehiculos inicializa las listas clientes y vehiculos de este objeto. Una vez creada la instancia es necesario añadir clientes y vehiculos al objeto easydrive. En este ejemplo se registran dos clientes y cinco vehículos de alquiler: tres turismos, un deportivo y una furgoneta.
 Para registrar un nuevo cliente basta con invocar el método registrarCliente(Cliente cliente) con una instancia de la clase Cliente para añadir un nuevo cliente a la lista clientes del objeto easydrive.
+
+```
+//registro del cliente con NIF "X5618927C"
+
+easydrive.registrarCliente(new Cliente("X561892C", "Juan", "Gonzalez Lopez"));
+```
+
+Para registrar un nuevo vehiculo basta con invocar el método registrarVehiculos(Vehculo vehiculo)  con una instancia de la clase Vehiculo para añadir un nuevo vehículo a la lista vehiculos del objeto easydrive.
+
+```
+// registro del turismo con matricula "4060 TUR"
+
+easydryve.registrarVehiculo(new Turismo("4060 TUR", "Skoda", "Fabia", "Blanco", 90.0, 2, false));
+```
+
+Una vez registrados los clientes y los vehículos de la empresa, se invocan los métodos imprimirClientes() e imprimirVehiculos() para mostrar la relación de clientes y el catálogo de vehículos de la empresa "easydrive".
+
+```
+// imprime la relación de clientes de "easydrive"
+easydrive.imprimirClientes();
+
+// imprime el catálogo de vehículos de "easydrive"
+easydrive.imprimirVehiculos();
+
+//
+```
+
+```
+import java.util.ArrayList;
+import java.util.List;
+
+public class EmpresaAlquilerVehiculos
+{
+  //se omiten los atributos y el resto de métodos de la clase
+  public void registrarCliente(Cliente cliente)
+  {
+    this.clientes.add(cliente);
+  }
+
+  public void registrarVehiculo(Vehiculo vehiculo)
+  {
+    this.vehiculos.add(vehiculo);
+  }
+
+  public void imprimirClientes()
+  {
+    System.out.println("NIF cliente\tNombre\n");
+    for (Cliente c : this.clientes)
+      System.out.println(c.getAtributos());
+  }
+
+  public void imprimirVehiculos()
+  {
+    System.out.println("Matricula\tModelo " + "\tImporte Disponible\n");
+    for (Vehiculo v : this.vehiculos)
+      System.out.println(v.getAtributosInforme());
+  }
+
+  public void alquilarVehiculo(String matricula, String nif, int dias)
+  {
+    Cliente cliente = getCliente(nif)
+    Vehiculo vehiculo = getVehiculo(matricula);
+    if (vehiculo.getDisponible())
+    {
+      vehiculo.setDisponible(false);
+      this.alquileres.add(new VehiculoAlquilado(cliente, vehiculo, diaHoy(), mesHoy(), añoHoy(), dias));
+    }
+  }
+
+  public void recibirVehiculo(String matricula)
+  {
+    if (vehiculo != null)
+      vehiculo.setDisponible(true);
+  }
+}
+```
