@@ -3465,7 +3465,43 @@ public class MisVehiculos
     easydrive.registrarVehiculo(new Turismo("4060 TUR", "Skoda", "Fabia", "Blanco", 90.0, 2, false));
     easydrive.registrarVehiculo(new Deportivo("4070 DEP", "Ford", "Mustang", "Rojo", 150.0, 2000));
     easydrive.registrarVehiculo(new Turismo("4080 TUR", "VW", "GTI", "Azul", 110.0, 2, false));
-    
+    easydrive.registrarVehiculo(new Turismo("4090 TUR", "SEAT", "Ibiza", "Blanco", 90.0, 4, false));
+    easydrive.registrarVehiculo(new Furgoneta("4100 FUR", "Fiat", "Ducato", "Azul", 80.0, 1200, 8));
+
+    // imprime la relación de clientes de easydrive
+    easydrive.imprimirClientes();
+
+    // imprime el catalogo de vehiculos de easydrive
+    easydrive.imprinirVehiculos();
   }
 }
 ```
+
+# Entrada y salida
+## Los flujos de Java
+
+Practicamente todos los programas deben leer datos del exterior para procesarlos y después presentar los resultados. La información que necesita un programa normalmente se obtiene mediante la entrada de datos por el teclado o leyendo un fichero. Los resultados de la ejecucuón de un programa se pueden presentar por la consola, la impresora o en un fichero. El tipo de información que se utiliza tanto en las entradas como en las salidas puede tener diversos formatos: texto, imagen, sonido, binario, etc.
+
+En Java, la entrada de datos se realiza mediante un flujo de entrada. Para realizar la entrrada de datos es necesario abrir el flujo de entrada, leer la información del flujo hasta el final y por último cerrar el flujo.
+La salida se hace mediante un flujo de salida. Para realizar la salida de datos es necesario abrir el flujo de salida y a continuación se escribe en él toda la información que se desee, por último se cierra el flujo.
+
+Este esquema de entradas y sakidas basdas en un flujo permite que las entgradas sean independientes de la fuente de datos y que las salidas sean independientes del destino de datos.
+
+Un flujo en Java es un objeto que se utiliza para realizar una entrada o salida de datos. Representa un canal de información del que se puede leer o escribir datos de forma secuencial. Existen dos tipos de flujos en Java, los que utilizan bytes y los que utilizan caracteres.
+
+La aiguiente tabla muestra los flujos de entrada de datos e Java
+
+| Flujos con Bytes          | Flujos con Caracteres |
+-----------------------------------------------------
+| InputStream               | Reader |
+|   ByteArrayInputStream    |   BufferedReader |
+|   FileInputStream         |     LineNumberReader |
+|   FilterInputStream       |   CharArrayReader |
+|     BufferedInputStream   |   FilterReader |
+|     DataInputStream       |     PushBackReader |
+|     LineNumberInputStream |   InputStreamReader |
+|     PuchBackInputStream   |     FileReader |
+|   ObjectInputStream       |   PipedReader |
+|   PipedInputStream        |   StringReader |
+|   SequenceInputStream     |
+|   StringBufferInputStream |
