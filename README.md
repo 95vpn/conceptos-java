@@ -3492,7 +3492,7 @@ Un flujo en Java es un objeto que se utiliza para realizar una entrada o salida 
 La aiguiente tabla muestra los flujos de entrada de datos e Java
 
 | Flujos con Bytes          | Flujos con Caracteres |
------------------------------------------------------
+|---------------------------|--------------------------|
 | InputStream               | Reader                |
 |   ByteArrayInputStream    |   BufferedReader      |
 |   FileInputStream         |     LineNumberReader  |
@@ -3509,7 +3509,7 @@ La aiguiente tabla muestra los flujos de entrada de datos e Java
 La siguiente tabla muestra los flujos de salida de datos de Java
 
 | Flujos con bytes          | Flujos con caracteres |
------------------------------------------------------
+|---------------------------|--------------------------|
 | OutputStream              | Writer                |
 |   ByteArrayOutputStream   |   BufferedWriter      |
 |   FileOutputStream        |   CharArrayWriter     |
