@@ -3505,3 +3505,25 @@ La aiguiente tabla muestra los flujos de entrada de datos e Java
 |   PipedInputStream        |   StringReader |
 |   SequenceInputStream     |
 |   StringBufferInputStream |
+
+La siguiente tabla muestra los flujos de salida de datos de Java
+
+| Flujos con bytes | Flujos con caracteres          |
+-----------------------------------------------------
+| OutputStream              | Writer                |
+|   ByteArrayOutputStream   |   BufferedWriter      |
+|   FileOutputStream        |   CharArrayWriter     |
+|   FilterOutputStream      |   FilterWriter        |
+|     BufferedOutputStream  |   OutputStreamWriter  |
+|     DataOutputStream      |     FileWriter        |
+|     PrintStream           |   PipedWriter         |
+|   ObjectOutputStream      |   PrintWriter         | 
+|   PipedOutputStream       |   StringWriter        |
+
+Existen flujos con bytes y flujos con caracteres que se aplican a la misma entrada o salida. FileInputStream y FileOutputStream son flujos para leer y escribir bytes en un fichero, FileReader y FileWriter también son flujos que se aplican a focheros, pero en este caso para leer y escribir caracteres.
+
+Los flujos se pueden utilizar solos o combinados. Si se combinan dos flujos, por ejemplo uno que lea caracteres de un archivo con otro que convierta a mayúsculas los caracteres, entonces el resultado final es un flujo del que se leen caracteres en mayúsculas.
+
+En los siguientes ejemplos se muestran las aplicaciones de algunos de estos flujos para leer datos del tecladom leer y escribir en ficheros de texto o leer y escribir ficheros de objetos.
+
+
