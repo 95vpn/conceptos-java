@@ -3493,22 +3493,22 @@ La aiguiente tabla muestra los flujos de entrada de datos e Java
 
 | Flujos con Bytes          | Flujos con Caracteres |
 -----------------------------------------------------
-| InputStream               | Reader |
-|   ByteArrayInputStream    |   BufferedReader |
-|   FileInputStream         |     LineNumberReader |
-|   FilterInputStream       |   CharArrayReader |
-|     BufferedInputStream   |   FilterReader |
-|     DataInputStream       |     PushBackReader |
-|     LineNumberInputStream |   InputStreamReader |
-|     PuchBackInputStream   |     FileReader |
-|   ObjectInputStream       |   PipedReader |
-|   PipedInputStream        |   StringReader |
-|   SequenceInputStream     |
-|   StringBufferInputStream |
+| InputStream               | Reader                |
+|   ByteArrayInputStream    |   BufferedReader      |
+|   FileInputStream         |     LineNumberReader  |
+|   FilterInputStream       |   CharArrayReader     |
+|     BufferedInputStream   |   FilterReader        |
+|     DataInputStream       |     PushBackReader    |
+|     LineNumberInputStream |   InputStreamReader   |
+|     PuchBackInputStream   |     FileReader        |
+|   ObjectInputStream       |   PipedReader         |
+|   PipedInputStream        |   StringReader        |
+|   SequenceInputStream     |                       |
+|   StringBufferInputStream |                       |
 
 La siguiente tabla muestra los flujos de salida de datos de Java
 
-| Flujos con bytes | Flujos con caracteres          |
+| Flujos con bytes          | Flujos con caracteres |
 -----------------------------------------------------
 | OutputStream              | Writer                |
 |   ByteArrayOutputStream   |   BufferedWriter      |
