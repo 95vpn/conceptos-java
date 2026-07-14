@@ -3526,4 +3526,15 @@ Los flujos se pueden utilizar solos o combinados. Si se combinan dos flujos, por
 
 En los siguientes ejemplos se muestran las aplicaciones de algunos de estos flujos para leer datos del tecladom leer y escribir en ficheros de texto o leer y escribir ficheros de objetos.
 
+## Entrada de datos desde el teclado
+
+El flujo de entrada System.in lee los datos que se introducen en el teclado. Si este flujo se pasa como argumento a una instancia de la clase Scanner, permite realizar la lectura de datos del teclado. Basta con utilizar los métodos next(), nextLine() y nextInt() para leer una palabra, una linea y un número entero, respectivamente.
+
+A continuación se muestra el uso de la clase Scanner y el flujo de entrada del teclado System.in. Para utilizar la clase Scanner en un programa Java es necesario importar la librería java.util.Scanner.
+
+Suponga que se desea realizar un programa que pide un nopmbre, el día, el mes y el año de la fecha de nacimiento de una persona. En este programa se declara una instancia de la clase Scanner, con nombre entradaTeclado que se inicializa con el flujo de entrada del teclado System.in.
+
+```
+Scanner entradaTeclado = new Scanner(System.in);
+```
 
