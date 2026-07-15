@@ -3537,4 +3537,16 @@ Suponga que se desea realizar un programa que pide un nopmbre, el día, el mes y
 ```
 Scanner entradaTeclado = new Scanner(System.in);
 ```
+La clase Scanner ofrece los métodos next(), nextLine(), o nextInt(), entre otros. El método next() lee una palabra, el método nextLine() de entradaTeclado, se lee toda la linea, de manera que la variable nombre almacene tanto el nombre como los apellidos de la persona.
 
+```
+System.out.print("¿Como te llamas?");
+nombre = entradaTeclado.nextLine();
+```
+
+Las variables numéricas de tipo int diaNacimiento, mesNacimiento y añoNacimiento se inicializan con el valor numérico introducido, invicando el método nextInt() de entradaTeclado.
+
+```
+System.out.print("¿Qué día naciste?");
+diaNacimiento = entradaTeclado.nextOnt();
+```
