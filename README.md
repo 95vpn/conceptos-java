@@ -3550,3 +3550,40 @@ Las variables numéricas de tipo int diaNacimiento, mesNacimiento y añoNacimien
 System.out.print("¿Qué día naciste?");
 diaNacimiento = entradaTeclado.nextOnt();
 ```
+
+```
+Import java.util.Scanner;
+
+public class EntradaDatosTeclado
+{
+  public static void main(String args[])
+  {
+    String nombre;
+    int diaNacimiento, mesNacimiento, añoNacimiento;
+
+    // inicialización de la instancia de Scanner con el flujo de entrada del teclado
+
+    Scanner entradaTeclado = new Scanner(System.in);
+
+    System.out.print("¿Como te llamas?           ");
+    nombre = entradaTeclado.nextLine();
+
+    System.out.print("Que día naciste?      ");
+    diaNacimiento = entradaTeclado.nextInt();
+
+    System.out.print("¿En que mes?             ");
+    mesNacimiento = entradaTeclado.nextInt();
+
+    System.out.print("¿En que año?     ");
+    añoNacimiento = entradaTeclado.nextInt();
+
+    System.out.println("Hola  "  +  nombre  + "  naciste el  "  +  diaNacimiento + "/"  +  mesNacimiento  + "/"  +  añoNacimiento);
+  }
+}
+```
+
+Una vez introducidos todos los datos, el programa muestra unmensaje por consola con el nombre y fecha de nacimiento.
+
+```
+Hola Juan, nacistge el 10/12/1382
+```
