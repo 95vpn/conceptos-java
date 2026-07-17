@@ -3587,3 +3587,28 @@ Una vez introducidos todos los datos, el programa muestra unmensaje por consola 
 ```
 Hola Juan, nacistge el 10/12/1382
 ```
+
+### Leer y escribir en ficheros de texto
+La lectura de datos en un fichero de texto requiere el uso de las clases  PrintWrier, File y Scanner. Para escribir en un fichero de texto es necesario utilizar la clase PrintWriter. Esta clase permite crear un fichero de texto para almacenar datos. Esta clase ofrece los métodos print() y println() para escribir datos en el fichero. El método close() cierra el fichero de datos.
+
+Por ejemplo, para escribir un array de números enteros en un fichero de texto, es necesario crear una instancia de la clase PrintWriter.
+
+```
+int[][] numeros = {{1, 2, 3, 4, 5}, {1, 2, 3, 4, 5}, {1, 2, 3, 4, 5}, {1, 2, 3, 4, 5}, {1, 2, 3, 4, 5}};
+
+// la instancia ficheroSalida de la clase PrintWriter crea y escribe en el fichero "c:\\Numeros.txt"
+
+String idFichero = "c:\\Numeros.txt";
+PrintWriter ficheroSaida = new PrintWriter(idFichero);
+
+for (int i=0; i<numeros[i].length; j++)
+{
+  for (int j=0; j<numeros[i].length; j++)
+  {
+    ficheroSalida.print(numeros[i][j] + ".");
+  }
+  ficheroSalida.println("");
+}
+
+ficheroSalida.close();
+```
