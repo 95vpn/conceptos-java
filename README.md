@@ -3612,3 +3612,33 @@ for (int i=0; i<numeros[i].length; j++)
 
 ficheroSalida.close();
 ```
+
+El for anidado escribe todos los elementos del array en el fichero de texto. Al finalizar se invoca al método close() del objeto ficheroSalida para cerrarlo.
+
+El contenido del fichero de texto Numeros.txt.
+
+```
+1, 2 ,3 ,4, 5,
+1, 2, 3, 4, 5,
+1, 2, 3, 4, 5,
+1, 2, 3, 4, 5,
+1, 2, 3, 4, 5,
+```
+
+La clase File ofrece el método exists() para saber si un fichero existe o no. Para leer el contenido de fichero se crea una instancia de la clase Scanner que recibe como argumento la instancia del fichero de texto.
+
+La clase Scanner ofrece el método hasNext() para saber si hay mas elementos que leer y next() para leer el siguiente elemento.
+
+La clase StringTokenizer facilita la división de una cadena de texto en componentes separados por espacios o por un caráter delimitador. En este ejemplo se crea una instancia con el delimitador ",".
+
+Cuando se realiza una operación de lectura o escritura de un fichero es necesario gestionar los errores en tiempo de ejecución de Java, denominados excepciones. Durante la lectura o escritura de un fichero se puede producir una excepción de tipo IOException.
+
+Para utilizar las clases PrintWriter, File, Scanner, StringTokenizer, IOEXception es necesario importar los siguientes paquetes:
+
+```
+import.java.io.PrintWriter;
+import.java.oi.File;
+import.java.util.Scanner;
+import.java.util.StringTokenizer;
+import.java.io.IOException;
+```
