@@ -3642,3 +3642,33 @@ import.java.util.Scanner;
 import.java.util.StringTokenizer;
 import.java.io.IOException;
 ```
+
+Para abrir un fichero de testo se crea una instancia de la clase File. El contenido del fichero se lee con una instancia de la clase Scanner. Como los números almacenados en el fichero estan separados por comas, se utiliza una instancia de StringTokenizer para leer cada número.
+
+```
+String idFichero = "c:\\Numeros.txt";
+
+File ficheroEntrada = new File (idFichero);
+
+if (ficheroEntrada.exists())
+{
+  Scanner datosFichero = new Scanner(FicheroEntrada);
+
+  System.out.println("Numeros del fichero");
+
+  while (datosFichero.hasNext())
+  {
+    StringTokenizer numerosFichero = new StringTokenizer(datosFichero.next(), ",");
+    while (numerosFicheros.hasMoreTokens())
+    {
+      System.out.print(numerosFichero.nextToken() + "\t");
+
+    }
+    System.out.prinyln("");
+  }
+
+  datosFichero.close();
+}
+else
+  System.out.println("¿El fichero no existe!");
+```
