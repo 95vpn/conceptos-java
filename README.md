@@ -3695,7 +3695,30 @@ public class LecturaEscrituraFichero
         ficheroSalida.print(numeros[i][j] + " , ");
       
       }
-      ficheroSalida.close();
+      
+    }
+    ficheroSalida.close();
+
+    File ficheroEntrada = new File (idFichero);
+
+    if (ficheroEntrada exists())
+    {
+      Scanner datosFichero = new Scanner(ficheroEntrada);
+      System.out.println("Numeros del fichero");
+      while (datosFichero.hasNext())
+      {
+        StringTokenizer numerosFichero = new StringTokenizer(datosFichero.next(),",");
+        while (numerosFichero.hasMoreTokens())
+        {
+          System.out.print(numerosFichero.nextToken() + "\t");
+        }
+        System.out.println("");
+      }
+      datosFichero.close();
+    }
+    else
+    {
+      System.out.println("EL Fichero no existe!");
     }
   }
 }
