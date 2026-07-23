@@ -3723,3 +3723,60 @@ public class LecturaEscrituraFichero
   }
 }
 ```
+
+## Leer y escribir objetos en ficheros
+
+La lectura y escritura de objetos de un fichero binario requiere el uso de las clases FileOurputStream y ObjectOutputStream. La clase ObjectOutputStream permite escribir objetos en un fichero utilizando el método writeObject(Object o). Los datos que se almacenan en el fichero de salida tienen un formato binario distinto de los ficheros de texto. El método close() de la clase ObjectOutputStream cierra el fichero de datos.
+
+Para escribir objetos utilizando la clase ObjectOutputStream es necesario codificar los objetos dentro del flujo de salida. A la codificación de los objetos dentro de un flujo de entrada o salida se le denomina "serialización". Para que los objetos de una clase sean "serializables" es necesario implementar la interfaz Serializable de Java.
+
+Para leer objetos almacenados en un fichero binario se utiliza el método readObject() de la clase ObjectInputStream. Despues de leer el objeto del fichero se debe convertir a la clase a la que pertenece.
+
+Cuando se utilizan los flujos ObjectInputStream y ObjectOutputStream de Java es necesario atrapar los errores de ejecución que se producen mientras se lee o escribe el fichero de datos con los flujos de entrada y salida. Para atrapar los errores de ejecucuón o excepciones, se utilizan las sentencias try y catch. Las excepciones que se producen durante la ejecución de las sentencias definidas en el cuerpo del try se atrapan con el catch.
+
+Para escribir un objeto de la clase Persona en un ficero binario, es necesario indicar que esta clase es "serializable", es decir, que sus objetos se codifican dentro de los flujos de entrada y salida de Java. Para indicar que la clase Persona es "serializable" se modifica su declaración indicando que implementa la interfaz Serializable.
+
+```
+public class Persona implements jaca.io.Serializable
+{
+
+}
+```
+
+La declaración completa de la clase Persona, con la implementación de la interfaz Serializable, su mpetod constructor y sus métodos 'get' y 'set'.
+
+```
+public class Persona implements java.io.Serializable
+{
+  private String dni;
+  private String nombre;
+  private String apellidos;
+
+  public Persona (String dni, String nombre, String apellidos)
+  {
+    this.dni = dni;
+    this.nombre = nombre;
+    this.apellidos = apellidos;
+  }
+
+  public String getDNI()
+  {
+    return this.dni;
+  }
+
+  public String getNombre()
+  {
+    return this.nombre;
+  }
+
+  public String getApellidos()
+  {
+    return this.apellidos;
+  }
+
+  public String getAtributos()
+  {
+    return this.getDNI() + "  " + this.getApellidos() + "  " + this.getNombre();
+  }
+}
+```
