@@ -3780,3 +3780,15 @@ public class Persona implements java.io.Serializable
   }
 }
 ```
+
+Para escribir un objeto de la clase Persona en un fichero de texto se utilizan las clases FileOutputStream y ObjectOutputStream. Se crea una instancias de la clase FileOutputStream para inicializar la instncia objetoSalida de ObjectOutputStream que escribe en el fichero binario Objetos.dat.
+
+```
+String nombreFichero = "c:\\Objetos.dat";
+
+try
+{
+  FileOutputStream ficheroSalida = new FileOutputStream(nombreFichero);
+  
+}
+```
