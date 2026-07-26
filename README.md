@@ -3789,6 +3789,24 @@ String nombreFichero = "c:\\Objetos.dat";
 try
 {
   FileOutputStream ficheroSalida = new FileOutputStream(nombreFichero);
+
+  ObjectOutputStream objetoSalida = new ObjectOutputStream(ficheroSalida);
+
+  // Se escriben dos objetos de la clase Persona
+
+  objetoSalida.writeObject(new Persona("55287188B", "Maria", "Ruiz Ramos"));
+  objetoSalida.writeObject(new Persona("40302010A", "Juan", "Gonzalez Lopez"));
+
+  objetoSalida.close();
   
+} catch (FileNotFoundException e)
+{
+  System.out.println("¡El fichero no existe1");
+} catch (IOExceptionv e)
+{
+  System.out.println(e.getMessage());
+} catch (Exception e)
+{
+  System.out.println(e.getMessage());
 }
 ```
