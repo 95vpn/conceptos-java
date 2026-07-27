@@ -3810,3 +3810,5 @@ try
   System.out.println(e.getMessage());
 }
 ```
+
+Para leer los objetos almacenasdos en el fichero binariose utilizan las clases FileInputStrream y ObjectInputStream. Se crea una instancia de la clase FileInputStream para inicializar la instancia objetoEntrada de ObjectInputStream.
