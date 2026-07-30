@@ -3812,3 +3812,54 @@ try
 ```
 
 Para leer los objetos almacenasdos en el fichero binariose utilizan las clases FileInputStrream y ObjectInputStream. Se crea una instancia de la clase FileInputStream para inicializar la instancia objetoEntrada de ObjectInputStream.
+
+```
+try
+{
+  FileInputStream ficheroEntrada = new FileInputStream(nombreFichero);
+  ObjectInputStream objetoEntrada = ObjectInputStream(ficheroEntrada);
+
+  // se leen dos objetosde la clase Persona
+
+  Persona p1 = (Persona)objetoEntrada.readObject();
+  Persona p2 = (Persona)objecoEntrada.readObject();
+
+  // se cierra el flujo de objetos objetoEntrada
+
+  objetoEntrada.close();
+  System.out.println("DNI\t Nombre");
+  System.out.println(p1.getAtributos());
+  System.out.println(p2.getAtributos());
+} catch (FileNotFoundException e)
+{
+  System.out.println("¿El fichero no existe!");
+}  catch (IOException e)
+{
+  System.out.println(e.getMessage());
+}  catch (Exception e)
+{
+  System.out.println(e.getMessage());
+}
+```
+
+Las sentencias try y catch se utilizan para atrapar excepciones que se producen durante la ejecución del programa: FileNotFoundException, IOException o Exception. De esta forma se atrapan los errores que se producen cuando el fichero de datos no existe o cuando hay problemas de lectura o escritura en el fichero.
+
+Las excepciones son el mecanismo que proporciona Java para gestionar los errores de ejecución de una aplicación.
+
+la sentencia try-catch-finally tiene la siguiente sintaxis:
+
+```
+try
+{
+  // sentencias-que pueden producir una excepción;
+}  catch(Exception-tipo-1 e)
+{
+  sentencias-para-excepció-tipo-1;
+} catch (Exception-tipo-2 e)
+{
+  sentencias-para-excepción-tipo-2;
+}  catch (Exception-tipo-3 e)
+{
+  
+}
+```
