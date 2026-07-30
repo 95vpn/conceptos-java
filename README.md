@@ -3860,6 +3860,55 @@ try
   sentencias-para-excepción-tipo-2;
 }  catch (Exception-tipo-3 e)
 {
-  
+  sentencias-para-excepcion-tipo-3;
+} finally
+{
+  sentencias-que-se-ejecutan-si hay-excepcion-o-no;
 }
+```
+
+En una sentencia try-catch-finally, los bloques catch se pueden repetir tantas veces como excepciones de distinto tipo se desee atrapar. El bloque finally es opcional y solo puede aparecer una vez. Este bloque se ejecuta siempre.
+
+```
+import java.io;
+
+public class LecturaEscrituraObjetos
+{
+  public static void main(String[] args)
+  {
+    Atring nombreFichero = "c:\\Objetos.dat";
+    try
+    {
+      FileOutputStream ficheroSalida = new FileOutputStream(nombreFichero);
+
+      ObjectOutputStream objetoSalida = new ObjectOutputStream(ficheroSalida)
+
+      objetoSalida.writeObject(new Persona("55287188B", "María", "Ruiz Ramos");
+      objetoSalida.writeObject(new Persona("40302010A", "Juan", "Gonzalez Lopez"));
+
+      objetoSalida.close();
+
+      FileInputStream ficheroEntrada = new FileInputStream(nombreFichero);
+      ObjectInputStream objetoEntrada = new ObjectInputStream(ficheroEntrada);
+
+      Persona p1 = (Persona)objetoEntrada.readObject();
+      Oersona p2 = (Persona)objetoEntrada.readObject();
+
+      objetoEntrada.close();
+
+      System.out.println("DNI\T Nombre");
+      System.out.println(p1.getAtributos());
+      System.out.println(p2.getAtributos());
+    } catch (FileNotFoundExceprion e)
+    {
+      System.out.println("El fichero no existe");
+    } catch (IOException e)
+    {
+     System.out.println(e.getMessage());
+    } catch (Exceptio e)
+    {
+      System.out.println(e.getMessage());
+    }
+  }
+} 
 ```
