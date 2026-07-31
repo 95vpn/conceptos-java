@@ -3912,3 +3912,19 @@ public class LecturaEscrituraObjetos
   }
 } 
 ```
+
+## Operadores del lenguaje Java
+
+### Operadores aritméticos
+
+Los operadores aritméticos son símbolos, que representan operaciones aritméticas con dos operandos.
+
+| Operador  | Operación aritmética |
+|-----------|----------------------|
+|     +     | Suma de números y concatenación de cadena |
+|     -     | Resta |
+|     +     | Producto |
+|     /     | División |
+|     %     | Módulo o resto |
+
+El operador + se utiliza para sumar dos números y también permite concatenar o unir dos cadenas de caracteres. Este operador esta "Sobrecargado" porque opera con números y con cadenas de caracteres.
