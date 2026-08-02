@@ -3928,3 +3928,9 @@ Los operadores aritméticos son símbolos, que representan operaciones aritméti
 |     %     | Módulo o resto |
 
 El operador + se utiliza para sumar dos números y también permite concatenar o unir dos cadenas de caracteres. Este operador esta "Sobrecargado" porque opera con números y con cadenas de caracteres.
+
+### Operadores Unarios y compuestos
+
+Estos operadores atirmpeticos se utilizan para hacer mas claro el código Java. Convinan la operación de asignación con una operación aritmética. 
+
+Los operadores ++ y -- son operadores unarios, es decir, utilizan un solo operando. Los operadores unarios se pueden aplicarantes y después del operando. Por ejemplo, x++ y ++x representan dos operaciones distintas aplicando el mismo operador. Ambas operaciones suman 1 a la variable xpero tienen un significado diferente.
