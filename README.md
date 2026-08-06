@@ -3946,3 +3946,50 @@ Operadores del lenguaje Java
 | *=       |  a*=b     |  a= a*b    |
 | /=       |  a/=b     |  a= a/b    |
 | %=       |  a%=b     |  a= a%b    |
+
+La siguiente tabla muestra ejemplos de uso de los operadores unarios y de los operadores compuestos
+| Expresión | Equivale a | Significado |
+|-----------|------------|-------------|
+| x++       | x=x+1      | Suma 1 al valor de x |
+| x+=%      | x=x+5      | Suma 5 al valor de x |
+| y-=2      | y=y-2      | Resta 2 al valor de y |
+| z*=10     | z=z*10     | Mulstiplica por 10 el valor de z |
+| a/=b      | a=a/b      | Divide a entre b |
+| c%=3      | c=c%3      | Calcula el modulo de c dividido entre 3 |
+
+## Operadores de relación
+Los operadores de relacion permiten comparar dos o mas valores.
+
+| Operador  | Significado | Ejemplo |
+|-----------|-------------|---------|
+| =         | Igual       | nota = 10 |
+| <         | Menor que   | nota < 5 |
+| >         | Mayor que   | nota > 9 |
+| <=        | Menor o igual | nota <= 7 |
+| >=        | Mayor o igual | nota >=5 |
+| <>        | Distinto de | nota <> 0 |
+
+## Operadores lógicos
+
+Java utiliza tres operadores lógicos: el O lógico (disyunción), el Y lógico (conjunción) y la negación.
+
+Los operadores O lógico (||) y el Y lógico (&&) se utilizan para evaluar expresiones lógicas que solo pueden tomar el valor falso o verdadero.
+El operador Y lógico (&&) devuelve false si uno de los operandos es false.
+El O lógico (||) devuelve true si uno de los operandos es true.
+El operador de negación (¡) es unario y devuelve el vaslor negado de una expresión lógica.
+
+## Orden de precedencia de los operadores
+
+La siguiente tabla muestra el orden de prioridad de los operadores. Indica que operador se aplica primero en una expresión.
+
+| Operador | Descripción |
+|----------|-------------|
+| ++ -- !  | Operadores unarios, negación |
+| * / %    | Producto, división, módulo |
+| + -      | Suma, resta |
+| < > <= >= | Menor, mayor, menor o igual, mayor igual |
+| == !=    | Igual, diferente |
+| &&       | Operador lógico AND |
+| ||       | Operador lógico OR |
+| ?        | Operador condicional ternario ? |
+| = += -= *= /= %= | Asignación y operadores combinados de asignación |
